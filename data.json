@@ -1,0 +1,404 @@
+[
+    {
+        "title": "Official AOSP",
+        "roms": [
+            {
+                "name": "HentaiOS",
+                "links": [
+                    {
+                        "text": "@hentaiOS",
+                        "url": "https://t.me/hentaiOS"
+                    },
+                    {
+                        "text": "@hentaiOSkona",
+                        "url": "https://t.me/hentaiOSkona"
+                    }
+                ]
+            },
+            {
+                "name": "AICP",
+                "links": [
+                    {
+                        "url": "https://rb.gy/tnd89m",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "EvolutionX",
+                "links": [
+                    {
+                        "url": "https://rb.gy/pccqcx",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "POSP",
+                "links": [
+                    {
+                        "url": "https://rb.gy/8s9t3d",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "LineageOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/sepi7v",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "OctaviOS",
+                "links": [
+                    {
+                        "url": "https://t.me/Octavi_OS",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "PixelPlusUI",
+                "links": [
+                    {
+                        "url": "https://rb.gy/qucm7b",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "ArrowOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/bzunaj",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "crDroid",
+                "links": [
+                    {
+                        "url": "https://rb.gy/etvo1g",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Syberia Project",
+                "links": [
+                    {
+                        "url": "https://rb.gy/vvrvoe",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "CherishOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/agpgqx",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "StagOS",
+                "links": [
+                    {
+                        "url": "https://t.me/HornsOfficial",
+                        "text": "@HornsOfficial"
+                    }
+                ]
+            },
+            {
+                "name": "ShapeshiftOS",
+                "links": [
+                    {
+                        "url": "https://t.me/shapeshift_pocof3",
+                        "text": "@Shapeshift_PocoF3"
+                    }
+                ]
+            },
+            {
+                "name": "HavocOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/akjmmu",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Pixel Extended",
+                "links": [
+                    {
+                        "url": "https://rb.gy/stgebk",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "DescendantOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/pv4kgi",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Derpfest",
+                "links": [
+                    {
+                        "url": "https://t.me/PocoF3GlobalOfficial/228840",
+                        "text": "Official Channel Post"
+                    }
+                ]
+            },
+            {
+                "name": "SparkOS",
+                "links": [
+                    {
+                        "url": "https://www.pling.com/p/1554425/",
+                        "text": "Pling"
+                    }
+                ]
+            },
+            {
+                "name": "Pixel Experience Plus",
+                "links": [
+                    {
+                        "url": "https://download.pixelexperience.org/alioth",
+                        "text": "Website"
+                    }
+                ]
+            },
+            {
+                "name": "Iron LOS",
+                "links": [
+                    {
+                        "url": "https://sourceforge.net/projects/ironlos/files/alioth/",
+                        "text": "Sourceforge"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Unofficial AOSP",
+        "roms": [
+            {
+                "name": "NusantaraProject",
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/421",
+                        "text": "Official Channel Post"
+                    }
+                ]
+            },
+            {
+                "name": "DotOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/qbz4cy",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "ProtonAOSP",
+                "links": [
+                    {
+                        "url": "https://rb.gy/3osq5t",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "AOSIP",
+                "links": [
+                    {
+                        "url": "https://rb.gy/peb7ch",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Pixel Experience Plus",
+                "links": [
+                    {
+                        "url": "https://rb.gy/gr110t",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "AOSP Extended",
+                "links": [
+                    {
+                        "url": "https://t.me/MBsRoom",
+                        "text": "@MBsRoom"
+                    }
+                ]
+            },
+            {
+                "name": "Pixel 5 Port (Android 12",
+                "links": [
+                    {
+                        "url": "https://rb.gy/c9562q",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Project Lighthouse Raft",
+                "links": [
+                    {
+                        "url": "https://t.me/oghe3003_support",
+                        "text": "@Oghe3003_Support"
+                    }
+                ]
+            },
+            {
+                "name": "CorvusOS",
+                "links": [
+                    {
+                        "url": "https://downloads.corvusrom.com/?dir=alioth",
+                        "text": "Website"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "MIUI",
+        "roms": [
+            {
+                "name": "Stock MIUI Firmware",
+                "links": [
+                    {
+                        "url": "https://t.me/XiaomiGeeksBot",
+                        "text": "Use /fastboot alioth in @XiaomiGeeksBot"
+                    }
+                ]
+            },
+            {
+                "name": "XiaomiEU",
+                "links": [
+                    {
+                        "url": "https://xiaomi.eu/",
+                        "text": "Website"
+                    }
+                ]
+            },
+            {
+                "name": "EliteRom",
+                "links": [
+                    {
+                        "url": "https://rb.gy/bwr7ox",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "OneOS",
+                "links": [
+                    {
+                        "url": "https://t.me/OneOS_Weekly",
+                        "text": "@OneOS_Weekly"
+                    }
+                ]
+            },
+            {
+                "name": "MiGlobe",
+                "links": [
+                    {
+                        "url": "https://miglobe.com/",
+                        "text": "Website"
+                    }
+                ]
+            },
+            {
+                "name": "MIUIMix",
+                "links": [
+                    {
+                        "url": "https://t.me/MiuiMix",
+                        "text": "@MIUIMix"
+                    }
+                ]
+            },
+            {
+                "name": "XTRV Hellas MIUI",
+                "links": [
+                    {
+                        "url": "https://xiaomi-miui.gr/community/",
+                        "text": "Website"
+                    }
+                ]
+            },
+            {
+                "name": "MIUIVn Weekly",
+                "links": [
+                    {
+                        "url": "https://t.me/pocof3vn",
+                        "text": "@PocoF3VN"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Kernels",
+        "roms": [
+            {
+                "name": "Quantic+ Kernel",
+                "links": [
+                    {
+                        "url": "https://rb.gy/va45yo",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "IMMENSITY-X Kernel",
+                "links": [
+                    {
+                        "url": "https://rb.gy/tbhl0f",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Tetris Kernel",
+                "links": [
+                    {
+                        "url": "https://rb.gy/ewi6tt",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "Optimus Drunk Kernel",
+                "links": [
+                    {
+                        "url": "https://rb.gy/shkbgj",
+                        "text": "XDA-Post"
+                    }
+                ]
+            },
+            {
+                "name": "NetErnels Nethunter Kernel",
+                "links": [
+                    {
+                        "url": "https://github.com/Neternels/Nethunter_Alioth-in/releases",
+                        "text": "GitHub"
+                    }
+                ]
+            }
+        ]
+    }
+]

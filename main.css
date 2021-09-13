@@ -1,0 +1,100 @@
+body {
+    --text-color: #000;
+    --text-color-link: #009;
+    --background-color: #fff;
+    --background-color-input: #fff;
+    --border-input: 1px solid #ccc;
+
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --text-color: #fff;
+    --text-color-link: deeppink;
+    --background-color: #000;
+    --background-color-input: #333;
+    --border-input: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+header,
+footer {
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: var(--text-color-link);
+}
+
+input {
+    display: block;
+    border: var(--border-input);
+    color: var(--text-color);
+    background-color: var(--background-color-input);
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+button {
+    position: fixed;
+    bottom: .5rem;
+    right: 1.5rem;
+    border: 0;
+    padding: 0;
+    background: #eee;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main>div {
+    flex: 1 0 calc(100% - 1rem);
+    padding: .5rem;
+}
+
+@media (min-width: 640px) {
+    main>div {
+        flex: 1 0 calc(25% - 2rem);
+    }
+}
+
+h2 {
+    font-size: 150%;
+    padding: 1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    line-height: 1.5;
+    background-color: var(--background-color);
+}
