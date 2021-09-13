@@ -23,7 +23,7 @@ const render = (container, data) => {
                 romItem.appendChild(document.createElement('br'));
                 const anchor = document.createElement('a');
                 anchor.innerText = link.text;
-                anchor.setAttribute('href', link.href);
+                anchor.setAttribute('href', link.url);
                 romItem.appendChild(anchor);
             });
             romList.appendChild(romItem);
