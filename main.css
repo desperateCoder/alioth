@@ -61,6 +61,11 @@ section.empty {
     section {
         flex: 1 0 calc(25% - 2rem);
     }
+
+    section.empty {
+        display: block;
+        visibility: hidden;
+    }
 }
 
 h2 {
