@@ -6,12 +6,12 @@
                 "name": "HentaiOS",
                 "links": [
                     {
-                        "text": "@hentaiOS",
-                        "url": "https://t.me/hentaiOS"
+                        "url": "https://t.me/hentaiOS",
+			"text": "@hentaiOS"
                     },
                     {
-                        "text": "@hentaiOSkona",
-                        "url": "https://t.me/hentaiOSkona"
+                        "url": "https://t.me/hentaiOSkona",
+			"text": "@hentaiOSkona"
                     }
                 ]
             },
