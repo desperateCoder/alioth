@@ -5,7 +5,7 @@ body {
     --background-color-input: #fff;
     --border-input: 1px solid #ccc;
 
-    font-family: sans-serif;
+    font-family: mono;
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
