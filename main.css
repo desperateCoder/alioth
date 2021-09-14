@@ -8,6 +8,7 @@ body {
 
     font-family: mono;
     margin: 0;
+    overflow-y: scroll;
     background-color: var(--background-color);
     color: var(--text-color);
 }
