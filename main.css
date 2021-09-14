@@ -6,7 +6,8 @@ body {
     --background-color-select: #e5e5e5;
     --border-input: 1px solid #ccc;
 
-    font-family: mono;
+    font-family: monospace;
+    font-size: 1rem;
     margin: 0;
     overflow-y: scroll;
     background-color: var(--background-color);
