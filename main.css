@@ -37,6 +37,7 @@ footer {
 
 footer {
     text-align: center;
+    padding-bottom: 7rem;
 }
 
 a {
@@ -52,20 +53,6 @@ input {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
-}
-
-button {
-    position: fixed;
-    bottom: .5rem;
-    right: 1.5rem;
-    border: 0;
-    padding: 0;
-    background: #eee;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    cursor: pointer;
 }
 
 main>div {
@@ -89,6 +76,7 @@ h2 {
 ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 li {
@@ -97,4 +85,7 @@ li {
     border-radius: 2px;
     line-height: 1.5;
     background-color: var(--background-color);
+}
+li:last-child {
+    margin-bottom: 0;
 }
