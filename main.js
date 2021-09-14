@@ -24,7 +24,7 @@ const render = (container, data) => {
 
     const documentFragment = document.createDocumentFragment();
     data.forEach((category, index) => {
-        const categorySection = document.createElement('div');
+        const categorySection = document.createElement('section');
         categorySection.style.backgroundColor = categoryColors[(index % categoryColors.length) * 2];
         
         const categoryHeader = document.createElement('h2');

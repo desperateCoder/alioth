@@ -21,29 +21,12 @@ body.dark {
     --border-input: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+header {
     padding: 1rem;
 }
 
 h1 {
     text-align: center;
-}
-
-header,
-footer {
-    padding: 1rem;
-}
-
-footer {
-    text-align: center;
-    padding-bottom: 7rem;
-}
-
-a {
-    color: var(--text-color-link);
 }
 
 input {
@@ -57,10 +40,57 @@ input {
     border-radius: 2px;
 }
 
-main>div {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
     flex: 1 0 calc(100% - 1rem);
     padding: .5rem;
     border-radius: 2px;
+}
+
+@media (min-width: 640px) {
+    section {
+        flex: 1 0 calc(25% - 2rem);
+    }
+}
+
+h2 {
+    font-size: 150%;
+    padding: 1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    line-height: 1.5;
+    background-color: var(--background-color);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--text-color-link);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 1rem 7rem 1rem;
 }
 
 select {
@@ -98,34 +128,4 @@ select:focus {
 select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
-}
-
-@media (min-width: 640px) {
-    main>div {
-        flex: 1 0 calc(25% - 2rem);
-    }
-}
-
-h2 {
-    font-size: 150%;
-    padding: 1rem;
-    font-weight: normal;
-    color: #fff;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: .5rem;
-    padding: .5rem 1rem;
-    border-radius: 2px;
-    line-height: 1.5;
-    background-color: var(--background-color);
-}
-li:last-child {
-    margin-bottom: 0;
 }
