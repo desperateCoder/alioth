@@ -26,12 +26,15 @@ const render = (container, data) => {
     data.forEach((category, index) => {
         const categorySection = document.createElement('section');
         categorySection.style.backgroundColor = categoryColors[(index % categoryColors.length) * 2];
-        
+
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category.title;
 
         const romList = document.createElement('ul');
         category.roms.forEach(rom => romList.appendChild(renderRom(rom)))
+        if (category.roms.length < 1) {
+            categorySection.classList.add('empty');
+        }
 
         categorySection.appendChild(categoryHeader);
         categorySection.appendChild(romList);

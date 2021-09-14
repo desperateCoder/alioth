@@ -53,6 +53,10 @@ section {
     border-radius: 2px;
 }
 
+section.empty {
+    display: none;
+}
+
 @media (min-width: 640px) {
     section {
         flex: 1 0 calc(25% - 2rem);
