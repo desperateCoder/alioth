@@ -23,25 +23,25 @@ jobs:
       - name: Validate Javascript
         run: node --check main.js
 
-#  deploy:
-#    name: Deploy
-#    runs-on: ubuntu-latest
-#    needs: [validate-json, validate-js]
-#    if: github.ref == 'refs/heads/master'
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#      - name: Remove unused resources
-#        run: rm -r .git .github README.md
-#      - name: Install lftp
-#        run: sudo apt install lftp
-#      - name: Pull .well-known
-#        continue-on-error: true
-#        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror ${{ secrets.FTP_SERVER_DIR }}/.well-known ./; quit;" ${{ secrets.FTP_URL }}
-#      - name: Push new bundle to remote
-#        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror -R ./ ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }}; quit;" ${{ secrets.FTP_URL }}
-#      - name: Remove old backup
-#        continue-on-error: true
-#        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; rm -r ${{ secrets.FTP_SERVER_DIR }}.bak; quit;" ${{ secrets.FTP_URL }}
-#      - name: Backup current bundle and deploy new bundle
-#        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mv ${{ secrets.FTP_SERVER_DIR }} ${{ secrets.FTP_SERVER_DIR }}.bak; mv ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }} ${{ secrets.FTP_SERVER_DIR }}; quit;" ${{ secrets.FTP_URL }}
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: [validate-json, validate-js]
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Remove unused resources
+        run: rm -r .git .github README.md
+      - name: Install lftp
+        run: sudo apt install lftp
+      - name: Pull .well-known
+        continue-on-error: true
+        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror ${{ secrets.FTP_SERVER_DIR }}/.well-known ./; quit;" ${{ secrets.FTP_URL }}
+      - name: Push new bundle to remote
+        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror -R ./ ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }}; quit;" ${{ secrets.FTP_URL }}
+      - name: Remove old backup
+        continue-on-error: true
+        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; rm -r ${{ secrets.FTP_SERVER_DIR }}.bak; quit;" ${{ secrets.FTP_URL }}
+      - name: Backup current bundle and deploy new bundle
+        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mv ${{ secrets.FTP_SERVER_DIR }} ${{ secrets.FTP_SERVER_DIR }}.bak; mv ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }} ${{ secrets.FTP_SERVER_DIR }}; quit;" ${{ secrets.FTP_URL }}
