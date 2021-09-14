@@ -17,15 +17,12 @@ const initFilter = (containerEl, filterEl, data) => {
     render(containerEl, filter(filterEl.value, data));
 }
 
-const categoryColors = ['#b6469d', '#bf678b', '#c98879', '#ddcb55', '#a5b872', '#6ea68f', '#3794ac', '#0082c9', '#2d73be', '#5b64b3', '#8855a8'];
-
 const render = (container, data) => {
     removeAllChildren(container);
 
     const documentFragment = document.createDocumentFragment();
     data.forEach((category, index) => {
         const categorySection = document.createElement('section');
-        categorySection.style.backgroundColor = categoryColors[(index % categoryColors.length) * 2];
 
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category.title;

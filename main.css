@@ -74,6 +74,18 @@ section.empty {
     }
 }
 
+section:nth-of-type(11n+1) { background-color:#b6469d; }
+section:nth-of-type(11n+2) { background-color:#c98879; }
+section:nth-of-type(11n+3) { background-color:#a5b872; }
+section:nth-of-type(11n+4) { background-color:#3794ac; }
+section:nth-of-type(11n+5) { background-color:#2d73be; }
+section:nth-of-type(11n+6) { background-color:#8855a8; }
+section:nth-of-type(11n+7) { background-color:#bf678b; }
+section:nth-of-type(11n+8) { background-color:#ddcb55; }
+section:nth-of-type(11n+9) { background-color:#6ea68f; }
+section:nth-of-type(11n+10) { background-color:#0082c9; }
+section:nth-of-type(11n+11) { background-color:#5b64b3; }
+
 h2 {
     font-size: 150%;
     padding: 1rem;
