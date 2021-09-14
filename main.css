@@ -3,6 +3,7 @@ body {
     --text-color-link: #009;
     --background-color: #fff;
     --background-color-input: #fff;
+    --background-color-select: #e5e5e5;
     --border-input: 1px solid #ccc;
 
     font-family: mono;
@@ -16,6 +17,7 @@ body.dark {
     --text-color-link: deeppink;
     --background-color: #000;
     --background-color-input: #333;
+    --background-color-select: #333;
     --border-input: none;
 }
 
@@ -58,6 +60,43 @@ input {
 main>div {
     flex: 1 0 calc(100% - 1rem);
     padding: .5rem;
+}
+
+select {
+    --arrow-size: .3rem;
+    
+    border: 0;
+    padding: .5rem 3.5rem .5rem 1rem;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    color: var(--text-color);
+    background-color: var(--background-color-select);
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--text-color) 50%),
+        linear-gradient(135deg, var(--text-color) 50%, transparent 50%),
+        linear-gradient(to right, #999, #999);
+    background-position:
+        calc(100% - 18px) calc(1rem),
+        calc(100% - calc(18px - var(--arrow-size))) calc(1rem),
+        calc(100% - 2.2rem) .5rem;
+    background-size:
+        var(--arrow-size) var(--arrow-size),
+        var(--arrow-size) var(--arrow-size),
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    outline: 0;
+}
+
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
 
 @media (min-width: 640px) {
