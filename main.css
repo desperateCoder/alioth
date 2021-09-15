@@ -47,12 +47,14 @@ main {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    align-items: flex-start;
 }
 
 section {
     flex: 1 0 calc(100% - 1rem);
-    padding: .5rem;
     border-radius: 2px;
+    margin-bottom: 10px;
+    padding: .5rem .5rem 2rem;
 }
 
 section.empty {
