@@ -21,15 +21,18 @@ const render = (container, data) => {
     removeAllChildren(container);
 
     const documentFragment = document.createDocumentFragment();
-    data.forEach((category, index) => {
+    data.forEach(category => {
         const categorySection = document.createElement('section');
 
         const categoryHeader = document.createElement('h2');
         categoryHeader.innerText = category.title;
 
         const romList = document.createElement('ul');
-        category.roms.forEach(rom => romList.appendChild(renderRom(rom)))
-        if (category.roms.length < 1) {
+        if (category.roms.length > 0) {
+            category.roms
+                .map(rom => renderRom(rom))
+                .forEach(node => romList.appendChild(node));
+        } else {
             categorySection.classList.add('empty');
         }
 
@@ -83,7 +86,8 @@ const filter = (term, data) => {
                             Array.isArray(rom.links) &&
                             rom.links
                                 .filter(link => typeof link.text === 'string')
-                                .some(link => link.text.toLowerCase().indexOf(lowerTerm) > -1)
+                                .map(link => link.text.toLowerCase())
+                                .some(lowerLinkText => lowerLinkText.indexOf(lowerTerm) > -1)
                         )
                     )
             };
