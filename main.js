@@ -80,9 +80,10 @@ const filter = (term, data) => {
                     .filter(rom =>
                         (typeof rom.name === 'string' && rom.name.toLowerCase().indexOf(lowerTerm) > -1) ||
                         (
-                            Array.isArray(rom.links) && rom.links.some(link =>
-                                (typeof link.text === 'string' && link.text.toLowerCase().indexOf(lowerTerm) > -1)
-                            )
+                            Array.isArray(rom.links) &&
+                            rom.links
+                                .filter(link => typeof link.text === 'string')
+                                .some(link => link.text.toLowerCase().indexOf(lowerTerm) > -1)
                         )
                     )
             };
