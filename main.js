@@ -81,8 +81,7 @@ const filter = (term, data) => {
                         (typeof rom.name === 'string' && rom.name.toLowerCase().indexOf(lowerTerm) > -1) ||
                         (
                             Array.isArray(rom.links) && rom.links.some(link =>
-                                (typeof link.text === 'string' && link.text.toLowerCase().indexOf(lowerTerm) > -1) ||
-                                (typeof link.url === 'string' && link.url.toLowerCase().indexOf(lowerTerm) > -1)
+                                (typeof link.text === 'string' && link.text.toLowerCase().indexOf(lowerTerm) > -1)
                             )
                         )
                     )
