@@ -61,6 +61,7 @@ const renderLink = (parentEl, link) => {
     const anchor = document.createElement('a');
     anchor.innerText = link.text;
     anchor.setAttribute('href', link.url);
+    anchor.setAttribute('target', '_blank');
     parentEl.appendChild(anchor);
 }
 
