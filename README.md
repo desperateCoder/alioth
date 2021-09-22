@@ -8,7 +8,7 @@ As of September 22nd, we have decided that not every single ROM that is released
 
 The following new criteria have been set for the inclusion of custom ROMs into this list:
 
-1. The source code and every part of the ROM has to be open-source and free from kangs or other discrepancies.
+1. The source code of the ROM has to be open-source and free from kangs or other discrepancies.
 
 2. The person developing and maintaining the custom ROM has to have a remote idea of what they are doing. Buildbotted ROMs and such will not be accepted. This point will be evaluated individually for every entry on this list.
 
