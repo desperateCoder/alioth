@@ -16,10 +16,37 @@
                 ]
             },
             {
+                "name": "LineageOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/sepi7v",
+                        "text": "Post on XDA"
+                    }
+                ]
+            },
+            {
+                "name": "ColtOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/jifk5s",
+                        "text": "Sourceforge"
+                    }
+                ]
+            },
+            {
                 "name": "AICP",
                 "links": [
                     {
                         "url": "https://rb.gy/tnd89m",
+                        "text": "Post on XDA"
+                    }
+                ]
+            },
+            {
+                "name": "ArrowOS",
+                "links": [
+                    {
+                        "url": "https://rb.gy/bzunaj",
                         "text": "Post on XDA"
                     }
                 ]
@@ -43,15 +70,6 @@
                 ]
             },
             {
-                "name": "LineageOS",
-                "links": [
-                    {
-                        "url": "https://rb.gy/sepi7v",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
                 "name": "OctaviOS",
                 "links": [
                     {
@@ -70,15 +88,6 @@
                 ]
             },
             {
-                "name": "ArrowOS",
-                "links": [
-                    {
-                        "url": "https://rb.gy/bzunaj",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
                 "name": "crDroid",
                 "links": [
                     {
@@ -92,15 +101,6 @@
                 "links": [
                     {
                         "url": "https://rb.gy/vvrvoe",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "CherishOS",
-                "links": [
-                    {
-                        "url": "https://rb.gy/agpgqx",
                         "text": "Post on XDA"
                     }
                 ]
@@ -174,24 +174,6 @@
                     {
                         "url": "https://download.pixelexperience.org/alioth",
                         "text": "Website"
-                    }
-                ]
-            },
-            {
-                "name": "Iron LOS",
-                "links": [
-                    {
-                        "url": "https://sourceforge.net/projects/ironlos/files/alioth/",
-                        "text": "Sourceforge"
-                    }
-                ]
-            },
-	        {
-                "name": "ColtOS",
-                "links": [
-                    {
-                        "url": "https://rb.gy/jifk5s",
-                        "text": "Sourceforge"
                     }
                 ]
             }
@@ -269,24 +251,6 @@
                     {
                         "url": "https://t.me/oghe3003_support",
                         "text": "@Oghe3003_Support"
-                    }
-                ]
-            },
-            {
-                "name": "CorvusOS",
-                "links": [
-                    {
-                        "url": "https://downloads.corvusrom.com/?dir=alioth",
-                        "text": "Website"
-                    }
-                ]
-            },
-            {
-                "name": "Moto Edge 20 Port",
-                "links": [
-                    {
-                        "url": "https://www.pling.com/p/1597114/",
-                        "text": "Pling"
                     }
                 ]
             }
@@ -386,15 +350,6 @@
                 "links": [
                     {
                         "url": "https://rb.gy/tbhl0f",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "Tetris Kernel",
-                "links": [
-                    {
-                        "url": "https://rb.gy/ewi6tt",
                         "text": "Post on XDA"
                     }
                 ]
