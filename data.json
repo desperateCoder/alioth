@@ -115,15 +115,6 @@
                 ]
             },
             {
-                "name": "ShapeshiftOS",
-                "links": [
-                    {
-                        "url": "https://t.me/shapeshift_pocof3",
-                        "text": "@Shapeshift_PocoF3"
-                    }
-                ]
-            },
-            {
                 "name": "HavocOS",
                 "links": [
                     {
@@ -183,11 +174,11 @@
         "title": "Unofficial AOSP",
         "roms": [
             {
-                "name": "NusantaraProject",
+                "name": "ShapeShiftOS",
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/496",
-                        "text": "Official Channel Post"
+                        "url": "https://t.me/pocoF3GlobalUpdates/518",
+                        "text": "Telegram Post"
                     }
                 ]
             },
