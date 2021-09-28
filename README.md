@@ -1,6 +1,6 @@
 # 📱 Alioth
 
-[![Android CI](https://github.com/desperateCoder/alioth/workflows/ci/badge.svg)](https://github.com/desperateCoder/alioth/actions)
+[![Continuous Integration](https://github.com/desperateCoder/alioth/actions/workflows/ci.yml/badge.svg)](https://github.com/desperateCoder/alioth/actions)
 [![Plant Tree](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Plant%20Tree&query=%24.total&url=https%3A%2F%2Fpublic.offset.earth%2Fusers%2Ftreeware%2Ftrees)](https://plant.treeware.earth/desperateCoder/alioth)
 
 Simple, web based list of Custom ROMs for the Poco F3. Includes a filter function. Check out our [criteria for inclusion](https://github.com/desperateCoder/alioth/blob/master/CONTRIBUTING.md#criteria-for-inclusion).
