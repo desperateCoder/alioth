@@ -9,10 +9,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install jsonlint
-        run: sudo apt install jsonlint
-      - name: Validate JSON
+      - name: Install dependencies
+        run: |
+          sudo apt install jsonlint
+          sudo npm install -g ajv-cli
+      - name: Validate JSON structure
         run: jsonlint-php data.json
+      - name: Validate JSON schema
+        run: ajv validate -s data.schema.json -d data.json --spec=draft2020
 
   validate-js:
     name: Validate Javascript
