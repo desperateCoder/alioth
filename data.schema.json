@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alioth.knecht.rocks/data.schema.json",
+  "title": "Data",
+  "description": "Defines the global data structure.",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "$ref": "#/$defs/category"
+  },
+  "$defs": {
+    "category": {
+      "type": "object",
+      "required": [
+        "title",
+        "roms"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The name of the category."
+        },
+        "roms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/item"
+          },
+          "description": "Contains the actual items"
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "name",
+        "links"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the ROM."
+        },
+        "links": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/link"
+          },
+          "description": "Contains one or more links"
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": [
+        "url",
+        "text"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "The URL where this link points to."
+        },
+        "text": {
+          "type": "string",
+          "description": "The title of this link."
+        }
+      }
+    }
+  }
+}
