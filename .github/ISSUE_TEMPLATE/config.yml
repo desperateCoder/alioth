@@ -1,5 +1,7 @@
 contact_links:
-  - name: 💬 Official Telegram Group - @PocoF3GlobalOfficial
+  - name: 💬 Official Telegram Group
     url: https://t.me/PocoF3GlobalOfficial
-  - name: 💬 Official Telegram Channel - @PocoF3GlobalUpdates
+    about: "@PocoF3GlobalOfficial"
+  - name: 💬 Official Telegram Channel
     url: https://t.me/pocoF3GlobalUpdates
+    about: "@PocoF3GlobalUpdates"
