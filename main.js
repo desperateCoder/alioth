@@ -66,33 +66,21 @@ const renderLink = (parentEl, link) => {
 }
 
 const filter = (term, data) => {
-    if (!Array.isArray(data)) {
-        console.warn('given data is not an array', data);
-        return [];
-    }
-
     const lowerTerm = term.toLowerCase();
-    return data
-        .filter(category => typeof category === 'object')
-        .filter(category => typeof category.title === 'string')
-        .filter(category => Array.isArray(category.roms))
-        .map(category => {
-            return {
-                title: category.title,
-                roms: category.roms
-                    .filter(rom => typeof rom === 'object')
-                    .filter(rom =>
-                        (typeof rom.name === 'string' && rom.name.toLowerCase().indexOf(lowerTerm) > -1) ||
-                        (
-                            Array.isArray(rom.links) &&
-                            rom.links
-                                .filter(link => typeof link.text === 'string')
-                                .map(link => link.text.toLowerCase())
-                                .some(lowerLinkText => lowerLinkText.indexOf(lowerTerm) > -1)
-                        )
-                    )
-            };
-        });
+    return data.map(category => {
+        return {
+            title: category.title,
+            roms: category.roms
+                .filter(rom =>
+                    rom.name
+                        .toLowerCase()
+                        .indexOf(lowerTerm) > -1 ||
+                    rom.links
+                        .map(link => link.text.toLowerCase())
+                        .some(lowerLinkText => lowerLinkText.indexOf(lowerTerm) > -1)
+                )
+        };
+    });
 }
 
 const initDarkMode = (darkModeToggleEl) => {
