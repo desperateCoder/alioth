@@ -1,15 +1,15 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", async () => {
+    const darkModeToggleEl = document.querySelector('select');
+    initDarkMode(darkModeToggleEl);
+
     const resp = await fetch('./data.json');
     const data = await resp.json();
 
     const mainEl = document.querySelector('main');
     const filterEl = document.querySelector('input');
     initFilter(mainEl, filterEl, data);
-
-    const darkModeToggleEl = document.querySelector('select');
-    initDarkMode(darkModeToggleEl);
 });
 
 const initFilter = (containerEl, filterEl, data) => {
