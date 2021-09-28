@@ -355,13 +355,7 @@
                 ]
             },
             {
-                "name": "NetErnels Nethunter Kernel",
-                "links": [
-                    {
-                        "url": "https://github.com/Neternels/Nethunter_Alioth-in/releases",
-                        "text": "GitHub"
-                    }
-                ]
+                "name": "NetErnels Nethunter Kernel"
             }
         ]
     }
