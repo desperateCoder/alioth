@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          sudo apt install jsonlint
+          sudo apt-get install jsonlint
           sudo npm install -g ajv-cli
       - name: Validate JSON structure
         run: jsonlint-php data.json
@@ -38,7 +38,7 @@ jobs:
       - name: Remove unused resources
         run: rm -r .git .github README.md
       - name: Install lftp
-        run: sudo apt install lftp
+        run: sudo apt-get install lftp
       - name: Pull .well-known
         continue-on-error: true
         run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror ${{ secrets.FTP_SERVER_DIR }}/.well-known ./; quit;" ${{ secrets.FTP_URL }}
