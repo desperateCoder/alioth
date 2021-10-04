@@ -51,6 +51,15 @@
             "$ref": "#/$defs/link"
           },
           "description": "Contains one or more links"
+        },
+        "maintainer": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/maintainer"
+          },
+          "description": "Contains one or maintainers"
         }
       }
     },
@@ -68,6 +77,22 @@
         "text": {
           "type": "string",
           "description": "The title of this link."
+        }
+      }
+    },
+    "maintainer": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "link": {
+          "type": "string",
+          "description": "The URL where this link points to."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the Maintainer."
         }
       }
     }
