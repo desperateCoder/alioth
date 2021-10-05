@@ -4,19 +4,46 @@
         "roms": [
             {
                 "name": "HentaiOS",
+                "maintainer": [
+                    {
+                        "name": "Raphielscape",
+                        "link": "https://t.me/raphielscape"
+                    },
+                    {
+                        "name": "Dyneteve"
+                    },
+                    {
+                        "name": "UtsavTheCunt",
+                        "link": "https://t.me/utsavthecunt"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/hentaiOS",
-			"text": "@hentaiOS"
+                        "text": "@hentaiOS"
                     },
                     {
                         "url": "https://t.me/hentaiOSkona",
-			"text": "@hentaiOSkona"
+                        "text": "@hentaiOSkona"
                     }
                 ]
             },
             {
                 "name": "LineageOS",
+                "maintainer": [
+                    {
+                        "name": "SahilSonar",
+                        "link": "https://t.me/sahilsonar"
+                    },
+                    {
+                        "name": "Althaf",
+                        "link": "https://t.me/althafvly"
+                    },
+                    {
+                        "name": "SebaUbuntu",
+                        "link": "https://t.me/sebaubuntu"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/sepi7v",
@@ -26,6 +53,12 @@
             },
             {
                 "name": "ColtOS",
+                "maintainer": [
+                    {
+                        "name": "Aman Dwivedi",
+                        "link": "https://t.me/amandwivedi0"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/jifk5s",
@@ -35,6 +68,12 @@
             },
             {
                 "name": "AICP",
+                "maintainer": [
+                    {
+                        "name": "Nick van Bokhorst",
+                        "link": "https://t.me/NickvBokhorst"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/tnd89m",
@@ -44,6 +83,12 @@
             },
             {
                 "name": "xdroidCAF",
+                "maintainer": [
+                    {
+                        "name": "Oghe3003",
+                        "link": "https://t.me/oghe3003"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/oghe3003_support",
@@ -53,6 +98,12 @@
             },
             {
                 "name": "ArrowOS",
+                "maintainer": [
+                    {
+                        "name": "palaych",
+                        "link": "https://t.me/palaych"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/bzunaj",
@@ -62,6 +113,12 @@
             },
             {
                 "name": "EvolutionX",
+                "maintainer": [
+                    {
+                        "name": "DarkAngelGR",
+                        "link": "https://t.me/DarkAngelGR"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/pccqcx",
@@ -71,6 +128,12 @@
             },
             {
                 "name": "POSP",
+                "maintainer": [
+                    {
+                        "name": "SahilSonar",
+                        "link": "https://t.me/sahilsonar"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/8s9t3d",
@@ -80,6 +143,12 @@
             },
             {
                 "name": "OctaviOS",
+                "maintainer": [
+                    {
+                        "name": "TonyJoaca",
+                        "link": "https://t.me/tonyjoaca"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/Octavi_OS",
@@ -89,6 +158,12 @@
             },
             {
                 "name": "PixelPlusUI",
+                "maintainer": [
+                    {
+                        "name": "soumyo19",
+                        "link": "https://t.me/soumyo19"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/qucm7b",
@@ -98,6 +173,12 @@
             },
             {
                 "name": "crDroid",
+                "maintainer": [
+                    {
+                        "name": "raystef66",
+                        "link": "https://t.me/raystef66"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/etvo1g",
@@ -107,6 +188,12 @@
             },
             {
                 "name": "Syberia Project",
+                "maintainer": [
+                    {
+                        "name": "blinoff82",
+                        "link": "https://t.me/blinoff82"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/vvrvoe",
@@ -116,6 +203,12 @@
             },
             {
                 "name": "StagOS",
+                "maintainer": [
+                    {
+                        "name": "IronGFly",
+                        "link": "https://t.me/irongfly"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/HornsOfficial",
@@ -125,6 +218,12 @@
             },
             {
                 "name": "HavocOS",
+                "maintainer": [
+                    {
+                        "name": "IronGFly",
+                        "link": "https://t.me/irongfly"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/akjmmu",
