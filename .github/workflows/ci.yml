@@ -43,7 +43,7 @@ jobs:
         continue-on-error: true
         run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror ${{ secrets.FTP_SERVER_DIR }}/.well-known ./; quit;" ${{ secrets.FTP_URL }}
       - name: Push new bundle to remote
-        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror --reverse ./ ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }} --parallel=10; quit;" ${{ secrets.FTP_URL }}
+        run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; mirror --reverse ./ ${{ secrets.FTP_SERVER_DIR }}-${{ github.sha }} --verbose --parallel=10; quit;" ${{ secrets.FTP_URL }}
       - name: Remove old backup
         continue-on-error: true
         run: lftp -u ${{ secrets.FTP_USER }},${{ secrets.FTP_PASSWORD }} -e "set ssl:verify-certificate no; rm -r ${{ secrets.FTP_SERVER_DIR }}.bak; quit;" ${{ secrets.FTP_URL }}
