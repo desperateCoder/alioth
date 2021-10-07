@@ -4,6 +4,7 @@ body {
     --background-color: #fff;
     --background-color-input: #fff;
     --background-color-select: #e5e5e5;
+    --background-color-tag: #eee;
     --border-input: 1px solid #ccc;
 
     font-family: monospace;
@@ -20,6 +21,7 @@ body.dark {
     --background-color: #000;
     --background-color-input: #333;
     --background-color-select: #333;
+    --background-color-tag: #333;
     --border-input: none;
 }
 
@@ -110,12 +112,29 @@ li {
     background-color: var(--background-color);
 }
 
-li p {
-    font-size: 9pt;
-}
-
 li:last-child {
     margin-bottom: 0;
+}
+
+.maintainer {
+    font-size: 9pt;
+    margin-top: 1rem;
+}
+
+.maintainer ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: .5rem;
+}
+
+.maintainer ul li {
+    list-style: none;
+    margin-bottom: 0;
+    display: inline-block;
+    padding: .2rem .5rem;
+    background-color: var(--background-color-tag);
+    border-radius: .1rem;
 }
 
 a {

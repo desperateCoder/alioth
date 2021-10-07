@@ -25,7 +25,7 @@ const render = (container, data) => {
         const categorySection = document.createElement('section');
 
         const categoryHeader = document.createElement('h2');
-        categoryHeader.innerText = category.title;
+        categoryHeader.appendChild(document.createTextNode(category.title));
 
         const romList = document.createElement('ul');
         if (category.roms.length > 0) {
@@ -51,7 +51,7 @@ const removeAllChildren = (el) => {
 
 const renderRom = (rom) => {
     const romItem = document.createElement('li');
-    romItem.innerText = rom.name;
+    romItem.appendChild(document.createTextNode(rom.name));
     rom.links.forEach(link => renderLink(romItem, link));
     if (rom.maintainer) {
         romItem.appendChild(renderMaintainer(rom.maintainer));
@@ -60,34 +60,33 @@ const renderRom = (rom) => {
 }
 
 const renderMaintainer = (maintainer) => {
-    const wrapper = document.createElement('p');
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('maintainer');
     wrapper.appendChild(document.createTextNode('Maintainer: '));
+    const list = document.createElement('ul');
+    wrapper.appendChild(list);
     maintainer
         .map(m => {
-            let node;
+            const item = document.createElement('li');
             if (typeof m.link === 'string') {
-                node = document.createElement('a');
-                node.setAttribute('href', m.link);
-                node.setAttribute('target', '_blank');
+                const anchor = document.createElement('a');
+                anchor.setAttribute('href', m.link);
+                anchor.setAttribute('target', '_blank');
+                anchor.appendChild(document.createTextNode(m.name));
+                item.appendChild(anchor);
             } else {
-                node = document.createElement('span');
+                item.appendChild(document.createTextNode(m.name));
             }
-            node.innerText = m.name;
-            return node;
+            return item;
         })
-        .forEach((node, index) => {
-            if (index > 0) {
-                wrapper.appendChild(document.createTextNode(', '));
-            }
-            wrapper.appendChild(node);
-        });
+        .forEach(node => list.appendChild(node));
     return wrapper;
 }
 
 const renderLink = (parentEl, link) => {
     parentEl.appendChild(document.createElement('br'));
     const anchor = document.createElement('a');
-    anchor.innerText = link.text;
+    anchor.appendChild(document.createTextNode(link.text));
     anchor.setAttribute('href', link.url);
     anchor.setAttribute('target', '_blank');
     parentEl.appendChild(anchor);
