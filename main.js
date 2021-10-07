@@ -68,7 +68,7 @@ const renderMaintainer = (maintainer) => {
     maintainer
         .map(m => {
             const item = document.createElement('li');
-            if (typeof m.link === 'string') {
+            if (m.link) {
                 const anchor = document.createElement('a');
                 anchor.setAttribute('href', m.link);
                 anchor.setAttribute('target', '_blank');
