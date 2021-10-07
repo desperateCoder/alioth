@@ -110,6 +110,10 @@ li {
     background-color: var(--background-color);
 }
 
+li p {
+    font-size: 9pt;
+}
+
 li:last-child {
     margin-bottom: 0;
 }
@@ -158,11 +162,4 @@ select:focus {
 select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
-}
-
-li .maintainer {
-    font-size: 9pt;
-    background-color: darkorange;
-    padding: .2rem;
-    border-radius: .3rem;
 }

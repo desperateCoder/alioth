@@ -52,38 +52,36 @@ const removeAllChildren = (el) => {
 const renderRom = (rom) => {
     const romItem = document.createElement('li');
     romItem.innerText = rom.name;
-    if (rom.maintainer) {
-        renderMaintainer(romItem, rom.maintainer);
-    }
     rom.links.forEach(link => renderLink(romItem, link));
+    if (rom.maintainer) {
+        romItem.appendChild(renderMaintainer(rom.maintainer));
+    }
     return romItem;
 }
 
-const renderMaintainer = (parentEl, maintainer) => {
-    parentEl.appendChild(document.createElement('br'));
-    const parentSpan = document.createElement('span');
-    parentSpan.setAttribute('class', "maintainer");
-    const prefixSpan = document.createElement('span');
-    prefixSpan.innerText = "Maintainer: "
-    parentSpan.appendChild(prefixSpan);
-    for (let i = 0; i<maintainer.length; i++) {
-        if (i > 0) {
-            const separatorSpan = document.createElement('span');
-            separatorSpan.innerText = ", "
-            parentSpan.appendChild(separatorSpan);
-        }
-        let maintainerElement;
-        if (maintainer[i].link) {
-            maintainerElement = document.createElement('a');
-            maintainerElement.setAttribute('href', maintainer[i].link);
-            maintainerElement.setAttribute('target', '_blank');
-        } else{
-            maintainerElement = document.createElement('span');
-        }
-        maintainerElement.innerText = maintainer[i].name;
-        parentSpan.appendChild(maintainerElement);
-        parentEl.appendChild(parentSpan);
-    }
+const renderMaintainer = (maintainer) => {
+    const wrapper = document.createElement('p');
+    wrapper.appendChild(document.createTextNode('Maintainer: '));
+    maintainer
+        .map(m => {
+            let node;
+            if (typeof m.link === 'string') {
+                node = document.createElement('a');
+                node.setAttribute('href', m.link);
+                node.setAttribute('target', '_blank');
+            } else {
+                node = document.createElement('span');
+            }
+            node.innerText = m.name;
+            return node;
+        })
+        .forEach((node, index) => {
+            if (index > 0) {
+                wrapper.appendChild(document.createTextNode(', '));
+            }
+            wrapper.appendChild(node);
+        });
+    return wrapper;
 }
 
 const renderLink = (parentEl, link) => {
