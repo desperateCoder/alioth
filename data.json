@@ -62,7 +62,7 @@
                 "links": [
                     {
                         "url": "https://rb.gy/jifk5s",
-                        "text": "Sourceforge"
+                        "text": "SourceForge"
                     }
                 ]
             },
@@ -233,6 +233,12 @@
             },
             {
                 "name": "Pixel Extended",
+                "maintainer": [
+                    {
+                        "name": "Ralf979",
+                        "link": "https://t.me/ralf979"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/stgebk",
@@ -241,25 +247,28 @@
                 ]
             },
             {
-                "name": "DescendantOS",
-                "links": [
-                    {
-                        "url": "https://rb.gy/pv4kgi",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
                 "name": "Derpfest",
+                "maintainer": [
+                    {
+                        "name": "Pokorny72",
+                        "link": "https://t.me/pokorny72"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://sourceforge.net/projects/derpfest/files/alioth/",
-                        "text": "Sourceforge"
+                        "text": "SourceForge"
                     }
                 ]
             },
             {
                 "name": "SparkOS",
+                "maintainer": [
+                    {
+                        "name": "shubh1133",
+                        "link": "https://t.me/shubh1133"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://www.pling.com/p/1554425/",
@@ -269,6 +278,12 @@
             },
             {
                 "name": "Pixel Experience Plus",
+                "maintainer": [
+                    {
+                        "name": "Zidan44",
+                        "link": "https://t.me/zidan44"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://download.pixelexperience.org/alioth",
@@ -283,6 +298,12 @@
         "roms": [
             {
                 "name": "ShapeShiftOS",
+                "maintainer": [
+                    {
+                        "name": "shubh1133",
+                        "link": "https://t.me/shubh1133"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/518",
@@ -292,6 +313,12 @@
             },
             {
                 "name": "DotOS",
+                "maintainer": [
+                    {
+                        "name": "EnderXH",
+                        "link": "https://t.me/enderxh"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/0zvvxz",
@@ -301,6 +328,12 @@
             },
             {
                 "name": "ProtonAOSP",
+                "maintainer": [
+                    {
+                        "name": "UtsavTheCunt",
+                        "link": "https://t.me/utsavthecunt"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/3osq5t",
@@ -309,47 +342,32 @@
                 ]
             },
             {
-                "name": "AOSIP",
-                "links": [
+                "name": "Project Radiant",
+                "maintainer": [
                     {
-                        "url": "https://rb.gy/peb7ch",
-                        "text": "Post on XDA"
+                        "name": "darkphnx",
+                        "link": "https://t.me/darkphnx"
                     }
-                ]
-            },
-            {
-                "name": "Pixel Experience Plus",
+                ],
                 "links": [
                     {
-                        "url": "https://rb.gy/gr110t",
-                        "text": "Post on XDA"
+                        "url": "https://sourceforge.net/projects/aradiant/files/",
+                        "text": "SourceForge"
                     }
                 ]
             },
             {
                 "name": "AOSP Extended",
+                "maintainer": [
+                    {
+                        "name": "Manuel (framework_res)",
+                        "link": "https://t.me/framework_res"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/MBsRoom",
                         "text": "@MBsRoom"
-                    }
-                ]
-            },
-            {
-                "name": "Pixel 5 Port (Android 12)",
-                "links": [
-                    {
-                        "url": "https://rb.gy/c9562q",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "Project Lighthouse Raft",
-                "links": [
-                    {
-                        "url": "https://t.me/oghe3003_support",
-                        "text": "@Oghe3003_Support"
                     }
                 ]
             }
@@ -360,10 +378,16 @@
         "roms": [
             {
                 "name": "Stock MIUI Firmware",
+                "maintainer": [
+                    {
+                        "name": "Xiaomi",
+                        "link": "https://rb.gy/enaq3a"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/XiaomiGeeksBot",
-                        "text": "Use /fastboot alioth in @XiaomiGeeksBot"
+                        "text": "Run /fastboot @XiaomiGeeksBot"
                     }
                 ]
             },
@@ -378,6 +402,12 @@
             },
             {
                 "name": "EliteRom",
+                "maintainer": [
+                    {
+                        "name": "Hassan Mirza",
+                        "link": "https://t.me/hassanmirza01"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/bwr7ox",
@@ -387,6 +417,12 @@
             },
             {
                 "name": "OneOS",
+                "maintainer": [
+                    {
+                        "name": "OneOS Development Team",
+                        "link": "https://one.revtechs.me/en/about"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/OneOS_Weekly",
@@ -396,6 +432,11 @@
             },
             {
                 "name": "MiGlobe",
+                "maintainer": [
+                    {
+                        "name": "MiGlobe Development Team"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://miglobe.com/",
@@ -405,6 +446,11 @@
             },
             {
                 "name": "MIUIMix",
+                "maintainer": [
+                    {
+                        "name": "MIUIMix Maintainer Team"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/MiuiMix",
@@ -414,6 +460,11 @@
             },
             {
                 "name": "XTRV Hellas MIUI",
+                "maintainer": [
+                    {
+                        "name": "Greek Community"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://xiaomi-miui.gr/community/",
@@ -422,7 +473,13 @@
                 ]
             },
             {
-                "name": "MIUIVn Weekly",
+                "name": "MIUIVN Weekly",
+                "maintainer": [
+                    {
+                        "name": "KimNam2005",
+                        "link": "https://t.me/kimnam2005"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://t.me/pocof3vn",
@@ -437,6 +494,12 @@
         "roms": [
             {
                 "name": "Quantic+ Kernel",
+                "maintainer": [
+                    {
+                        "name": "Carlos Ayrton",
+                        "link": "https://t.me/ayrton990"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/va45yo",
@@ -446,6 +509,12 @@
             },
             {
                 "name": "IMMENSITY-X Kernel",
+                "maintainer": [
+                    {
+                        "name": "UtsavTheCunt",
+                        "link": "https://t.me/utsavthecunt"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/tbhl0f",
@@ -455,19 +524,16 @@
             },
             {
                 "name": "Optimus Drunk Kernel",
+                "maintainer": [
+                    {
+                        "name": "Nick van Bokhorst",
+                        "link": "https://t.me/NickvBokhorst"
+                    }
+                ],
                 "links": [
                     {
                         "url": "https://rb.gy/shkbgj",
                         "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "NetErnels Nethunter Kernel",
-                "links": [
-                    {
-                        "url": "https://github.com/Neternels/Nethunter_Alioth-in/releases",
-                        "text": "GitHub"
                     }
                 ]
             }
