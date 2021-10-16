@@ -43,9 +43,14 @@
           "type": "string",
           "description": "The name of the ROM."
         },
-        "androidVersion": {
-          "type": "number",
-          "description": "The Android version."
+        "androidVersions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "number"
+          },
+          "description": "The Android versions available for this rom."
         },
         "links": {
           "type": "array",

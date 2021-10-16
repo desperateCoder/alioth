@@ -4,6 +4,7 @@
         "roms": [
             {
                 "name": "hentaiOS",
+                "androidVersions": [11, 12],
                 "maintainer": [
                     {
                         "name": "Raphielscape",
@@ -173,7 +174,7 @@
             },
             {
                 "name": "crDroid",
-                "androidVersion": 11,
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "raystef66",
