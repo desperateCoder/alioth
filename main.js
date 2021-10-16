@@ -12,6 +12,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFilter(mainEl, filterEl, data);
 });
 
+const ANDROID_VERSIONS = [
+    { version: 1, name: "Base" },
+    { version: 1.1, name: "Base" },
+    { version: 1.5, name: "Cupcake" },
+    { version: 1.6, name: "Donut" },
+    { version: 2, name: "Eclair" },
+    { version: 2.1, name: "Eclair" },
+    { version: 2.2, name: "Froyo" },
+    { version: 2.3, name: "Gingerbread" },
+    { version: 3.0, name: "Honeycomb" },
+    { version: 3.1, name: "Honeycomb" },
+    { version: 3.2, name: "Honeycomb" },
+    { version: 4, name: "Ice Cream Sandwich" },
+    { version: 4.1, name: "Jelly Bean" },
+    { version: 4.2, name: "Jelly Bean" },
+    { version: 4.3, name: "Jelly Bean" },
+    { version: 4.4, name: "KitKat" },
+    { version: 5, name: "Lollipop" },
+    { version: 5.1, name: "Lollipop" },
+    { version: 6, name: "Marshmallow" },
+    { version: 7, name: "Nougat" },
+    { version: 7.1, name: "Nougat" },
+    { version: 8, name: "Oreo" },
+    { version: 8.1, name: "Oreo" },
+    { version: 9, name: "Pie" },
+    { version: 10, name: "Q" },
+    { version: 11, name: "R" },
+    { version: 12, name: "S" },
+];
+
 const initFilter = (containerEl, filterEl, data) => {
     filterEl.addEventListener('keyup', () => render(containerEl, filter(filterEl.value, data)));
     render(containerEl, filter(filterEl.value, data));
@@ -51,12 +81,32 @@ const removeAllChildren = (el) => {
 
 const renderRom = (rom) => {
     const romItem = document.createElement('li');
-    romItem.appendChild(document.createTextNode(rom.name));
+    const romName = document.createElement('h3');
+    romName.appendChild(document.createTextNode(rom.name));
+    romItem.appendChild(romName);
+    if (rom.androidVersions) {
+        romItem.appendChild(renderAndroidVersions(rom.androidVersions));
+    }
     rom.links.forEach(link => renderLink(romItem, link));
     if (rom.maintainer) {
         romItem.appendChild(renderMaintainer(rom.maintainer));
     }
     return romItem;
+}
+
+const renderAndroidVersions = (androidVersions) => {
+    const list = document.createElement('ul');
+    list.classList.add('android-versions');
+    androidVersions.forEach(v => {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(v));
+        const title = ANDROID_VERSIONS.find(av => av.version === v);
+        if (title) {
+            li.setAttribute('title', `Android ${v} (${title.name})`);
+        }
+        list.appendChild(li);
+    });
+    return list;
 }
 
 const renderMaintainer = (maintainer) => {
@@ -84,7 +134,6 @@ const renderMaintainer = (maintainer) => {
 }
 
 const renderLink = (parentEl, link) => {
-    parentEl.appendChild(document.createElement('br'));
     const anchor = document.createElement('a');
     anchor.appendChild(document.createTextNode(link.text));
     anchor.setAttribute('href', link.url);
