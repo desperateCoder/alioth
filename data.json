@@ -173,7 +173,7 @@
             },
             {
                 "name": "crDroid",
-                "version": 11,
+                "androidVersion": 11,
                 "maintainer": [
                     {
                         "name": "raystef66",
