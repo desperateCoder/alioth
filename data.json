@@ -31,6 +31,7 @@
             },
             {
                 "name": "LineageOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "SahilSonar",
@@ -54,6 +55,7 @@
             },
             {
                 "name": "ColtOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Aman Dwivedi",
@@ -69,6 +71,7 @@
             },
             {
                 "name": "AICP",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Nick van Bokhorst",
@@ -84,6 +87,7 @@
             },
             {
                 "name": "xdroidCAF",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Oghe3003",
@@ -99,6 +103,7 @@
             },
             {
                 "name": "ArrowOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "palaych",
@@ -114,6 +119,7 @@
             },
             {
                 "name": "EvolutionX",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "DarkAngelGR",
@@ -129,6 +135,7 @@
             },
             {
                 "name": "POSP",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "SahilSonar",
@@ -144,6 +151,7 @@
             },
             {
                 "name": "OctaviOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "TonyJoaca",
@@ -159,6 +167,7 @@
             },
             {
                 "name": "PixelPlusUI",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "soumyo19",
@@ -190,6 +199,7 @@
             },
             {
                 "name": "Syberia Project",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "blinoff82",
@@ -205,6 +215,7 @@
             },
             {
                 "name": "StagOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "IronGFly",
@@ -220,6 +231,7 @@
             },
             {
                 "name": "HavocOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "IronGFly",
@@ -235,6 +247,7 @@
             },
             {
                 "name": "Pixel Extended",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Ralf979",
@@ -250,6 +263,7 @@
             },
             {
                 "name": "Derpfest",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Pokorny72",
@@ -265,6 +279,7 @@
             },
             {
                 "name": "SparkOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "shubh1133",
@@ -280,6 +295,7 @@
             },
             {
                 "name": "Pixel Experience Plus",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Zidan44",
@@ -300,6 +316,7 @@
         "roms": [
             {
                 "name": "ShapeShiftOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "shubh1133",
@@ -315,6 +332,7 @@
             },
             {
                 "name": "DotOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "EnderXH",
@@ -330,6 +348,7 @@
             },
             {
                 "name": "ProtonAOSP",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "UtsavTheCunt",
@@ -345,6 +364,7 @@
             },
             {
                 "name": "Project Radiant",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "darkphnx",
@@ -360,6 +380,7 @@
             },
             {
                 "name": "AOSP Extended",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Manuel (framework_res)",
@@ -380,6 +401,7 @@
         "roms": [
             {
                 "name": "Stock MIUI Firmware",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Xiaomi",
@@ -395,6 +417,7 @@
             },
             {
                 "name": "XiaomiEU",
+                "androidVersions": [11],
                 "links": [
                     {
                         "url": "https://xiaomi.eu/",
@@ -404,6 +427,7 @@
             },
             {
                 "name": "EliteRom",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Hassan Mirza",
@@ -419,6 +443,7 @@
             },
             {
                 "name": "OneOS",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "OneOS Development Team",
@@ -434,6 +459,7 @@
             },
             {
                 "name": "MiGlobe",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "MiGlobe Development Team"
@@ -448,6 +474,7 @@
             },
             {
                 "name": "MIUIMix",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "MIUIMix Maintainer Team"
@@ -462,6 +489,7 @@
             },
             {
                 "name": "XTRV Hellas MIUI",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "Greek Community"
@@ -476,6 +504,7 @@
             },
             {
                 "name": "MIUIVN Weekly",
+                "androidVersions": [11],
                 "maintainer": [
                     {
                         "name": "KimNam2005",
