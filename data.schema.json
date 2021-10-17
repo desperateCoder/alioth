@@ -48,7 +48,7 @@
           "minItems": 1,
           "uniqueItems": true,
           "items": {
-            "type": "number"
+            "type": "string"
           },
           "description": "The Android versions available for this rom."
         },
