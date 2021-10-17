@@ -525,6 +525,7 @@
         "roms": [
             {
                 "name": "Quantic+ Kernel",
+                "androidVersions": ["11", "AOSP excl. hentaiOS"],
                 "maintainer": [
                     {
                         "name": "Carlos Ayrton",
@@ -540,6 +541,7 @@
             },
             {
                 "name": "IMMENSITY-X Kernel",
+                "androidVersions": ["11", "AOSP excl. hentaiOS"],
                 "maintainer": [
                     {
                         "name": "UtsavTheCunt",
@@ -555,6 +557,7 @@
             },
             {
                 "name": "Optimus Drunk Kernel",
+                "androidVersions": ["11", "AOSP + MIUI"],
                 "maintainer": [
                     {
                         "name": "Nick van Bokhorst",
