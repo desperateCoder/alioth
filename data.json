@@ -103,7 +103,7 @@
             },
             {
                 "name": "ArrowOS",
-                "androidVersions": ["11"],
+                "androidVersions": ["11", "12"],
                 "maintainer": [
                     {
                         "name": "palaych",
@@ -135,7 +135,7 @@
             },
             {
                 "name": "POSP",
-                "androidVersions": ["11"],
+                "androidVersions": ["11", "12"],
                 "maintainer": [
                     {
                         "name": "SahilSonar",
@@ -151,7 +151,7 @@
             },
             {
                 "name": "OctaviOS",
-                "androidVersions": ["11"],
+                "androidVersions": ["11", "12"],
                 "maintainer": [
                     {
                         "name": "TonyJoaca",
