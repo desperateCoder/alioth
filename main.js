@@ -112,7 +112,7 @@ const renderAndroidVersions = (androidVersions) => {
 const renderMaintainer = (maintainer) => {
     const wrapper = document.createElement('div');
     wrapper.classList.add('maintainer');
-    wrapper.appendChild(document.createTextNode('Maintainer: '));
+    wrapper.appendChild(document.createTextNode(maintainer.length > 1 ? 'Maintainers: ' : 'Maintainer: '));
     const list = document.createElement('ul');
     wrapper.appendChild(list);
     maintainer
