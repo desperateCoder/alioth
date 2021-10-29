@@ -417,7 +417,7 @@
             },
             {
                 "name": "XiaomiEU",
-                "androidVersions": ["11"],
+                "androidVersions": ["11", "12"],
                 "links": [
                     {
                         "url": "https://xiaomi.eu/",
