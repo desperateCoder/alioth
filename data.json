@@ -541,7 +541,7 @@
         "roms": [
             {
                 "name": "Quantic+ Kernel",
-                "androidVersions": ["11", "AOSP excl. hentaiOS"],
+                "androidVersions": ["11", "AOSP"],
                 "maintainer": [
                     {
                         "name": "Carlos Ayrton",
@@ -557,7 +557,7 @@
             },
             {
                 "name": "IMMENSITY-X Kernel",
-                "androidVersions": ["11", "AOSP excl. hentaiOS"],
+                "androidVersions": ["11", "AOSP"],
                 "maintainer": [
                     {
                         "name": "UtsavTheCunt",
