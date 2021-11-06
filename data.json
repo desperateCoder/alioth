@@ -96,8 +96,8 @@
                 ],
                 "links": [
                     {
-                        "name": "@AOSPKAlioth",
-                        "url": "https://t.me/aospkalioth"
+                        "url": "https://t.me/aospkalioth",
+                        "text": "@AOSPKAlioth"
                     }
                 ]
             },
