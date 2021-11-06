@@ -86,6 +86,22 @@
                 ]
             },
             {
+                "name": "AOSP Kraken (AOSPK)",
+                "androidVersions": ["12"],
+                "maintainter": [
+                    {
+                        "name": "cristianvaz",
+                        "link": "https:/t.me/chrisitanvaz"
+                    }
+                ],
+                "links": [
+                    {
+                        "name": "@AOSPKAlioth",
+                        "url": "https://t.me/aospkalioth"
+                    }
+                ]
+            },
+            {
                 "name": "xdroidCAF",
                 "androidVersions": ["11"],
                 "maintainer": [
@@ -552,6 +568,22 @@
                     {
                         "url": "https://rb.gy/tbhl0f",
                         "text": "Post on XDA"
+                    }
+                ]
+            },
+            {
+                "name": "HYPER-X Kernel",
+                "androidVersions": ["11", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "FarizMaulana",
+                        "link": "https://t.me/farizmaulana"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/hyperXalioth",
+                        "text": "@HyperXAlioth"
                     }
                 ]
             },
