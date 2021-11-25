@@ -214,8 +214,8 @@
                 ]
             },
             {
-                "name": "Syberia Project",
-                "androidVersions": ["11"],
+                "name": "SyberiaOS",
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "blinoff82",
@@ -224,7 +224,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/vvrvoe",
+                        "url": "https://rb.gy/4rkkum",
                         "text": "Post on XDA"
                     }
                 ]
