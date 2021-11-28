@@ -30,7 +30,8 @@
           },
           "description": "Contains the actual items"
         }
-      }
+      },
+      "additionalProperties": false 
     },
     "item": {
       "type": "object",
@@ -70,7 +71,8 @@
           },
           "description": "Contains one or maintainers"
         }
-      }
+      },
+      "additionalProperties": false 
     },
     "link": {
       "type": "object",
@@ -87,7 +89,8 @@
           "type": "string",
           "description": "The title of this link."
         }
-      }
+      },
+      "additionalProperties": false 
     },
     "maintainer": {
       "type": "object",
@@ -103,7 +106,8 @@
           "type": "string",
           "description": "The name of the Maintainer."
         }
-      }
+      },
+      "additionalProperties": false 
     }
   }
 }
