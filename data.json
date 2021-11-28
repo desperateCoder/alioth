@@ -32,7 +32,7 @@
             {
                 "name": "LineageOS",
                 "androidVersions": ["11"],
-                "maintainter": [
+                "maintainer": [
                     {
                         "name": "SahilSonar",
                         "link": "https://t.me/sahilsonar"
