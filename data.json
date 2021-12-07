@@ -448,7 +448,7 @@
         "roms": [
             {
                 "name": "Quantic+ Kernel",
-                "androidVersions": ["11", "AOSP"],
+                "androidVersions": ["11", "12", "AOSP"],
                 "maintainer": [
                     {
                         "name": "Carlos Ayrton",
@@ -480,7 +480,7 @@
             },
             {
                 "name": "HYPER-X Kernel",
-                "androidVersions": ["11", "AOSP + MIUI"],
+                "androidVersions": ["11", "12", "AOSP + MIUI"],
                 "maintainer": [
                     {
                         "name": "FarizMaulana",
@@ -496,7 +496,7 @@
             },
             {
                 "name": "Optimus Drunk Kernel",
-                "androidVersions": ["11", "AOSP + MIUI"],
+                "androidVersions": ["11", "12", "AOSP + MIUI"],
                 "maintainer": [
                     {
                         "name": "Nick van Bokhorst",
