@@ -102,22 +102,6 @@
                 ]
             },
             {
-                "name": "xdroidCAF",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "Oghe3003",
-                        "link": "https://t.me/oghe3003"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/oghe3003_support",
-                        "text": "@Oghe3003_Support"
-                    }
-                ]
-            },
-            {
                 "name": "ArrowOS",
                 "androidVersions": ["12"],
                 "maintainer": [
@@ -135,7 +119,7 @@
             },
             {
                 "name": "EvolutionX",
-                "androidVersions": ["11"],
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "DarkAngelGR",
@@ -183,11 +167,11 @@
             },
             {
                 "name": "PixelPlusUI",
-                "androidVersions": ["11"],
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
-                        "name": "soumyo19",
-                        "link": "https://t.me/soumyo19"
+                        "name": "johnmart19",
+                        "link": "https://t.me/johnmart19"
                     }
                 ],
                 "links": [
@@ -345,70 +329,6 @@
                         "text": "Telegram Post"
                     }
                 ]
-            },
-            {
-                "name": "DotOS",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "EnderXH",
-                        "link": "https://t.me/enderxh"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://rb.gy/0zvvxz",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "ProtonAOSP",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "UtsavTheCunt",
-                        "link": "https://t.me/utsavthecunt"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://rb.gy/3osq5t",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "Project Radiant",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "darkphnx",
-                        "link": "https://t.me/darkphnx"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://sourceforge.net/projects/aradiant/files/",
-                        "text": "SourceForge"
-                    }
-                ]
-            },
-            {
-                "name": "AOSP Extended",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "Manuel (framework_res)",
-                        "link": "https://t.me/framework_res"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/MBsRoom",
-                        "text": "@MBsRoom"
-                    }
-                ]
             }
         ]
     },
@@ -439,6 +359,22 @@
                         "url": "https://xiaomi.eu/",
                         "text": "Website"
                     }
+                ]
+            },
+            {
+                "name": "MIUIVN Mod",
+                "androidVersions": ["11"],
+                "maintainer": [
+                    {
+                        "name": "Kimnam2005",
+                        "link": "https://t-me/kimnam2005"
+                    }
+                ],
+                "links": [
+                     {
+                         "url": "https://t.me/pocof3vn",
+                         "text": "@PocoF3VN"
+                     }
                 ]
             }
         ]
@@ -506,6 +442,22 @@
                 "links": [
                     {
                         "url": "https://rb.gy/shkbgj",
+                        "text": "Post on XDA"
+                    }
+                ]
+            },
+            {
+                "name": "aRise Kernel",
+                "androidVersions": ["11", "12", "AOSP"],
+                "maintainer": [
+                    {
+                        "name": "NotZeetaa",
+                        "link": "https://t.me/notzeetaa"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://rb.gy/frew7d",
                         "text": "Post on XDA"
                     }
                 ]
