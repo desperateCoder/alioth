@@ -480,7 +480,7 @@
             },
             {
                 "name": "TWRP - Unofficial",
-                "androidVersions": ["12", "AOSP excl. hOS"],
+                "androidVersions": ["12", "AOSP + MIUI"],
                 "maintainer": [
                     {
                         "name": "Camerado"
@@ -490,6 +490,22 @@
                     {
                         "url": "https://dl.akr-developers.com/?dir=skkk/TWRP/A12",
                         "text": "AKR Download"
+                    }
+                ]
+            },
+            {
+                "name": "OrangeFox Recovery Project",
+                "androidVersions": ["12", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "Pranav Talmale",
+                        "link": "https://t.me/raphael_alpha"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://rb.gy/csiwgx",
+                        "text": "Post on XDA"
                     }
                 ]
             }
