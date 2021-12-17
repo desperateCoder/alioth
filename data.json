@@ -312,27 +312,6 @@
         ]
     },
     {
-        "title": "Unofficial AOSP",
-        "roms": [
-            {
-                "name": "ShapeShiftOS",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "shubh1133",
-                        "link": "https://t.me/shubh1133"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/pocoF3GlobalUpdates/518",
-                        "text": "Telegram Post"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "title": "MIUI",
         "roms": [
             {
