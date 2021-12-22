@@ -1,11 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Link, Maintainer } from 'src/app/schema';
 
 @Component({
   selector: 'app-rom',
   templateUrl: './rom.component.html',
   styleUrls: ['./rom.component.scss']
 })
-export class RomComponent implements OnInit {
+export class RomComponent {
 
   @Input()
   name: string = ''
@@ -14,15 +15,9 @@ export class RomComponent implements OnInit {
   androidVersions: string[] = []
 
   @Input()
-  maintainer: any[] = []
+  maintainer: Maintainer[] = []
 
   @Input()
-  links: string[] = []
-
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  links: Link[] = []
 
 }

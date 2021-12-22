@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --silent",
-    "e2e": "ng e2e --headless --watch=false"
+    "e2e": "ng e2e --headless --watch=false",
+    "postinstall": "json2ts data.schema.json > src/app/schema.d.ts"
   },
   "private": true,
   "dependencies": {
@@ -31,15 +32,13 @@
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
     "@cypress/schematic": "^1.6.0",
-    "@types/jasmine": "~3.10.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^12.11.1",
-    "jasmine-core": "~3.10.0",
+    "cypress": "latest",
     "jest": "^27.4.5",
     "jest-preset-angular": "^11.0.1",
-    "karma-coverage": "~2.1.0",
+    "json-schema-to-typescript": "^10.1.5",
     "ts-jest": "^27.1.2",
-    "typescript": "~4.5.2",
-    "cypress": "latest"
+    "typescript": "~4.5.2"
   }
 }

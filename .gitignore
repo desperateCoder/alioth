@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /.angular
+/src/app/schema.d.ts
 /cypress/videos
 /cypress/downloads
 # Only exists if Bazel was run
