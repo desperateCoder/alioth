@@ -9,6 +9,7 @@ import { RomCategoryComponent } from './rom-category/rom-category.component';
 import { RomComponent } from './rom/rom.component';
 import { RouterModule } from '@angular/router';
 import { RomListComponent } from './rom-list.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RomListComponent } from './rom-list.component';
     MatButtonModule,
     MatCardModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatTooltipModule
   ]
 })
 export class RomListModule { }

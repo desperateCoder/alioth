@@ -4,8 +4,12 @@
         <p>
             <mat-icon>language</mat-icon>
             <mat-chip-list aria-label="Links">
-                <mat-chip *ngFor="let link of links" [selectable]="false" [disableRipple]="link.url.length > 0">
-                    {{link.text}}</mat-chip>
+                <ng-container *ngFor="let link of links">
+                    <a *ngIf="link.url" [href]="link.url" target="_blank" [matTooltip]="link.url">
+                        <mat-chip [selectable]="false">{{link.text}}</mat-chip>
+                    </a>
+                    <mat-chip *ngIf="!link.url" [selectable]="false" [disableRipple]="true">{{link.text}}</mat-chip>
+                </ng-container>
             </mat-chip-list>
         </p>
         <p>
@@ -19,7 +23,13 @@
         <p *ngIf="maintainer">
             <mat-icon>people</mat-icon>
             <mat-chip-list aria-label="Maintainer">
-                <mat-chip *ngFor="let m of maintainer" [selectable]="false" [disableRipple]="true">{{m.name}}</mat-chip>
+                <ng-container *ngFor="let m of maintainer">
+                    <a *ngIf="m.link" [href]="m.link" target="_blank" [matTooltip]="m.link">
+                        <mat-chip [selectable]="false">{{m.name}}</mat-chip>
+                    </a>
+                    <mat-chip *ngIf="!m.link" [selectable]="false" [disableRipple]="true">{{m.name}}
+                    </mat-chip>
+                </ng-container>
             </mat-chip-list>
         </p>
     </mat-card-content>

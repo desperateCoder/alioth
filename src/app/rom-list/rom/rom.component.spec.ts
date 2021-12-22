@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { RomComponent } from './rom.component';
 
@@ -15,7 +16,8 @@ describe('RomComponent', () => {
       imports: [
         MatCardModule,
         MatChipsModule,
-        MatIconModule
+        MatIconModule,
+        MatTooltipModule
       ]
     })
     .compileComponents();
