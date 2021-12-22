@@ -1,0 +1,2 @@
+<app-rom-category *ngFor="let category of (service.getData() | async)" [title]="category.title" [roms]="category.roms">
+</app-rom-category>

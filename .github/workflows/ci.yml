@@ -14,29 +14,66 @@ jobs:
           sudo apt-get install jsonlint
           sudo npm install -g ajv-cli
       - name: Validate JSON structure
-        run: jsonlint-php data.json
+        run: jsonlint-php src/assets/data.json
       - name: Validate JSON schema
-        run: ajv validate -s data.schema.json -d data.json --spec=draft2020
+        run: ajv validate -s data.schema.json -d src/assets/data.json --spec=draft2020
 
-  validate-js:
-    name: Validate Javascript
+  unit:
+    name: Unit tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Validate Javascript
-        run: node --check main.js
+      - name: Install dependencies
+        run: npm ci
+      - name: Run frontend Unit tests
+        run: npm run test
+
+  e2e:
+    name: E2E tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Run End to End tests
+        run: npm run e2e
+      - name: Upload videos
+        uses: actions/upload-artifact@v2
+        with:
+          name: e2e-videos
+          path: cypress/videos
+
+  build:
+    name: Build UI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build UI
+        run: npm run build
+      - name: Add .htaccess to bundle
+        run: mv .htaccess dist/alioth/.htaccess
+      - name: Stash bundle
+        uses: actions/upload-artifact@v2
+        with:
+          name: bundle
+          path: dist/alioth/
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    needs: [validate-json, validate-js]
+    needs: [validate-json, unit, e2e, build]
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Remove unused resources
-        run: rm -r .git .github README.md CONTRIBUTING.md
+      - name: Unstash bundle
+        uses: actions/download-artifact@v2
+        with:
+          name: bundle
+          path: ./
       - name: Install lftp
         run: sudo apt-get install lftp
       - name: Pull .well-known
