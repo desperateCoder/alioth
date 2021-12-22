@@ -29,6 +29,8 @@ $dark-theme: mat.define-dark-theme((
 @include mat.card-theme($light-theme);
 @include mat.toolbar-theme($light-theme);
 @include mat.chips-theme($light-theme);
+@include mat.menu-theme($light-theme);
+@include mat.tooltip-theme($light-theme);
 
 // Apply the light theme only when the `.dark-theme` CSS class is applied
 // to an ancestor element of the components (such as `body`).
@@ -38,6 +40,8 @@ $dark-theme: mat.define-dark-theme((
     @include mat.card-color($dark-theme);
     @include mat.toolbar-color($dark-theme);
     @include mat.chips-color($dark-theme);
+    @include mat.menu-color($dark-theme);
+    @include mat.tooltip-color($dark-theme);
 }
 
 html, body { height: 100%; }

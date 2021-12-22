@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
   <h1><a routerLink="/" data-test="home-link">List of ROMs for Alioth (Poco F3)</a></h1>
   <span class="icon-spacer"></span>
-  <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" >
+  <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" matTooltip="Configure theme">
     <mat-icon>dark_mode</mat-icon>
   </button>
   <mat-menu #themeMenu="matMenu">

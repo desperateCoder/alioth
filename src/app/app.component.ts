@@ -9,7 +9,7 @@ import { Theme, ThemeingService as ThemingService } from './themeing.service';
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-  Theme = Theme
+  readonly Theme = Theme
   private readonly unsubscribe$ = new Subject<void>()
   @HostBinding('class.dark-theme')
   darkTheme: boolean = false
