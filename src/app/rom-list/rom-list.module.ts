@@ -13,6 +13,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MatInputModule } from '@angular/material/input';
     MatIconModule,
     MatTooltipModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonToggleModule
   ]
 })
 export class RomListModule { }

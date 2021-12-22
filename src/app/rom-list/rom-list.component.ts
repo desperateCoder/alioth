@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { fromEvent, map, Subject, takeUntil } from 'rxjs';
 import { RomService } from './rom.service';
 
@@ -25,9 +26,21 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
         map(event => event.target as HTMLInputElement),
         map(input => input.value)
       )
-      .subscribe(value => this.service.setFilter({term: value}))
+      .subscribe(value => this.service.setFilterTerm(value))
   }
 
+  filterAndroidVersion(event: MatButtonToggleChange) {
+    const toggle = event.source;
+    if (toggle) {
+        const group = toggle.buttonToggleGroup;
+        if (event.value.some((item: any) => item == toggle.value)) {
+            group.value = [toggle.value];
+            this.service.setFilterAndroidVersion(group.value[0] || '')
+        }
+    } else {
+      this.service.setFilterAndroidVersion('')
+    }
+  }
 
   ngOnDestroy(): void {
     this.unsubscribe$.next()

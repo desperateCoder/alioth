@@ -1,11 +1,24 @@
 :host {
     background-color: var(--background-color-area);
     display: block;
+    padding-top: 2rem;
+}
+
+mat-toolbar {
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+mat-form-field,
+mat-button-toggle-group {
+    font-size: .8rem;
 }
 
 mat-form-field {
-    font-size: .8rem;
     flex: 1 1 auto;
+    min-width: 10rem;
+    max-width: 30rem;
 }
 
 mat-form-field ::ng-deep .mat-form-field-wrapper {

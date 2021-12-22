@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { combineLatest, EMPTY, filter, map, Observable, of, ReplaySubject, share, startWith, Subject, tap } from 'rxjs';
+import { BehaviorSubject, combineLatest, EMPTY, filter, map, Observable, of, ReplaySubject, share, startWith, Subject, tap } from 'rxjs';
 import { Category, Data } from '../schema';
 
 @Injectable({
@@ -8,7 +8,10 @@ import { Category, Data } from '../schema';
 })
 export class RomService {
 
-  private readonly filter$ = new ReplaySubject<RomFilter>(1)
+  private readonly filter$ = new BehaviorSubject<RomFilter>({
+    term: '',
+    androidVersion: ''
+  })
   private rawData$: null | Observable<Data> = null
   private filteredData$: null | Observable<Data> = null
 
@@ -34,13 +37,14 @@ export class RomService {
     if (this.filteredData$ === null) {
       this.filteredData$ = combineLatest([
         this.getRawData(),
-        this.filter$.pipe(startWith({ term: '' }))
+        this.filter$
       ]).pipe(
         map(([data, filter]) => {
           return data.map(category => {
             return {
               title: category.title,
               roms: category.roms
+                .filter(rom => !!rom.androidVersions.find(version => version.toLocaleLowerCase().indexOf(filter.androidVersion) >= 0))
                 .filter(rom =>
                   rom.name
                     .toLowerCase()
@@ -58,13 +62,16 @@ export class RomService {
     return this.filteredData$
   }
 
-  public setFilter(filter: RomFilter) {
-    const normalizedFilter = { ...filter }
-    normalizedFilter.term = normalizedFilter.term.toLowerCase()
-    this.filter$.next(normalizedFilter)
+  public setFilterTerm(term: string) {
+    this.filter$.next({...this.filter$.getValue(), term: term.toLowerCase()})
+  }
+
+  public setFilterAndroidVersion(androidVersion: string) {
+    this.filter$.next({...this.filter$.getValue(), androidVersion: androidVersion.toLowerCase()})
   }
 }
 
 export interface RomFilter {
   term: string
+  androidVersion: string
 }

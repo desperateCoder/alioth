@@ -2,10 +2,16 @@
   <span class="icon-spacer"></span>
   <mat-form-field appearance="fill">
     <mat-label>Search…</mat-label>
-    <input matInput type="search" #searchInput>
+    <input matInput type="search" #searchInput autofocus>
     <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
-  <button mat-button>Filter <mat-icon>filter_list</mat-icon></button>
+  <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple (change)="filterAndroidVersion($event)">
+    <mat-button-toggle value="11">11</mat-button-toggle>
+    <mat-button-toggle value="12">12</mat-button-toggle>
+    <mat-button-toggle value="AOSP">AOSP</mat-button-toggle>
+    <mat-button-toggle value="MIUI">MIUI</mat-button-toggle>
+  </mat-button-toggle-group>  
+  <!--button mat-button>Filter <mat-icon>filter_list</mat-icon></button-->
 </mat-toolbar>
 <div class="categories">
   <app-rom-category *ngFor="let category of (service.getFilteredData() | async)" [title]="category.title"
