@@ -1,5 +1,6 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
 
 @Component({
@@ -11,6 +12,7 @@ export class AppComponent implements OnInit {
 
   private readonly unsubscribe$ = new Subject<void>()
   readonly Theme = Theme
+  readonly environment = environment
 
   @HostBinding('class.custom-theme-dark')
   darkTheme: boolean = false

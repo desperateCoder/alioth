@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { fromEvent, map, Subject, takeUntil } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { RomService } from './rom.service';
 
 @Component({
@@ -11,6 +12,8 @@ import { RomService } from './rom.service';
 export class RomListComponent implements AfterViewInit, OnDestroy {
 
   private readonly unsubscribe$ = new Subject<void>()
+  readonly criteriaForInclusionURL = environment.criteriaForInclusionURL
+  readonly environment = environment
 
   @ViewChild('searchInput')
   searchInput!: ElementRef;
