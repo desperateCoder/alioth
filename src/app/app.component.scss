@@ -6,7 +6,10 @@ a {
   flex: 1 1 auto;
 }
 
-/* TODO Doesn't work */
-:host(.dark-theme) router-outlet + * {
-    background-color: #e5e5e5;
+:host {
+  display: block;
+}
+
+:host(.dark-theme) {
+    background-color: #212121;
 }

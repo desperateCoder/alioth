@@ -4,7 +4,7 @@
 @include mat.core();
 
 // Define a light theme
-$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-primary: mat.define-palette(mat.$blue-gray-palette);
 $light-accent: mat.define-palette(mat.$blue-gray-palette);
 $light-theme: mat.define-light-theme((
  color: (
@@ -14,7 +14,7 @@ $light-theme: mat.define-light-theme((
 ));
 
 // Define a dark theme
-$dark-primary: mat.define-palette(mat.$indigo-palette);
+$dark-primary: mat.define-palette(mat.$blue-gray-palette);
 $dark-accent: mat.define-palette(mat.$blue-gray-palette);
 $dark-theme: mat.define-dark-theme((
  color: (
