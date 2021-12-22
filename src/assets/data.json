@@ -442,5 +442,75 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "Recoveries",
+        "roms": [
+            {
+                "name": "TWRP - Official",
+                "androidVersions": ["11", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "Nebrassy",
+                        "link": "https://t.me/nebrassy"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://twrp.me/xiaomi/xiaomipocof3.html",
+                        "text": "Website"
+                    }
+                ]
+            },
+            {
+                "name": "TWRP - Unofficial",
+                "androidVersions": ["11", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "vkaushal (Vasi)",
+                        "link": "https://t.me/vkaushal"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://rb.gy/ats7vl",
+                        "text": "Post on XDA"
+                    }
+                ]
+            },
+            {
+                "name": "TWRP - Unofficial",
+                "androidVersions": ["12", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "Camerado"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://dl.akr-developers.com/?dir=skkk/TWRP/A12",
+                        "text": "AKR Download"
+                    }
+                ]
+            },
+            {
+                "name": "OrangeFox Recovery Project",
+                "androidVersions": ["12", "AOSP + MIUI"],
+                "note": "Do not use this on hentaiOS",
+                "maintainer": [
+                    {
+                        "name": "Pranav Talmale",
+                        "link": "https://t.me/raphael_alpha"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://rb.gy/csiwgx",
+                        "text": "Post on XDA"
+                    }
+                ]
+            }
+        ]
     }
 ]
+
