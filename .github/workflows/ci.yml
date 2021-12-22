@@ -16,7 +16,7 @@ jobs:
       - name: Validate JSON structure
         run: jsonlint-php src/assets/data.json
       - name: Validate JSON schema
-        run: ajv validate -s data.schema.json -d src/assets/data.json --spec=draft2020
+        run: ajv validate -s data.schema.json -d src/assets/data.json --spec=draft2020 --verbose
 
   unit:
     name: Unit tests

@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
 
@@ -7,25 +7,21 @@ import { Theme, ThemeingService as ThemingService } from './themeing.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
 
-  readonly Theme = Theme
   private readonly unsubscribe$ = new Subject<void>()
+  readonly Theme = Theme
+
   @HostBinding('class.custom-theme-dark')
   darkTheme: boolean = false
 
   constructor(
     public theming: ThemingService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.theming.darkModeActive$
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(active => this.darkTheme = active)
-  }
-
-  ngOnDestroy(): void {
-    this.unsubscribe$.next()
-    this.unsubscribe$.complete()
   }
 }

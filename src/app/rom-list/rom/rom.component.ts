@@ -17,7 +17,7 @@ export class RomComponent {
   androidVersions: string[] = []
 
   @Input()
-  maintainer: Maintainer[] = []
+  maintainer: undefined | Maintainer[] = []
 
   @Input()
   links: Link[] = []

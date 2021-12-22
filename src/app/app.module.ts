@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
-import {MatMenuModule} from '@angular/material/menu'; 
+import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatTooltipModule} from '@angular/material/tooltip'; 
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [

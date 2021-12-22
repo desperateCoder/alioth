@@ -1,2 +1,14 @@
-<app-rom-category *ngFor="let category of (service.getData() | async)" [title]="category.title" [roms]="category.roms">
-</app-rom-category>
+<mat-toolbar>
+  <span class="icon-spacer"></span>
+  <mat-form-field appearance="fill">
+    <mat-label>Search…</mat-label>
+    <input matInput type="search" #searchInput>
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+  <button mat-button>Filter <mat-icon>filter_list</mat-icon></button>
+</mat-toolbar>
+<div class="categories">
+  <app-rom-category *ngFor="let category of (service.getFilteredData() | async)" [title]="category.title"
+    [roms]="category.roms">
+  </app-rom-category>
+</div>

@@ -4,7 +4,6 @@
   "title": "Data",
   "description": "Defines the global data structure.",
   "type": "array",
-  "required": true,
   "uniqueItems": true,
   "items": {
     "$ref": "#/$defs/category"
@@ -23,7 +22,6 @@
         },
         "roms": {
           "type": "array",
-          "required": true,
           "uniqueItems": true,
           "items": {
             "$ref": "#/$defs/item"
@@ -38,17 +36,19 @@
       "required": [
         "name",
         "links",
-        "androidVersions",
-        "maintainer"
+        "androidVersions"
       ],
       "properties": {
         "name": {
           "type": "string",
           "description": "The name of the ROM."
         },
+        "note": {
+          "type": "string",
+          "description": "Notes regarding the ROM."
+        },
         "androidVersions": {
           "type": "array",
-          "required": true,
           "uniqueItems": true,
           "items": {
             "type": "string"
@@ -57,7 +57,6 @@
         },
         "links": {
           "type": "array",
-          "required": true,
           "uniqueItems": true,
           "items": {
             "$ref": "#/$defs/link"
@@ -66,7 +65,6 @@
         },
         "maintainer": {
           "type": "array",
-          "required": true,
           "uniqueItems": true,
           "items": {
             "$ref": "#/$defs/maintainer"
