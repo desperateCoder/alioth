@@ -1,4 +1,19 @@
 <mat-toolbar color="primary">
   <h1><a routerLink="/" data-test="home-link">List of ROMs for Alioth (Poco F3)</a></h1>
+  <span class="icon-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" >
+    <mat-icon>dark_mode</mat-icon>
+  </button>
+  <mat-menu #themeMenu="matMenu">
+    <button mat-menu-item (click)="theming.setTheme(Theme.LIGHT)">
+      <span>Light</span>
+    </button>
+    <button mat-menu-item (click)="theming.setTheme(Theme.DARK)">
+      <span>Dark</span>
+    </button>
+    <button mat-menu-item (click)="theming.setTheme(Theme.SYSTEM)">
+      <span>System default</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>
 <router-outlet></router-outlet>

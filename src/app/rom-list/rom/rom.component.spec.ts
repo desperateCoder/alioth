@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
 
 import { RomComponent } from './rom.component';
 
@@ -11,7 +13,9 @@ describe('RomComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ RomComponent ],
       imports: [
-        MatCardModule
+        MatCardModule,
+        MatChipsModule,
+        MatIconModule
       ]
     })
     .compileComponents();

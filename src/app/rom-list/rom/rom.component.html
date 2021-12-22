@@ -1,6 +1,20 @@
 <mat-card>
     <mat-card-title>{{name}}</mat-card-title>
     <mat-card-content>
-        
+        <mat-icon>language</mat-icon>
+        <mat-chip-list aria-label="Links">
+            <mat-chip *ngFor="let link of links" [selectable]="false" [disableRipple]="link.url.length > 0">
+                {{link.text}}</mat-chip>
+        </mat-chip-list>
+        <mat-icon>android</mat-icon>
+        <mat-chip-list aria-label="Android versions">
+            <mat-chip *ngFor="let version of androidVersions" [selectable]="false" [disableRipple]="true">{{version}}
+            </mat-chip>
+        </mat-chip-list>
+        <mat-icon>people</mat-icon>
+        <mat-chip-list aria-label="Maintainer">
+            <mat-chip *ngFor="let m of maintainer" [selectable]="false" [disableRipple]="true">{{m.name}}</mat-chip>
+        </mat-chip-list>
+
     </mat-card-content>
 </mat-card>

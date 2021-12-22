@@ -1,8 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Define a light theme
+$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-accent: mat.define-palette(mat.$blue-gray-palette);
+$light-theme: mat.define-light-theme((
+ color: (
+   primary: $light-primary,
+   accent: $light-accent,
+ )
+));
+
+// Define a dark theme
+$dark-primary: mat.define-palette(mat.$indigo-palette);
+$dark-accent: mat.define-palette(mat.$blue-gray-palette);
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary,
+   accent: $dark-accent,
+ )
+));
+
+// Apply the dark theme by default
+@include mat.core-theme($light-theme);
+@include mat.button-theme($light-theme);
+@include mat.card-theme($light-theme);
+@include mat.toolbar-theme($light-theme);
+@include mat.chips-theme($light-theme);
+
+// Apply the light theme only when the `.dark-theme` CSS class is applied
+// to an ancestor element of the components (such as `body`).
+.dark-theme {
+    @include mat.core-color($dark-theme);
+    @include mat.button-color($dark-theme);
+    @include mat.card-color($dark-theme);
+    @include mat.toolbar-color($dark-theme);
+    @include mat.chips-color($dark-theme);
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: #fefefe; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 a {
     color: inherit;
 }
@@ -54,4 +93,3 @@ a {
     font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
 }
-  

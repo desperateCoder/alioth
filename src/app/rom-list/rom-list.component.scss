@@ -1,0 +1,47 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+app-rom-category {
+    color: white;
+    flex: 1 0 calc(100% - 1rem);
+    border-radius: 2px;
+    padding: .5rem .5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    @media (min-width: 640px) {
+        flex: 1 0 calc(50% - 2rem);
+    }
+
+    @media (min-width: 1140px) {
+        flex: 1 0 calc(25% - 2rem);
+    }
+
+    &:nth-of-type(11n+1) { background-color:#b6469d; }
+    &:nth-of-type(11n+2) { background-color:#c98879; }
+    &:nth-of-type(11n+3) { background-color:#a5b872; }
+    &:nth-of-type(11n+4) { background-color:#3794ac; }
+    &:nth-of-type(11n+5) { background-color:#2d73be; }
+    &:nth-of-type(11n+6) { background-color:#8855a8; }
+    &:nth-of-type(11n+7) { background-color:#bf678b; }
+    &:nth-of-type(11n+8) { background-color:#ddcb55; }
+    &:nth-of-type(11n+9) { background-color:#6ea68f; }
+    &:nth-of-type(11n+10) { background-color:#0082c9; }
+    &:nth-of-type(11n+11) { background-color:#5b64b3; }
+}
+
+
+
+
+
+
+
+
+
+
