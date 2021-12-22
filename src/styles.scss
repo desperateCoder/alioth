@@ -3,45 +3,32 @@
 
 @include mat.core();
 
-// Define a light theme
-$light-primary: mat.define-palette(mat.$blue-gray-palette);
-$light-accent: mat.define-palette(mat.$blue-gray-palette);
-$light-theme: mat.define-light-theme((
+$custom-theme-light: mat.define-light-theme((
  color: (
-   primary: $light-primary,
-   accent: $light-accent,
+   primary: mat.define-palette(mat.$blue-gray-palette),
+   accent: mat.define-palette(mat.$blue-gray-palette),
  )
 ));
 
-// Define a dark theme
-$dark-primary: mat.define-palette(mat.$blue-gray-palette);
-$dark-accent: mat.define-palette(mat.$blue-gray-palette);
-$dark-theme: mat.define-dark-theme((
+$custom-theme-dark: mat.define-dark-theme((
  color: (
-   primary: $dark-primary,
-   accent: $dark-accent,
+   primary: mat.define-palette(mat.$blue-gray-palette),
+   accent: mat.define-palette(mat.$blue-gray-palette),
  )
 ));
 
-// Apply the dark theme by default
-@include mat.core-theme($light-theme);
-@include mat.button-theme($light-theme);
-@include mat.card-theme($light-theme);
-@include mat.toolbar-theme($light-theme);
-@include mat.chips-theme($light-theme);
-@include mat.menu-theme($light-theme);
-@include mat.tooltip-theme($light-theme);
+@include mat.all-component-themes($custom-theme-light);
 
-// Apply the light theme only when the `.dark-theme` CSS class is applied
-// to an ancestor element of the components (such as `body`).
-.dark-theme {
-    @include mat.core-color($dark-theme);
-    @include mat.button-color($dark-theme);
-    @include mat.card-color($dark-theme);
-    @include mat.toolbar-color($dark-theme);
-    @include mat.chips-color($dark-theme);
-    @include mat.menu-color($dark-theme);
-    @include mat.tooltip-color($dark-theme);
+:root {
+    --background-color-area: #f9f9f9;
+    --color-area: #121212;
+}
+
+.custom-theme-dark {
+    @include mat.all-component-themes($custom-theme-dark);
+
+    --background-color-area: #212121;
+    --color-area: white;
 }
 
 html, body { height: 100%; }

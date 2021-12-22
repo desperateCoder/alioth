@@ -4,6 +4,7 @@
     gap: 1rem;
     padding: 1rem;
     align-items: flex-start;
+    background-color: var(--background-color-area);
 }
 
 app-rom-category {
@@ -13,7 +14,7 @@ app-rom-category {
     padding: .5rem .5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 
     @media (min-width: 640px) {
         flex: 1 0 calc(50% - 2rem);
@@ -23,6 +24,7 @@ app-rom-category {
         flex: 1 0 calc(25% - 2rem);
     }
 
+    /*
     &:nth-of-type(11n+1) { background-color:#b6469d; }
     &:nth-of-type(11n+2) { background-color:#c98879; }
     &:nth-of-type(11n+3) { background-color:#a5b872; }
@@ -34,6 +36,7 @@ app-rom-category {
     &:nth-of-type(11n+9) { background-color:#6ea68f; }
     &:nth-of-type(11n+10) { background-color:#0082c9; }
     &:nth-of-type(11n+11) { background-color:#5b64b3; }
+    */
 }
 
 

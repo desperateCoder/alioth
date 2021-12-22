@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   readonly Theme = Theme
   private readonly unsubscribe$ = new Subject<void>()
-  @HostBinding('class.dark-theme')
+  @HostBinding('class.custom-theme-dark')
   darkTheme: boolean = false
 
   constructor(
