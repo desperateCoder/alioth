@@ -2,35 +2,26 @@
     <mat-card-title>{{name}}</mat-card-title>
     <mat-card-content>
         <p>
-            <mat-icon>language</mat-icon>
-            <mat-chip-list aria-label="Links">
-                <ng-container *ngFor="let link of links">
-                    <a *ngIf="link.url" [href]="link.url" target="_blank" [matTooltip]="link.url">
-                        <mat-chip [selectable]="false">{{link.text}}</mat-chip>
-                    </a>
-                    <mat-chip *ngIf="!link.url" [selectable]="false" [disableRipple]="true">{{link.text}}</mat-chip>
-                </ng-container>
-            </mat-chip-list>
-        </p>
-        <p>
             <mat-icon>android</mat-icon>
-            <mat-chip-list aria-label="Android versions">
-                <mat-chip *ngFor="let version of androidVersions" [selectable]="false" [disableRipple]="true">
+            <mat-chip-list aria-label="Android versions" [selectable]="false">
+                <mat-chip *ngFor="let version of androidVersions" [disableRipple]="true">
                     {{version}}
                 </mat-chip>
             </mat-chip-list>
         </p>
+        <p>
+            <mat-icon>language</mat-icon>
+            <ng-container *ngFor="let link of links">
+                <a *ngIf="link.url" [href]="link.url" target="_blank" [matTooltip]="link.url">{{link.text}}</a>
+                <ng-container *ngIf="!link.url">{{link.text}}</ng-container>
+            </ng-container>
+        </p>
         <p *ngIf="maintainer">
             <mat-icon>people</mat-icon>
-            <mat-chip-list aria-label="Maintainer">
-                <ng-container *ngFor="let m of maintainer">
-                    <a *ngIf="m.link" [href]="m.link" target="_blank" [matTooltip]="m.link">
-                        <mat-chip [selectable]="false">{{m.name}}</mat-chip>
-                    </a>
-                    <mat-chip *ngIf="!m.link" [selectable]="false" [disableRipple]="true">{{m.name}}
-                    </mat-chip>
-                </ng-container>
-            </mat-chip-list>
+            <ng-container *ngFor="let m of maintainer">
+                <a *ngIf="m.link" [href]="m.link" target="_blank" [matTooltip]="m.link">{{m.name}}</a>
+                <ng-container *ngIf="!m.link">{{m.name}}</ng-container>
+            </ng-container>
         </p>
     </mat-card-content>
 </mat-card>
