@@ -1,4 +1,5 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostBinding, Inject, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
@@ -11,19 +12,24 @@ import { Theme, ThemeingService as ThemingService } from './themeing.service';
 export class AppComponent implements OnInit {
 
   private readonly unsubscribe$ = new Subject<void>()
+  private readonly darkThemeClass = 'custom-theme-dark'
   readonly Theme = Theme
   readonly environment = environment
 
-  @HostBinding('class.custom-theme-dark')
-  darkTheme: boolean = false
-
   constructor(
+    @Inject(DOCUMENT) private document: Document,
     public theming: ThemingService
   ) { }
 
   ngOnInit(): void {
     this.theming.darkModeActive$
       .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(active => this.darkTheme = active)
+      .subscribe(active => {
+        if (active) {
+          this.document.body.classList.add(this.darkThemeClass)
+        } else {
+          this.document.body.classList.remove(this.darkThemeClass)
+        }
+      })
   }
 }
