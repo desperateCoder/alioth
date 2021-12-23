@@ -14,6 +14,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
   private readonly unsubscribe$ = new Subject<void>()
   readonly criteriaForInclusionURL = environment.criteriaForInclusionURL
   readonly environment = environment
+  readonly androidVersions = this.service.getAndroidVersions()
 
   @ViewChild('searchInput')
   searchInput!: ElementRef;

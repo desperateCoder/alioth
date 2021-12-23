@@ -5,12 +5,10 @@
     <input matInput type="search" #searchInput autofocus>
     <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
-  <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple (change)="filterAndroidVersion($event)">
-    <mat-button-toggle value="11">11</mat-button-toggle>
-    <mat-button-toggle value="12">12</mat-button-toggle>
-    <mat-button-toggle value="AOSP">AOSP</mat-button-toggle>
-    <mat-button-toggle value="MIUI">MIUI</mat-button-toggle>
-  </mat-button-toggle-group>  
+  <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple
+    (change)="filterAndroidVersion($event)">
+    <mat-button-toggle *ngFor="let version of (androidVersions | async)" [value]="version">{{version}}</mat-button-toggle>
+  </mat-button-toggle-group>
   <!--button mat-button>Filter <mat-icon>filter_list</mat-icon></button-->
 </mat-toolbar>
 <div class="categories">
@@ -18,6 +16,9 @@
     [roms]="category.roms">
   </app-rom-category>
 </div>
-<p>This list is subject to change at all times. Please take note of the <a [href]="environment.criteriaForInclusionURL" target="_blank">criteria for inclusion</a>.</p>
-<p>{{environment.note}}</p>
-<p>Responsible for contents: <a [href]="environment.maintainer.url">{{environment.maintainer.name}}</a></p>
+<footer>
+  <p>This list is subject to change at all times. Please take note of the <a
+      [href]="environment.criteriaForInclusionURL" target="_blank">criteria for inclusion</a>.</p>
+  <p>{{environment.note}}</p>
+  <p>Responsible for contents: <a [href]="environment.maintainer.url">{{environment.maintainer.name}}</a></p>
+</footer>

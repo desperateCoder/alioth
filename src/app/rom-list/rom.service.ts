@@ -27,9 +27,13 @@ export class RomService {
     return this.rawData$
   }
 
-  public getCategoryTitles(): Observable<string[]> {
+  public getAndroidVersions(): Observable<Set<string>> {
     return this.getRawData().pipe(
-      map(data => data.map(category => category.title))
+      map(data => {
+        return new Set(data
+          .flatMap(category => category.roms)
+          .flatMap(roms => roms.androidVersions))
+      })
     )
   }
 
@@ -63,11 +67,11 @@ export class RomService {
   }
 
   public setFilterTerm(term: string) {
-    this.filter$.next({...this.filter$.getValue(), term: term.toLowerCase()})
+    this.filter$.next({ ...this.filter$.getValue(), term: term.toLowerCase() })
   }
 
   public setFilterAndroidVersion(androidVersion: string) {
-    this.filter$.next({...this.filter$.getValue(), androidVersion: androidVersion.toLowerCase()})
+    this.filter$.next({ ...this.filter$.getValue(), androidVersion: androidVersion.toLowerCase() })
   }
 }
 

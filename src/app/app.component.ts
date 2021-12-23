@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, HostBinding, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
