@@ -30,9 +30,9 @@ export class RomService {
   public getAndroidVersions(): Observable<Set<string>> {
     return this.getRawData().pipe(
       map(data => {
-        return new Set(data
+        return new Set([...new Set(data
           .flatMap(category => category.roms)
-          .flatMap(roms => roms.androidVersions))
+          .flatMap(roms => roms.androidVersions))].sort())
       })
     )
   }
