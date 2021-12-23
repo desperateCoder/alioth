@@ -1,12 +1,14 @@
+$breakpoint-show-version-filter: 640px;
+
 :host {
     display: block;
     padding-top: 2rem;
 }
 
 mat-toolbar {
-    gap: 1rem;
     justify-content: center;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 mat-form-field,
@@ -16,8 +18,18 @@ mat-button-toggle-group {
 
 mat-form-field {
     flex: 1 1 auto;
-    min-width: 10rem;
-    max-width: 30rem;
+    min-width: 0;
+
+    @media (min-width: $breakpoint-show-version-filter) {
+        max-width: 30rem;
+    }
+}
+
+mat-button-toggle-group {
+    display: none;
+    @media (min-width: $breakpoint-show-version-filter) {
+        display: flex;
+    }
 }
 
 mat-form-field ::ng-deep .mat-form-field-wrapper {
