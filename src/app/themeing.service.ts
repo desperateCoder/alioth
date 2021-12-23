@@ -16,7 +16,7 @@ export class ThemeingService {
   private readonly themePersistenceValueDark = 'dark';
 
   private readonly darkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
-  private readonly darkModeMediaListener = (e: MediaQueryListEvent) => this.darkModeActive.next(e.matches)
+  private readonly darkModeMediaListener = (event: MediaQueryListEvent) => this.darkModeActive.next(event.matches)
 
   constructor() {
     switch (localStorage.getItem(this.themePersistenceKey)) {

@@ -1,6 +1,9 @@
 <mat-toolbar color="primary">
   <h1><a routerLink="/" data-test="home-link">List of ROMs for Alioth (Poco F3)</a></h1>
   <span class="icon-spacer"></span>
+  <button mat-icon-button (click)="share()" *ngIf="supportsSharing">
+    <mat-icon>share</mat-icon>
+  </button>
   <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" matTooltip="Configure theme">
     <mat-icon>dark_mode</mat-icon>
   </button>
@@ -15,7 +18,7 @@
       <span>System default</span>
     </button>
   </mat-menu>
-  <a mat-icon-button [href]="environment.criteriaForInclusionURL" matTooltip="Criteria for inclusion" target="_blank">
+  <a mat-icon-button routerLink="/about" matTooltip="Criteria for inclusion">
     <mat-icon>help_outline</mat-icon>
   </a>
 </mat-toolbar>

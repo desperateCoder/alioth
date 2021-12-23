@@ -8,8 +8,6 @@ import { Link, Maintainer } from 'src/app/schema';
 })
 export class RomComponent {
 
-  supportsSharing = 'share' in navigator
-
   @Input()
   name: string = ''
 

@@ -16,7 +16,7 @@ export class RomService {
   private filteredData$: null | Observable<Data> = null
 
   constructor(
-    private http: HttpClient
+    private readonly http: HttpClient
   ) { }
 
   private getRawData(): Observable<Data> {

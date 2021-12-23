@@ -20,7 +20,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
   searchInput!: ElementRef;
 
   constructor(
-    public service: RomService
+    public readonly service: RomService
   ) { }
 
   ngAfterViewInit(): void {
