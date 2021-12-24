@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } fr
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { fromEvent, map, Subject, takeUntil } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Category } from '../schema';
 import { RomService } from './rom.service';
 
 @Component({
@@ -44,6 +45,10 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
     } else {
       this.service.setFilterAndroidVersion('')
     }
+  }
+
+  identifyCategory(_: number, item: Category) {
+    return item.title
   }
 
   ngOnDestroy(): void {

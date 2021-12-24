@@ -8,10 +8,9 @@
     (change)="filterAndroidVersion($event)">
     <mat-button-toggle *ngFor="let version of (androidVersions | async)" [value]="version">{{version}}</mat-button-toggle>
   </mat-button-toggle-group>
-  <!--button mat-button>Filter <mat-icon>filter_list</mat-icon></button-->
 </mat-toolbar>
 <div class="categories">
-  <app-rom-category *ngFor="let category of (service.getFilteredData() | async)" [title]="category.title"
+  <app-rom-category *ngFor="let category of (service.getFilteredData() | async); trackBy: identifyCategory" [title]="category.title"
     [roms]="category.roms">
   </app-rom-category>
 </div>
