@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { take } from 'rxjs';
 import { LicensesService } from './licenses/licenses.service';
 
 @Component({

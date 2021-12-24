@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
@@ -9,7 +9,7 @@ import { Theme, ThemeingService as ThemingService } from './themeing.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
 
   private readonly unsubscribe$ = new Subject<void>()
   private readonly darkThemeClass = 'custom-theme-dark'
@@ -25,13 +25,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.theming.darkModeActive$
       .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(active => {
-        if (active) {
-          this.document.body.classList.add(this.darkThemeClass)
-        } else {
-          this.document.body.classList.remove(this.darkThemeClass)
-        }
-      })
+      .subscribe(active => this.document.body.classList[active ? 'add' : 'remove'](this.darkThemeClass))
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next()
+    this.unsubscribe$.complete()
   }
 
   share(): void {
