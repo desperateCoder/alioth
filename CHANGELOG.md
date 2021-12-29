@@ -1,5 +1,5 @@
 # Changelog
-All notable changes to this project will be documented in this file. The Changelog is about the web application and *not* the collected data.
+All notable changes to this project will be documented in this file. The changelog is only about the web application and *not* the [collected data](https://github.com/desperateCoder/alioth/commits/master/src/assets/data.json).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
