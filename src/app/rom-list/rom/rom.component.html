@@ -12,14 +12,14 @@
         <p>
             <mat-icon>language</mat-icon>
             <ng-container *ngFor="let link of links">
-                <a *ngIf="link.url" [href]="link.url" target="_blank" [matTooltip]="link.url">{{link.text}}</a>
+                <a *ngIf="link.url" [href]="link.url" target="_blank">{{link.text}}</a>
                 <ng-container *ngIf="!link.url">{{link.text}}</ng-container>
             </ng-container>
         </p>
         <p *ngIf="maintainer">
             <mat-icon>people</mat-icon>
             <ng-container *ngFor="let m of maintainer">
-                <a *ngIf="m.link" [href]="m.link" target="_blank" [matTooltip]="m.link">{{m.name}}</a>
+                <a *ngIf="m.link" [href]="m.link" target="_blank">{{m.name}}</a>
                 <ng-container *ngIf="!m.link">{{m.name}}</ng-container>
             </ng-container>
         </p>
