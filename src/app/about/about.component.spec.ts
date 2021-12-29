@@ -1,10 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { EMPTY } from 'rxjs';
 import { LicensesService } from './licenses/licenses.service';
 import { AboutComponent } from './about.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
@@ -13,7 +14,8 @@ describe('AboutComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        MatCardModule,
+        NoopAnimationsModule,
+        MatExpansionModule,
         MatIconModule,
         MatButtonModule
       ],

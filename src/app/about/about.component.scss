@@ -11,16 +11,31 @@
     }
 }
 
-mat-card-actions {
+[mat-raised-button] {
     text-transform: uppercase;
 }
 
-.license-content {
-    font-family: monospace;
+mat-panel-title {
+    align-items: center;
 }
 
-.license-avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+mat-icon {
+    margin-right: 2rem;
+}
+
+mat-panel-title,
+mat-panel-description {
+  flex-basis: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+mat-panel-description {
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
 }

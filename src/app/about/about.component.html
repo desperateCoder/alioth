@@ -1,70 +1,65 @@
-<mat-card>
-    <mat-card-header>
-        <div mat-card-avatar class="license-avatar">
-            <mat-icon>help_outline</mat-icon>
-        </div>
-        <mat-card-title>About</mat-card-title>
-        <mat-card-subtitle>Maintainer</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
+<mat-accordion class="example-headers-align" multi>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>help_outline</mat-icon>
+                About
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>This project aims to be device agnostic. Feel free to fork this project and
+            configure it to your needs by adjusting the <code>environment.ts</code>, <code>CHANGELOG.md</code>,
+            <code>README.md</code>, <code>CONTRIBUTING.md</code> and <code>ci.yml</code> files.
+        </p>
+        <h2>Maintainer</h2>
         <ul>
-            <li *ngFor="let maintainer of environment.maintainer"><a [href]="maintainer.url">{{maintainer.name}}</a></li>
+            <li *ngFor="let maintainer of environment.maintainer"><a [href]="maintainer.url">{{maintainer.name}}</a>
+            </li>
         </ul>
-    </mat-card-content>
-    <mat-card-actions>
-        <a mat-button [href]="environment.projectURL" target="_blank">Project</a>
-    </mat-card-actions>
-</mat-card>
-<mat-card>
-    <mat-card-header>
-        <div mat-card-avatar class="license-avatar">
-            <mat-icon>link</mat-icon>
-        </div>
-        <mat-card-title>Additional links</mat-card-title>
-        <mat-card-subtitle>Explore additional resources</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
+        <a mat-raised-button color="primary" [href]="environment.projectURL" target="_blank">Project website</a>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>link</mat-icon>
+                Additional links
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Explore additional resources provided my the maintainer about the data for this device:</p>
         <ul>
             <li *ngFor="let link of environment.additionalLinks"><a [href]="link.url">{{link.name}}</a></li>
         </ul>
-    </mat-card-content>
-</mat-card>
-<mat-card>
-    <mat-card-header>
-        <div mat-card-avatar class="license-avatar">
-            <mat-icon>people</mat-icon>
-        </div>
-        <mat-card-title>Contributing</mat-card-title>
-        <mat-card-subtitle>Notes for contributing</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>people</mat-icon>
+                Contributing
+            </mat-panel-title>
+        </mat-expansion-panel-header>
         <markdown src="assets/CONTRIBUTING.md"></markdown>
-    </mat-card-content>
-    <mat-card-actions>
-        <a mat-button [href]="environment.criteriaForInclusionURL" target="_blank">Contribute</a>
-    </mat-card-actions>
-</mat-card>
-<mat-card>
-    <mat-card-header>
-        <div mat-card-avatar class="license-avatar">
-            <mat-icon>fiber_new</mat-icon>
-        </div>
-        <mat-card-title>Changelog</mat-card-title>
-        <mat-card-subtitle>Learn about changes in this version</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
+        <a mat-raised-button color="primary" [href]="environment.issueUrl" target="_blank">Contribute</a>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>fiber_new</mat-icon>
+                Changelog
+            </mat-panel-title>
+        </mat-expansion-panel-header>
         <markdown src="assets/CHANGELOG.md"></markdown>
-    </mat-card-content>
-</mat-card>
-<mat-card>
-    <mat-card-header>
-        <div mat-card-avatar class="license-avatar">
-            <mat-icon>note</mat-icon>
-        </div>
-        <mat-card-title>Licenses</mat-card-title>
-        <mat-card-subtitle>of used third party libraries</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content class="license-content">
-        <p [innerHTML]="licenses"></p>
-    </mat-card-content>
-</mat-card>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>note</mat-icon>
+                Licenses of used third party libraries
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <code [innerHTML]="licenses"></code>
+    </mat-expansion-panel>
+</mat-accordion>
