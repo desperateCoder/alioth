@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$custom-theme-light: mat.define-light-theme((
+ color: (
+   primary: mat.define-palette(mat.$blue-gray-palette),
+   accent: mat.define-palette(mat.$blue-gray-palette),
+ )
+));
+
+$custom-theme-dark: mat.define-dark-theme((
+ color: (
+   primary: mat.define-palette(mat.$blue-gray-palette),
+   accent: mat.define-palette(mat.$blue-gray-palette),
+ )
+));
+
+@include mat.all-component-themes($custom-theme-light);
+
+:root {
+    --background-color-area: #f5f5f5;
+    --color-area: #121212;
+}
+
+.custom-theme-dark {
+    @include mat.all-component-themes($custom-theme-dark);
+
+    --background-color-area: #212121;
+    --color-area: white;
+}
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: /* Roboto, */ "Helvetica Neue", sans-serif;
+    background-color: var(--background-color-area);
+    scrollbar-width: thin;
+}
+a {
+    color: inherit;
+}
+
+/*
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(assets/fonts/roboto-300.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/fonts/roboto-400.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(assets/fonts/roboto-500.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/material-icons.woff2) format('woff2');
+}
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}

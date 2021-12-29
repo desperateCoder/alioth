@@ -1,0 +1,13 @@
+h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-spacer {
+  flex: 1 1 auto;
+}

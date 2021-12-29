@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <h1><a routerLink="/" data-test="home-link">{{environment.title}}</a></h1>
+  <span class="icon-spacer"></span>
+  <button mat-icon-button (click)="share()" *ngIf="supportsSharing">
+    <mat-icon>share</mat-icon>
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" matTooltip="Configure theme">
+    <mat-icon>dark_mode</mat-icon>
+  </button>
+  <mat-menu #themeMenu="matMenu">
+    <button mat-menu-item (click)="theming.setTheme(Theme.LIGHT)">
+      <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.LIGHT">check</ng-container></mat-icon>
+      <span>Light</span>
+    </button>
+    <button mat-menu-item (click)="theming.setTheme(Theme.DARK)">
+      <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.DARK">check</ng-container></mat-icon>
+      <span>Dark</span>
+    </button>
+    <button mat-menu-item (click)="theming.setTheme(Theme.SYSTEM)">
+      <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.SYSTEM">check</ng-container></mat-icon>
+      <span>System default</span>
+    </button>
+  </mat-menu>
+  <a mat-icon-button routerLink="/about" matTooltip="Criteria for inclusion">
+    <mat-icon>help_outline</mat-icon>
+  </a>
+</mat-toolbar>
+<router-outlet></router-outlet>

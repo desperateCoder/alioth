@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <mat-form-field appearance="fill">
+    <mat-label>Search…</mat-label>
+    <input matInput type="search" #searchInput autofocus>
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+  <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple
+    (change)="filterAndroidVersion($event)">
+    <mat-button-toggle *ngFor="let version of (androidVersions | async)" [value]="version">{{version}}</mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>
+<div class="categories">
+  <app-rom-category *ngFor="let category of (service.getFilteredData() | async); trackBy: identifyCategory" [title]="category.title"
+    [roms]="category.roms">
+  </app-rom-category>
+</div>
+<footer>
+  <p>This list is subject to change at all times. Please take note of the <a
+      [href]="environment.criteriaForInclusionURL" target="_blank">criteria for inclusion</a>.</p>
+  <p>{{environment.note}}</p>
+  <p>Responsible for contents: <a [href]="environment.maintainer.url">{{environment.maintainer.name}}</a></p>
+</footer>
