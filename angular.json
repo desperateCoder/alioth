@@ -29,7 +29,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {"glob": "CONTRIBUTING.md", "input": ".", "output": "./assets/"}
+              {"glob": "CONTRIBUTING.md", "input": ".", "output": "./assets/"},
+              {"glob": ".htaccess", "input": ".", "output": "."}
             ],
             "styles": [
               "src/styles.scss"

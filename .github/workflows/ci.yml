@@ -55,8 +55,6 @@ jobs:
         run: npm ci
       - name: Build UI
         run: npm run build
-      - name: Add .htaccess to bundle
-        run: mv .htaccess dist/custom-rom-list/.htaccess
       - name: Stash bundle
         uses: actions/upload-artifact@v2
         with:

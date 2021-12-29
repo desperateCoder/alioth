@@ -1,4 +1,15 @@
+# ALLOW HTML5 ROUTING
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule (.*) /index.html [QSA,L]
+</ifModule>
+
 # DISABLE CACHING
+
 <IfModule mod_headers.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
