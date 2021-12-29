@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  title: 'List of Custom ROMs for Alioth',
   criteriaForInclusionURL: 'https://github.com/desperateCoder/alioth/blob/master/CONTRIBUTING.md#criteria-for-inclusion',
   note: 'Please note that hentaiOS is not compatible with any of the listed kernels.',
   maintainer: {

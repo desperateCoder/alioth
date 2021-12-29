@@ -1,6 +1,6 @@
 {
-  "name": "alioth",
-  "version": "0.0.0",
+  "name": "custom-rom-list",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --silent",
     "e2e": "ng e2e --headless --watch=false",
-    "postinstall": "json2ts data.schema.json > src/app/schema.d.ts"
+    "postinstall": "json2ts src/assets/data.schema.json > src/app/schema.d.ts"
   },
   "private": true,
   "dependencies": {

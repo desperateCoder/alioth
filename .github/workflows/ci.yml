@@ -16,7 +16,7 @@ jobs:
       - name: Validate JSON structure
         run: jsonlint-php src/assets/data.json
       - name: Validate JSON schema
-        run: ajv validate -s data.schema.json -d src/assets/data.json --spec=draft2020 --verbose
+        run: ajv validate -s src/assets/data.schema.json -d src/assets/data.json --spec=draft2020 --verbose
 
   unit:
     name: Unit tests
@@ -56,12 +56,12 @@ jobs:
       - name: Build UI
         run: npm run build
       - name: Add .htaccess to bundle
-        run: mv .htaccess dist/alioth/.htaccess
+        run: mv .htaccess dist/custom-rom-list/.htaccess
       - name: Stash bundle
         uses: actions/upload-artifact@v2
         with:
           name: bundle
-          path: dist/alioth/
+          path: dist/custom-rom-list/
 
   deploy:
     name: Deploy

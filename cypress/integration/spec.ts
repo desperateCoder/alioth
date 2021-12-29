@@ -1,6 +1,6 @@
 describe('My First Test', () => {
   it('Visits the initial project page', () => {
     cy.visit('/')
-    cy.contains('Alioth')
+    cy.contains('List of Custom ROMs')
   })
 })

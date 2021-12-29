@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "alioth": {
+    "custom-rom-list": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/alioth",
+            "outputPath": "dist/custom-rom-list",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "alioth:build:production"
+              "browserTarget": "custom-rom-list:build:production"
             },
             "development": {
-              "browserTarget": "alioth:build:development"
+              "browserTarget": "custom-rom-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,17 +96,17 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "alioth:build"
+            "browserTarget": "custom-rom-list:build"
           }
         },
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "alioth:serve"
+            "devServerTarget": "custom-rom-list:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "alioth:serve:production"
+              "devServerTarget": "custom-rom-list:serve:production"
             }
           }
         },
@@ -120,18 +120,18 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "alioth:serve",
+            "devServerTarget": "custom-rom-list:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "alioth:serve:production"
+              "devServerTarget": "custom-rom-list:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "alioth"
+  "defaultProject": "custom-rom-list"
 }

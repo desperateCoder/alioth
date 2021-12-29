@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { Title } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
@@ -23,7 +24,8 @@ describe('AppComponent', () => {
         AppComponent
       ],
       providers: [
-        { provide: DOCUMENT, useValue: document }
+        { provide: DOCUMENT, useValue: document },
+        { provide: Title, useValue: document.title }
       ]
     }).compileComponents();
   });
