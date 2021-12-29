@@ -1,6 +1,40 @@
 <mat-card>
     <mat-card-header>
         <div mat-card-avatar class="license-avatar">
+            <mat-icon>help_outline</mat-icon>
+        </div>
+        <mat-card-title>About</mat-card-title>
+        <mat-card-subtitle>Maintainer</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ul>
+            <li *ngFor="let it of maintainer"><a [href]="it.url">{{it.name}}</a></li>
+        </ul>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [href]="environment.projectURL" target="_blank">Project</a>
+    </mat-card-actions>
+</mat-card><mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="license-avatar">
+            <mat-icon>people</mat-icon>
+        </div>
+        <mat-card-title>Contributing</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <markdown
+            lineNumbers
+            [start]="5"
+            src="assets/CONTRIBUTING.md">
+        </markdown>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button [href]="environment.criteriaForInclusionURL" target="_blank">Contribute</a>
+    </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="license-avatar">
             <mat-icon>note</mat-icon>
         </div>
         <mat-card-title>Licenses</mat-card-title>

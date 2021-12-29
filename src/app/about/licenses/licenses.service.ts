@@ -24,7 +24,7 @@ export class LicensesService {
           map(licenses => licenses.replace(/(?:\r\n|\r|\n)/g, '<br />')),
           map(licenses => this.sanitizer.sanitize(SecurityContext.HTML, licenses))
         )
-      : of('License information is only available in production mode.');
+      : of('License information is only available in production mode.')
   }
 }
 

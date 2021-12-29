@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { take } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { LicensesService } from './licenses/licenses.service';
 
 @Component({
@@ -9,7 +9,9 @@ import { LicensesService } from './licenses/licenses.service';
 })
 export class AboutComponent implements OnInit {
 
-  licenses: string = '';
+  readonly environment = environment
+  readonly maintainer = environment.maintainer
+  licenses: string = ''
 
   constructor(
     private readonly licensesService: LicensesService
