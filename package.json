@@ -33,7 +33,7 @@
     "@angular/compiler-cli": "~13.1.0",
     "@cypress/schematic": "^1.6.0",
     "@types/jest": "^27.0.3",
-    "@types/node": "^12.11.1",
+    "@types/node": "^17.0.5",
     "cypress": "latest",
     "jest": "^27.4.5",
     "jest-preset-angular": "^11.0.1",
