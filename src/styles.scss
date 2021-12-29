@@ -37,6 +37,8 @@ body {
     font-family: /* Roboto, */ "Helvetica Neue", sans-serif;
     background-color: var(--background-color-area);
     scrollbar-width: thin;
+    word-wrap: break-word;
+    word-wrap: anywhere;
 }
 a {
     color: inherit;
