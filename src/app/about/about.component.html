@@ -14,18 +14,17 @@
     <mat-card-actions>
         <a mat-button [href]="environment.projectURL" target="_blank">Project</a>
     </mat-card-actions>
-</mat-card><mat-card>
+</mat-card>
+<mat-card>
     <mat-card-header>
         <div mat-card-avatar class="license-avatar">
             <mat-icon>people</mat-icon>
         </div>
         <mat-card-title>Contributing</mat-card-title>
+        <mat-card-subtitle>Notes for contributing</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <markdown
-            lineNumbers
-            [start]="5"
-            src="assets/CONTRIBUTING.md">
+        <markdown lineNumbers [start]="5" src="assets/CONTRIBUTING.md">
         </markdown>
     </mat-card-content>
     <mat-card-actions>
