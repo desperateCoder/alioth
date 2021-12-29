@@ -5,7 +5,7 @@
 
 Simple, web based list of Custom ROMs for the Poco F3 (aka Xiaomi Mi 11x aka Redmi K40). Includes a filter function. Please take note of the [criteria for inclusion](https://github.com/desperateCoder/alioth/blob/master/CONTRIBUTING.md#criteria-for-inclusion).
 
-[![alioth](![image](https://user-images.githubusercontent.com/4741199/147690891-23d6ddf5-f62f-4ba0-8c83-468631d8be38.png))](https://alioth.knecht.rocks)
+[![alioth](https://user-images.githubusercontent.com/4741199/147695125-530e5a98-7788-4b75-86ed-e62fc6c136ab.png)](https://alioth.knecht.rocks)
 
 ## 📓 License
 
