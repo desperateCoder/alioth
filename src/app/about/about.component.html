@@ -26,7 +26,7 @@
                 Additional links
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <p>Explore additional resources provided my the maintainer about the data for this device:</p>
+        <p>Explore additional resources provided by the maintainer about the data for this device:</p>
         <ul>
             <li *ngFor="let link of environment.additionalLinks"><a [href]="link.url">{{link.name}}</a></li>
         </ul>
