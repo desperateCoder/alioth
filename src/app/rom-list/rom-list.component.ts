@@ -33,7 +33,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
         map(input => input.value)
       )
       .subscribe(value => this.service.setFilterTerm(value))
-    this.service.filter.pipe(
+    this.service.filterChanged$.pipe(
       takeUntil(this.unsubscribe$),
       skip(1),
       debounce(_ => timer(500))

@@ -12,7 +12,8 @@ export class RomService {
     term: '',
     androidVersion: ''
   })
-  public readonly filter = this.filter$.asObservable()
+  public readonly filterChanged$ = this.filter$.asObservable()
+    .pipe(map(_ => { }))
   private rawData$: null | Observable<Data> = null
   private filteredData$: null | Observable<Data> = null
 
