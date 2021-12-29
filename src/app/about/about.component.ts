@@ -10,7 +10,6 @@ import { LicensesService } from './licenses/licenses.service';
 export class AboutComponent implements OnInit {
 
   readonly environment = environment
-  readonly maintainer = environment.maintainer
   licenses: string = ''
 
   constructor(

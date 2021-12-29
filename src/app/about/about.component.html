@@ -8,12 +8,26 @@
     </mat-card-header>
     <mat-card-content>
         <ul>
-            <li *ngFor="let it of maintainer"><a [href]="it.url">{{it.name}}</a></li>
+            <li *ngFor="let maintainer of environment.maintainer"><a [href]="maintainer.url">{{maintainer.name}}</a></li>
         </ul>
     </mat-card-content>
     <mat-card-actions>
         <a mat-button [href]="environment.projectURL" target="_blank">Project</a>
     </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="license-avatar">
+            <mat-icon>link</mat-icon>
+        </div>
+        <mat-card-title>Additional links</mat-card-title>
+        <mat-card-subtitle>Explore additional resources</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ul>
+            <li *ngFor="let link of environment.additionalLinks"><a [href]="link.url">{{link.name}}</a></li>
+        </ul>
+    </mat-card-content>
 </mat-card>
 <mat-card>
     <mat-card-header>
@@ -24,12 +38,23 @@
         <mat-card-subtitle>Notes for contributing</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <markdown lineNumbers [start]="5" src="assets/CONTRIBUTING.md">
-        </markdown>
+        <markdown src="assets/CONTRIBUTING.md"></markdown>
     </mat-card-content>
     <mat-card-actions>
         <a mat-button [href]="environment.criteriaForInclusionURL" target="_blank">Contribute</a>
     </mat-card-actions>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="license-avatar">
+            <mat-icon>fiber_new</mat-icon>
+        </div>
+        <mat-card-title>Changelog</mat-card-title>
+        <mat-card-subtitle>Learn about changes in this version</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <markdown src="assets/CHANGELOG.md"></markdown>
+    </mat-card-content>
 </mat-card>
 <mat-card>
     <mat-card-header>
