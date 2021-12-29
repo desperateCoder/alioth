@@ -1,5 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RomListComponent } from './rom-list.component';
 
@@ -9,12 +10,16 @@ describe('RomListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RomListComponent ],
+      declarations: [RomListComponent],
       imports: [
-        HttpClientTestingModule
+        HttpClientTestingModule,
+        NoopAnimationsModule
+      ],
+      providers: [
+        { provide: Window, useValue: window }
       ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
