@@ -9,7 +9,6 @@ import { RomCategoryComponent } from './rom-category/rom-category.component';
 import { RomComponent } from './rom/rom.component';
 import { RouterModule } from '@angular/router';
 import { RomListComponent } from './rom-list.component';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -34,7 +33,6 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatCardModule,
     MatChipsModule,
     MatIconModule,
-    MatTooltipModule,
     MatInputModule,
     MatFormFieldModule,
     MatButtonToggleModule
