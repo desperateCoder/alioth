@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.0.0]
+## [2.0.0] - 2021-12-29
 ### Added
 - Easy filters for Android Version on Desktop devices from [@stefan-niedermann](https://github.com/stefan-niedermann)
 - Redesign based on [Material Design](https://material.io/) from [@stefan-niedermann](https://github.com/stefan-niedermann)
