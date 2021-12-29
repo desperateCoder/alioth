@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://alioth.knecht.rocks/data.schema.json",
+  "$id": "https://alioth.knecht.rocks/assets/data.schema.json",
   "title": "Data",
   "description": "Defines the global data structure.",
   "type": "array",
