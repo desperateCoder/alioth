@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, combineLatest, EMPTY, filter, map, Observable, of, ReplaySubject, share, startWith, Subject, tap } from 'rxjs';
-import { Category, Data } from '../schema';
+import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
+import { Data } from '../schema';
 
 @Injectable({
   providedIn: 'root'
