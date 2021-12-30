@@ -9,7 +9,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
 
-    &.note {
+    &.single-value {
         flex-wrap: nowrap;
     }
 }

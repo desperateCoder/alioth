@@ -498,6 +498,7 @@
                 "name": "OrangeFox Recovery Project",
                 "androidVersions": ["12", "AOSP + MIUI"],
                 "note": "Do not use this on hentaiOS",
+                "lastModified": "2021-12-17",
                 "maintainer": [
                     {
                         "name": "Pranav Talmale",

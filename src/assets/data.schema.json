@@ -47,6 +47,10 @@
           "type": "string",
           "description": "Notes regarding the ROM."
         },
+        "lastModified": {
+          "type": "string",
+          "description": "Last time this entry has been modified."
+        },
         "androidVersions": {
           "type": "array",
           "uniqueItems": true,
