@@ -14,8 +14,8 @@ describe('My First Test', () => {
     it('should display filters based on the data', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
       cy.visit('/')
-      cy.get('mat-button-toggle').eq(0).should('have.text', '11')
-      cy.get('mat-button-toggle').eq(1).should('have.text', '12')
+      cy.get('mat-button-toggle').eq(0).should('contain.text', '11')
+      cy.get('mat-button-toggle').eq(1).should('contain.text', '12')
     })
     it('should filter items when pressing a toggle button', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
