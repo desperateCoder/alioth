@@ -1,16 +1,16 @@
 $breakpoint-show-version-filter: 640px;
 
-:host {
-    --toolbar-content-font-size: .8rem;
-}
-
 mat-toolbar {
+    font-size: .8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
-
-    mat-button-toggle-group {
-        font-size: var(--toolbar-content-font-size);
-    }
+    height: auto !important;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 mat-form-field {
@@ -24,33 +24,15 @@ mat-form-field {
     }
 }
 
-mat-toolbar:first-child {
-    mat-button-toggle-group {
-        display: none;
+mat-button-toggle-group {
+    width: 100%;
+    overflow-x: auto;
+
+    mat-button-toggle {
+        flex: 1 0 auto;
     }
 
     @media (min-width: $breakpoint-show-version-filter) {
-        margin-bottom: 2rem;
-        
-        mat-button-toggle-group {
-            display: flex;
-        }
-    }
-}
-
-mat-toolbar:last-child {
-    margin-bottom: 2rem;
-
-    @media (min-width: $breakpoint-show-version-filter) {
-        display: none;
-    }
-
-    mat-button-toggle-group {
-        width: 100%;
-        overflow-x: auto;
-
-        mat-button-toggle {
-            flex: 1 0 auto;
-        }
+        width: auto;
     }
 }
