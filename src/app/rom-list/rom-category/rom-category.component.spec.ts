@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RomCategoryComponent } from './rom-category.component';
 
@@ -8,6 +9,9 @@ describe('RomCategoryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [
+        NoopAnimationsModule
+      ],
       declarations: [ RomCategoryComponent ]
     })
     .compileComponents();
