@@ -5,6 +5,7 @@ export const environment = {
   contributionURL: 'https://github.com/desperateCoder/alioth',
   issueUrl: 'https://github.com/desperateCoder/alioth/issues/new?assignees=&labels=proposal&template=proposal.md',
   note: 'Please note that hentaiOS is not compatible with any of the listed kernels.',
+  lastModified: '%LAST_MODIFIED%',
   additionalLinks: [
     {
       name: 'POCO F3/K40/Mi 11x | OFFICIAL on Telegram',

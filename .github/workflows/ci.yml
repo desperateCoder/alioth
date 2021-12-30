@@ -53,6 +53,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: npm ci
+      - name: Replace last modified date
+        run: sed -i "s/%LAST_MODIFIED%/$(git log -1 --pretty="format:%cI" src/assets/data.json)/g" src/environments/environment.prod.ts
       - name: Build UI
         run: npm run build
       - name: Stash bundle
