@@ -1,41 +1,34 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FilterBarComponent } from './filter-bar/filter-bar.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatToolbarModule } from '@angular/material/toolbar';
-
-import { RomListComponent } from './rom-list.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-describe('RomListComponent', () => {
-  let component: RomListComponent;
-  let fixture: ComponentFixture<RomListComponent>;
+import { FilterBarComponent } from './filter-bar.component';
+
+describe('FilterBarComponent', () => {
+  let component: FilterBarComponent;
+  let fixture: ComponentFixture<FilterBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        RomListComponent,
-        FilterBarComponent
-      ],
       imports: [
-        HttpClientTestingModule,
         NoopAnimationsModule,
+        HttpClientTestingModule,
         MatButtonToggleModule,
         MatFormFieldModule,
         MatToolbarModule,
         MatInputModule
       ],
-      providers: [
-        { provide: Window, useValue: window }
-      ]
+      declarations: [ FilterBarComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RomListComponent);
+    fixture = TestBed.createComponent(FilterBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

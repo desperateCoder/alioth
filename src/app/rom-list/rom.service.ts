@@ -87,8 +87,12 @@ export class RomService {
   }
 
   public isFilteredBy<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
+    const lowerValue = value.toLowerCase()
     return this.filter$.asObservable()
-      .pipe(map(filter => filter[property] === value))
+      .pipe(
+        map(filter => filter[property].toLowerCase()),
+        map(property => property === lowerValue)
+      )
   }
 }
 

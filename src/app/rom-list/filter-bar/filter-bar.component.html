@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <mat-form-field appearance="fill">
+        <mat-label>Search…</mat-label>
+        <input matInput type="search" #searchInput autofocus>
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple
+        (change)="filterAndroidVersion($event)">
+        <mat-button-toggle *ngFor="let version of (androidVersions$ | async)"
+            [checked]="(service.isFilteredBy('androidVersion', version) | async)" [value]="version">{{version}}
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+</mat-toolbar>
+<mat-toolbar>
+    <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple
+        (change)="filterAndroidVersion($event)">
+        <mat-button-toggle *ngFor="let version of (androidVersions$ | async)"
+            [checked]="(service.isFilteredBy('androidVersion', version) | async)" [value]="version">{{version}}
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+</mat-toolbar>

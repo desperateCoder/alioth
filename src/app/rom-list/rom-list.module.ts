@@ -14,13 +14,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { RomCategoryEmptyComponent } from './rom-category-empty/rom-category-empty.component';
+import { FilterBarComponent } from './filter-bar/filter-bar.component';
 
 @NgModule({
   declarations: [
     RomListComponent,
     RomCategoryComponent,
     RomComponent,
-    RomCategoryEmptyComponent
+    RomCategoryEmptyComponent,
+    FilterBarComponent
   ],
   imports: [
     CommonModule,

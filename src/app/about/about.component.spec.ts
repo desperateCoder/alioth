@@ -6,6 +6,8 @@ import { AboutComponent } from './about.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
@@ -15,6 +17,8 @@ describe('AboutComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         NoopAnimationsModule,
+        HttpClientTestingModule,
+        MarkdownModule.forRoot(),
         MatExpansionModule,
         MatIconModule,
         MatButtonModule
