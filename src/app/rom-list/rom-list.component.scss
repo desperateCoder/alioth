@@ -6,7 +6,7 @@ $breakpoint-show-version-filter: 640px;
     padding-bottom: 2rem;
 }
 
-.filter {
+header {
     position: sticky;
     top: 0;
     left: 0;
@@ -65,7 +65,7 @@ mat-toolbar:last-child {
     }
 }
 
-.categories {
+main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

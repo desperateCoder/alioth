@@ -1,4 +1,4 @@
-<div class="filter">
+<header>
   <mat-toolbar>
     <mat-form-field appearance="fill">
       <mat-label>Search…</mat-label>
@@ -16,12 +16,12 @@
       <mat-button-toggle *ngFor="let version of (androidVersions$ | async)" [checked]="(service.isFilteredBy('androidVersion', version) | async)" [value]="version">{{version}}</mat-button-toggle>
     </mat-button-toggle-group>
   </mat-toolbar>
-</div>
-<div class="categories">
+</header>
+<main>
   <app-rom-category *ngFor="let category of (filteredData$ | async); trackBy: identifyCategory" [title]="category.title"
     [roms]="category.roms">
   </app-rom-category>
-</div>
+</main>
 <footer>
   <p>This list has been last modified on <strong>{{environment.lastModified | date:'medium'}}</strong> and is subject to change at all times.</p>
   <p>Please see <a href="about">About</a> for more information about this app and its data.</p>
