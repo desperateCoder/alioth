@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Link, Maintainer } from 'src/app/schema';
+import { Item, Link, Maintainer } from 'src/app/schema';
 
 @Component({
   selector: 'app-rom',
@@ -9,15 +9,5 @@ import { Link, Maintainer } from 'src/app/schema';
 export class RomComponent {
 
   @Input()
-  name: string = ''
-
-  @Input()
-  androidVersions: string[] = []
-
-  @Input()
-  maintainer: undefined | Maintainer[] = []
-
-  @Input()
-  links: Link[] = []
-
+  rom: Item | undefined
 }

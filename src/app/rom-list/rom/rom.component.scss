@@ -8,4 +8,8 @@ p {
     gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
+
+    &.note {
+        flex-wrap: nowrap;
+    }
 }

@@ -8,7 +8,6 @@ export const environment = {
   projectURL: 'https://github.com/desperateCoder/alioth',
   contributionURL: 'https://github.com/desperateCoder/alioth',
   issueUrl: 'https://github.com/desperateCoder/alioth/issues/new?assignees=&labels=proposal&template=proposal.md',
-  note: 'Please note that hentaiOS is not compatible with any of the listed kernels.',
   lastModified: '2021-12-29T22:33:41+01:00',
   additionalLinks: [
     {
