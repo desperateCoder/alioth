@@ -6,11 +6,11 @@
   </mat-form-field>
   <mat-button-toggle-group name="androidVersion" aria-label="Android version" multiple
     (change)="filterAndroidVersion($event)">
-    <mat-button-toggle *ngFor="let version of (androidVersions | async)" [value]="version">{{version}}</mat-button-toggle>
+    <mat-button-toggle *ngFor="let version of (androidVersions$ | async)" [value]="version">{{version}}</mat-button-toggle>
   </mat-button-toggle-group>
 </mat-toolbar>
 <div class="categories">
-  <app-rom-category *ngFor="let category of (service.getFilteredData() | async); trackBy: identifyCategory" [title]="category.title"
+  <app-rom-category *ngFor="let category of (filteredData$ | async); trackBy: identifyCategory" [title]="category.title"
     [roms]="category.roms">
   </app-rom-category>
 </div>

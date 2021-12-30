@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
-import { debounce, fromEvent, map, skip, Subject, takeUntil, timer } from 'rxjs';
+import { debounce, fromEvent, map, share, skip, Subject, takeUntil, timer } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Category } from '../schema';
 import { RomService } from './rom.service';
@@ -14,14 +14,15 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
 
   private readonly unsubscribe$ = new Subject<void>()
   readonly environment = environment
-  readonly androidVersions = this.service.getAndroidVersions()
+  readonly androidVersions$ = this.service.getAndroidVersions()
+  readonly filteredData$ = this.service.getFilteredData()
 
   @ViewChild('searchInput')
   searchInput!: ElementRef;
 
   constructor(
     @Inject(Window) private readonly window: Window,
-    public readonly service: RomService
+    private readonly service: RomService
   ) { }
 
   ngAfterViewInit(): void {
@@ -32,17 +33,13 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
         map(input => input.value)
       )
       .subscribe(value => this.service.setFilterTerm(value))
-    this.service.filterChanged$.pipe(
+
+    this.filteredData$.pipe(
       takeUntil(this.unsubscribe$),
       skip(1),
+      map(_ => { }),
       debounce(_ => timer(500))
-    ).subscribe(() => {
-      this.window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      })
-    })
+    ).subscribe(() => this.window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }))
   }
 
   filterAndroidVersion(event: MatButtonToggleChange) {
