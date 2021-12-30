@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { fromEvent, map, Subject, takeUntil } from 'rxjs';
 import { RomService } from '../rom.service';
