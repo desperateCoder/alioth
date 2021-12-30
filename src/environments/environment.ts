@@ -2,33 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import {environment as prod } from './environment.prod'
+
 export const environment = {
-  production: false,
-  title: 'List of Custom ROMs for Alioth',
-  projectURL: 'https://github.com/desperateCoder/alioth',
-  contributionURL: 'https://github.com/desperateCoder/alioth',
-  issueUrl: 'https://github.com/desperateCoder/alioth/issues/new?assignees=&labels=proposal&template=proposal.md',
-  lastModified: '2021-12-29T22:33:41+01:00',
-  additionalLinks: [
-    {
-      name: 'POCO F3/K40/Mi 11x | OFFICIAL on Telegram',
-      url: 'https://t.me/PocoF3GlobalOfficial'
-    },
-    {
-      name: 'Poco F3/Mi 11X/K40 Updates™ on Telegram',
-      url: 'https://t.me/pocoF3GlobalUpdates'
-    }
-  ],
-  maintainer: [
-    {
-      name: '@krakeen06',
-      url: 'https://t.me/PocoF3GlobalOfficial'
-    },
-    {
-      name: '@desperateCoder',
-      url: 'https://github.com/desperateCoder'
-    }
-  ]
+  ...prod,
+  lastModified: '2021-01-01'
 };
 
 /*
