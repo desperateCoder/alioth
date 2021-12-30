@@ -82,16 +82,12 @@ export class RomService {
       })
   }
 
-  public setFilterTerm(term: string) {
-    this.filter$.next({ ...this.filter$.getValue(), term: term.toLowerCase() })
-  }
-
-  public setFilterAndroidVersion(androidVersion: string) {
-    this.filter$.next({ ...this.filter$.getValue(), androidVersion: androidVersion.toLowerCase() })
+  public setFilter<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
+    this.filter$.next({ ...this.filter$.getValue(), [property]: value.toLowerCase() })
   }
 }
 
-export interface RomFilter {
+interface RomFilter {
   term: string
   androidVersion: string
 }

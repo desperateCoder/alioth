@@ -32,7 +32,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
         map(event => event.target as HTMLInputElement),
         map(input => input.value)
       )
-      .subscribe(value => this.service.setFilterTerm(value))
+      .subscribe(value => this.service.setFilter('term', value))
 
     this.filteredData$.pipe(
       takeUntil(this.unsubscribe$),
@@ -48,10 +48,10 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
       const group = toggle.buttonToggleGroup;
       if (event.value.some((item: any) => item == toggle.value)) {
         group.value = [toggle.value];
-        this.service.setFilterAndroidVersion(group.value[0] || '')
+        this.service.setFilter('androidVersion', group.value[0] || '')
       }
     } else {
-      this.service.setFilterAndroidVersion('')
+      this.service.setFilter('androidVersion', '')
     }
   }
 
