@@ -14,7 +14,7 @@
             <span>{{rom.lastModified | date}}</span>
         </p>
         <p>
-            <mat-icon title="Links">language</mat-icon>
+            <mat-icon title="Links">link</mat-icon>
             <ng-container *ngFor="let link of rom.links">
                 <a *ngIf="link.url" [href]="link.url" target="_blank">{{link.text}}</a>
                 <ng-container *ngIf="!link.url">{{link.text}}</ng-container>
