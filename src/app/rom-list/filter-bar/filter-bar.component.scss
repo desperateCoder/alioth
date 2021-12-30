@@ -1,5 +1,9 @@
 $breakpoint-show-version-filter: 640px;
 
+:host {
+    display: block;
+}
+
 mat-toolbar {
     font-size: .8rem;
     display: flex;
