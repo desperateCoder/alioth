@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, combineLatest, distinctUntilChanged, map, Observable, share } from 'rxjs';
+import { BehaviorSubject, combineLatest, distinctUntilChanged, filter, map, Observable, share } from 'rxjs';
 import { Data } from '../schema';
 
 @Injectable({
@@ -84,6 +84,11 @@ export class RomService {
 
   public setFilter<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
     this.filter$.next({ ...this.filter$.getValue(), [property]: value.toLowerCase() })
+  }
+
+  public isFilteredBy<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
+    return this.filter$.asObservable()
+      .pipe(map(filter => filter[property] === value))
   }
 }
 

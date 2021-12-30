@@ -6,9 +6,16 @@ $breakpoint-show-version-filter: 640px;
     padding-bottom: 2rem;
 }
 
+.filter {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 mat-toolbar {
     justify-content: center;
-    margin-bottom: 2rem;
     gap: 1rem;
 }
 
@@ -27,10 +34,34 @@ mat-form-field {
     }
 }
 
-mat-button-toggle-group {
-    display: none;
+mat-toolbar:first-child {
+    mat-button-toggle-group {
+        display: none;
+    }
+
     @media (min-width: $breakpoint-show-version-filter) {
-        display: flex;
+        margin-bottom: 2rem;
+        
+        mat-button-toggle-group {
+            display: flex;
+        }
+    }
+}
+
+mat-toolbar:last-child {
+    margin-bottom: 2rem;
+
+    @media (min-width: $breakpoint-show-version-filter) {
+        display: none;
+    }
+
+    mat-button-toggle-group {
+        width: 100%;
+        overflow-x: auto;
+
+        mat-button-toggle {
+            flex: 1 0 auto;
+        }
     }
 }
 
@@ -40,14 +71,6 @@ mat-button-toggle-group {
     gap: 1rem;
     padding: 1rem;
     align-items: flex-start;
-}
-
-mat-toolbar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
 }
 
 app-rom-category {

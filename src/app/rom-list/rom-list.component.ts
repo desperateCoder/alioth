@@ -22,7 +22,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
 
   constructor(
     @Inject(Window) private readonly window: Window,
-    private readonly service: RomService
+    public readonly service: RomService
   ) { }
 
   ngAfterViewInit(): void {
