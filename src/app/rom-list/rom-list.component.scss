@@ -1,7 +1,5 @@
 :host {
     display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 app-filter-bar {
@@ -10,6 +8,11 @@ app-filter-bar {
     left: 0;
     right: 0;
     z-index: 1;
+
+    @media (min-width: 640px) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 main {
@@ -52,8 +55,7 @@ app-rom-category {
 }
 
 footer {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     text-align: center;
     color: var(--color-area);    
 }
