@@ -6,6 +6,7 @@ import {environment as prod } from './environment.prod'
 
 export const environment = {
   ...prod,
+  production: false,
   lastModified: '2021-01-01'
 };
 
