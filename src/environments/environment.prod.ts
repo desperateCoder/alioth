@@ -23,6 +23,10 @@ export const environment = {
     {
       name: '@desperateCoder',
       url: 'https://github.com/desperateCoder'
+    },
+    {
+      name: '@stefan-niedermann',
+      url: 'https://github.com/stefan-niedermann'
     }
   ]
 };
