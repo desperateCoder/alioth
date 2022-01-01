@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { LicensesService } from './licenses/licenses.service';
 
@@ -7,16 +7,11 @@ import { LicensesService } from './licenses/licenses.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
   readonly environment = environment
-  licenses: string = ''
 
   constructor(
-    private readonly licensesService: LicensesService
+    public readonly service: LicensesService
   ) { }
-
-  ngOnInit(): void {
-    this.licensesService.getLicenses().subscribe(next => this.licenses = `${next}`)
-  }
 }

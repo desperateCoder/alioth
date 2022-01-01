@@ -60,6 +60,6 @@
                 Licenses of used third party libraries
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <code [innerHTML]="licenses"></code>
+        <code [innerHTML]="(service.getLicenses() | async)"></code>
     </mat-expansion-panel>
 </mat-accordion>
