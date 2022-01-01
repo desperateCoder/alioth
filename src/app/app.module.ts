@@ -21,7 +21,9 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule.withConfig({
+      disableAnimations: window.matchMedia("(prefers-reduced-motion)").matches
+    }),
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,

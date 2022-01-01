@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Inject, OnDestroy } from '@angular/core';
-import { debounce, map, skip, Subject, takeUntil, timer } from 'rxjs';
+import { debounceTime, map, skip, Subject, takeUntil } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Category } from '../schema';
 import { RomService } from './rom.service';
@@ -25,7 +25,7 @@ export class RomListComponent implements AfterViewInit, OnDestroy {
       takeUntil(this.unsubscribe$),
       skip(1),
       map(_ => { }),
-      debounce(_ => timer(500))
+      debounceTime(500)
     ).subscribe(() => this.window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }))
   }
 
