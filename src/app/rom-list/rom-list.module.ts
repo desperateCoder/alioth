@@ -15,6 +15,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { RomCategoryEmptyComponent } from './rom-category-empty/rom-category-empty.component';
 import { FilterBarComponent } from './filter-bar/filter-bar.component';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/rom-list/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -32,6 +39,16 @@ import { FilterBarComponent } from './filter-bar/filter-bar.component';
         component: RomListComponent
       }
     ]),
+    TranslateModule.forChild({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient],
+      },
+      isolate: true,
+      extend: true
+    }),
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
@@ -45,4 +62,9 @@ import { FilterBarComponent } from './filter-bar/filter-bar.component';
     { provide: Window, useValue: window }
   ]
 })
-export class RomListModule { }
+export class RomListModule {
+  constructor(translate: TranslateService) {
+    translate.use(translate.store.currentLang)
+		translate.store.onLangChange.subscribe(lang => translate.use(lang.lang))
+  }
+}

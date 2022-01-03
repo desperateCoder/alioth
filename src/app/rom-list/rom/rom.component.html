@@ -2,32 +2,32 @@
     <mat-card-title>{{rom.name}}</mat-card-title>
     <mat-card-content>
         <p>
-            <mat-icon title="Android versions">android</mat-icon>
-            <mat-chip-list aria-label="Android versions" [selectable]="false">
+            <mat-icon [title]="'Android versions' | translate">android</mat-icon>
+            <mat-chip-list [attr.aria-label]="'Android versions' | translate" [selectable]="false">
                 <mat-chip *ngFor="let version of rom.androidVersions" [disableRipple]="true">
                     {{version}}
                 </mat-chip>
             </mat-chip-list>
         </p>
         <p *ngIf="rom.lastModified">
-            <mat-icon title="Last modified">today</mat-icon>
+            <mat-icon [title]="'Last modified' | translate">today</mat-icon>
             <span>{{rom.lastModified | date}}</span>
         </p>
         <p>
-            <mat-icon title="Links">link</mat-icon>
+            <mat-icon [title]="'Links' | translate">link</mat-icon>
             <ng-container *ngFor="let link of rom.links">
                 <a *ngIf="link.url" [href]="link.url" target="_blank">{{link.text}}</a>
                 <ng-container *ngIf="!link.url">{{link.text}}</ng-container>
             </ng-container>
         </p>
         <p *ngIf="rom.maintainer">
-            <mat-icon title="Maintainer">people</mat-icon>
+            <mat-icon [title]="'Maintainer' | translate">people</mat-icon>
             <ng-container *ngFor="let maintainer of rom.maintainer">
                 <a *ngIf="maintainer.link" [href]="maintainer.link" target="_blank">{{maintainer.name}}</a>
                 <ng-container *ngIf="!maintainer.link">{{maintainer.name}}</ng-container>
             </ng-container>
         </p>
-        <p *ngIf="rom.note" title="Notes" class="single-value">
+        <p *ngIf="rom.note" [title]="'Notes' | translate" class="single-value">
             <mat-icon>info_outline</mat-icon>
             <span>{{rom.note}}</span>
         </p>

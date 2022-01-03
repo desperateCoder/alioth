@@ -1,21 +1,22 @@
-describe('My First Test', () => {
+describe('Custom ROM list', () => {
   it('Visits the initial project page', () => {
     cy.visit('/')
+    setLanguage('en')
     cy.contains('List of Custom ROMs')
   })
-  describe('The application', () => {
+  describe('The ROM list', () => {
+    it('should display filters based on the data', () => {
+      cy.intercept('GET', 'assets/data.json', sampleData)
+      cy.visit('/')
+      cy.get('mat-button-toggle').eq(0).should('contain.text', '11')
+      cy.get('mat-button-toggle').eq(1).should('contain.text', '12')
+    })
     it('should hide items when searching for a term', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
       cy.visit('/')
       cy.get('app-rom').should('have.length', 3)
       cy.get('input').type('Baz')
       cy.get('app-rom').should('have.length', 1)
-    })
-    it('should display filters based on the data', () => {
-      cy.intercept('GET', 'assets/data.json', sampleData)
-      cy.visit('/')
-      cy.get('mat-button-toggle').eq(0).should('contain.text', '11')
-      cy.get('mat-button-toggle').eq(1).should('contain.text', '12')
     })
     it('should filter items when pressing a toggle button', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
@@ -28,14 +29,40 @@ describe('My First Test', () => {
     it('should display empty content views for blank categories', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
       cy.visit('/')
+      setLanguage('en')
       cy.get('app-rom-category-empty').should('have.length', 0)
       cy.get('input').type('Baz')
       cy.get('app-rom-category-empty').should('have.length', 1)
       cy.get('app-rom-category-empty').eq(0).contains('No ROM')
     })
   })
+  describe('Internatiionalization', () => {
+    it('should change the app title and search placeholder', () => {
+      cy.visit('/')
+      setLanguage('en')
+      cy.contains('List of Custom ROMs')
+      cy.contains('Search')
+      setLanguage('de')
+      cy.contains('Liste von Custom ROMs')
+      cy.contains('Suchen')
+    })
+    it('should preserve the language after navigation', () => {
+      cy.visit('/')
+      setLanguage('de')
+      cy.get('[data-test="about-link"]').click()
+      cy.contains('Änderungsprotokoll')
+      setLanguage('en')
+      cy.contains('Changelog')
+      cy.get('[data-test="home-link"]').click()
+      cy.contains('Search')
+    })
+  })
 })
 
+function setLanguage(lang: string) {
+  cy.get('[data-test="configure-language"]').click()
+  cy.get(`[data-test="language-${lang}"]`).eq(0).click()
+}
 
 const sampleData = [
   {

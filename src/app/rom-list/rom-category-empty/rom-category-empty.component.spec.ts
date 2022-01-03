@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { RomCategoryEmptyComponent } from './rom-category-empty.component';
 
@@ -11,6 +12,7 @@ describe('RomCategoryEmptyComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        TranslateModule.forRoot(),
         MatIconModule,
         MatCardModule
       ],

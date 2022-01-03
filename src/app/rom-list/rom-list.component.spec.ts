@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { RomListComponent } from './rom-list.component';
 import { MatInputModule } from '@angular/material/input';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('RomListComponent', () => {
   let component: RomListComponent;
@@ -22,6 +23,7 @@ describe('RomListComponent', () => {
       imports: [
         HttpClientTestingModule,
         NoopAnimationsModule,
+        TranslateModule.forRoot(),
         MatButtonToggleModule,
         MatFormFieldModule,
         MatToolbarModule,

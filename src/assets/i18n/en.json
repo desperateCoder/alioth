@@ -1,0 +1,11 @@
+{
+    "Title": "{{deviceName}}: List of Custom ROMs",
+    "Configure theme": "Configure theme",
+    "Theme": {
+        "Light": "Light",
+        "Dark": "Dark",
+        "System default": "System default"
+    },
+    "Configure language": "Configure language",
+    "About": "About"
+}

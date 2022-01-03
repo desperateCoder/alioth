@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { FilterBarComponent } from './filter-bar.component';
 
@@ -17,6 +18,7 @@ describe('FilterBarComponent', () => {
       imports: [
         NoopAnimationsModule,
         HttpClientTestingModule,
+        TranslateModule.forRoot(),
         MatButtonToggleModule,
         MatFormFieldModule,
         MatToolbarModule,

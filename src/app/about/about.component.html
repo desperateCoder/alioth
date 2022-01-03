@@ -4,17 +4,16 @@
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <mat-icon>help_outline</mat-icon>
-                About
+                {{ 'About' | translate }}
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <h2>Maintainer</h2>
+        <h2>{{ 'Maintainer' | translate }}</h2>
         <ul>
             <li *ngFor="let maintainer of environment.maintainer"><a [href]="maintainer.url">{{maintainer.name}}</a>
             </li>
         </ul>
-        <h2>Reuse for your own device</h2>
-        <p>This project aims to be device agnostic. Feel free to fork this project and
-            configure it to your needs by adjusting the following files:</p>
+        <h2>{{ 'Reuse for your own device' | translate }}</h2>
+        <p>{{ 'This project aims to be device agnostic. Feel free to fork this project and configure it to your needs by adjusting the following files:' | translate }}</p>
         <ul>
             <li><code>environment.ts</code></li>
             <li><code>CHANGELOG.md</code></li>
@@ -22,17 +21,17 @@
             <li><code>CONTRIBUTING.md</code></li>
             <li><code>ci.yml</code></li>
         </ul>
-        <a mat-raised-button color="primary" [href]="environment.projectURL" target="_blank">Project website</a>
+        <a mat-raised-button color="primary" [href]="environment.projectURL" target="_blank">{{ 'Project website' | translate }}</a>
     </mat-expansion-panel>
 
     <mat-expansion-panel [expanded]="true">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <mat-icon>link</mat-icon>
-                Additional links
+                {{ 'Additional links' | translate }}
             </mat-panel-title>
         </mat-expansion-panel-header>
-        <p>Explore additional resources provided by the maintainer about the data for this device:</p>
+        <p>{{ 'Explore additional resources provided by the maintainer about the data for this device:' | translate }}</p>
         <ul>
             <li *ngFor="let link of environment.additionalLinks"><a [href]="link.url">{{link.name}}</a></li>
         </ul>
@@ -42,18 +41,18 @@
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <mat-icon>people</mat-icon>
-                Contributing
+                {{ 'Contributing' | translate }}
             </mat-panel-title>
         </mat-expansion-panel-header>
         <markdown src="assets/CONTRIBUTING.md"></markdown>
-        <a mat-raised-button color="primary" [href]="environment.issueUrl" target="_blank">Contribute</a>
+        <a mat-raised-button color="primary" [href]="environment.issueUrl" target="_blank">{{ 'Contribute' | translate }}</a>
     </mat-expansion-panel>
 
     <mat-expansion-panel>
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <mat-icon>fiber_new</mat-icon>
-                Changelog
+                {{ 'Changelog' | translate }}
             </mat-panel-title>
         </mat-expansion-panel-header>
         <markdown src="assets/CHANGELOG.md"></markdown>
@@ -63,7 +62,7 @@
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <mat-icon>note</mat-icon>
-                Licenses of used third party libraries
+                {{ 'Licenses of used third party libraries' | translate }}
             </mat-panel-title>
         </mat-expansion-panel-header>
         <code [innerHTML]="(service.getLicenses() | async)"></code>

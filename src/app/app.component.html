@@ -1,27 +1,36 @@
 <mat-toolbar color="primary">
-  <h1><a routerLink="/" data-test="home-link">{{environment.title}}</a></h1>
+  <h1><a routerLink="/" data-test="home-link">{{ 'Title' | translate:environment }}</a></h1>
   <span class="icon-spacer"></span>
   <button mat-icon-button (click)="share()" *ngIf="supportsSharing">
     <mat-icon>share</mat-icon>
   </button>
-  <button mat-icon-button [matMenuTriggerFor]="themeMenu" aria-label="Configure theme" matTooltip="Configure theme">
+  <button mat-icon-button [matMenuTriggerFor]="themeMenu" [attr.aria-label]="'Configure theme' | translate" [matTooltip]="'Configure theme' | translate">
     <mat-icon>dark_mode</mat-icon>
   </button>
-  <mat-menu #themeMenu="matMenu">
+  <mat-menu #themeMenu>
     <button mat-menu-item (click)="theming.setTheme(Theme.LIGHT)">
       <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.LIGHT">check</ng-container></mat-icon>
-      <span>Light</span>
+      <span>{{ 'Theme.Light' | translate }}</span>
     </button>
     <button mat-menu-item (click)="theming.setTheme(Theme.DARK)">
       <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.DARK">check</ng-container></mat-icon>
-      <span>Dark</span>
+      <span>{{ 'Theme.Dark' | translate}}</span>
     </button>
     <button mat-menu-item (click)="theming.setTheme(Theme.SYSTEM)">
       <mat-icon><ng-container *ngIf="(theming.darkModeSetting$ | async) === Theme.SYSTEM">check</ng-container></mat-icon>
-      <span>System default</span>
+      <span>{{  'Theme.System default' | translate }}</span>
     </button>
   </mat-menu>
-  <a mat-icon-button routerLink="/about" matTooltip="About">
+  <button mat-icon-button [matMenuTriggerFor]="languageMenu" data-test="configure-language" [attr.aria-label]="'Configure language' | translate" [matTooltip]="'Configure language' | translate">
+    <mat-icon>language</mat-icon>
+  </button>
+  <mat-menu #languageMenu>
+    <button mat-menu-item *ngFor="let lang of translate.getLangs()" (click)="setLanguage(lang)" [attr.data-test]="'language-' + lang">
+      <mat-icon><ng-container *ngIf="translate.currentLang === lang">check</ng-container></mat-icon>
+      <span>{{ lang }}</span>
+    </button>
+  </mat-menu>
+  <a mat-icon-button routerLink="/about" [matTooltip]="'About' | translate" data-test="about-link">
     <mat-icon>help_outline</mat-icon>
   </a>
 </mat-toolbar>
