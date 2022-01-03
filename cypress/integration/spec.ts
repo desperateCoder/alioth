@@ -36,7 +36,7 @@ describe('Custom ROM list', () => {
       cy.get('app-rom-category-empty').eq(0).contains('No ROM')
     })
   })
-  describe('Internatiionalization', () => {
+  xdescribe('Internationalization', () => {
     it('should change the app title and search placeholder', () => {
       cy.visit('/')
       setLanguage('en')
