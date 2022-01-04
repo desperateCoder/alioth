@@ -45,10 +45,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.unsubscribe$.complete()
   }
 
-  setLanguage(language: string): void {
-    this.translate.use(language)
-  }
-
   share(): void {
     window.navigator.share({
       title: this.title.getTitle(),
