@@ -8,5 +8,9 @@
     "Links": "Links",
     "Maintainer": "Maintainer",
     "Notes": "Notizen",
-    "No ROMs found": "Keine ROMs gefunden"
+    "No ROMs found": "Keine ROMs gefunden",
+    "Footer": {
+        "Last modified": "Diese Liste wurde zuletzt am <strong>{{lastModified}}</strong> aktualisiert und kann jederzeit verändert werden.",
+        "See about": "Weitere Informationen über diese App und die angezeigten Daten finden Sie auf der <a href=\"{{aboutUrl}}\">Über-Seite</a>."
+    }
 }

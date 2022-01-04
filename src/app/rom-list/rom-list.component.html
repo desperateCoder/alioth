@@ -5,6 +5,6 @@
   </app-rom-category>
 </main>
 <footer>
-  <p>This list has been last modified on <strong>{{environment.lastModified | date:'medium'}}</strong> and is subject to change at all times.</p>
-  <p>Please see <a href="about">About</a> for more information about this app and its data.</p>
+  <p [innerHTML]="'Footer.Last modified' | translate:{lastModified: environment.lastModified | date:'medium'}"></p>
+  <p [innerHTML]="'Footer.See about' | translate:{aboutUrl: 'about'}"></p>
 </footer>
