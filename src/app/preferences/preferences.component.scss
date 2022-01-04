@@ -1,0 +1,25 @@
+:host {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+mat-button-toggle-group {
+    width: 100%;
+    overflow-x: auto;
+
+    mat-button-toggle {
+        flex: 1 0 auto;
+    }
+}
+
+mat-form-field {
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+<h1>{{'Preferences.Title' | translate}}</h1>
+<h2>
+    <mat-icon>dark_mode</mat-icon> {{'Preferences.Theme' | translate}}
+</h2>
+
+<mat-button-toggle-group name="theme" [attr.aria-label]="'Theme' | translate" (change)="theming.setTheme($event.value)">
+    <mat-button-toggle [checked]="(theming.darkModeSetting$ | async) === Theme.LIGHT" [value]="Theme.LIGHT">
+        {{'Theme.Light' | translate}}
+    </mat-button-toggle>
+    <mat-button-toggle [checked]="(theming.darkModeSetting$ | async) === Theme.DARK" [value]="Theme.DARK">
+        {{'Theme.Dark' | translate}}
+    </mat-button-toggle>
+    <mat-button-toggle [checked]="(theming.darkModeSetting$ | async) === Theme.SYSTEM" [value]="Theme.SYSTEM">
+        {{'Theme.System default' | translate}}
+    </mat-button-toggle>
+</mat-button-toggle-group>
+
+<h2>
+    <mat-icon>language</mat-icon> {{'Preferences.Language' | translate}}
+</h2>
+
+<mat-form-field appearance="fill">
+    <mat-label>{{'Preferences.Choose' | translate}}</mat-label>
+    <mat-select [value]="translate.currentLang" (valueChange)="i18n.setPreferredLanguage($event)" data-test="configure-language">
+        <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang" [attr.data-test]="'language-' + lang">
+            {{lang}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

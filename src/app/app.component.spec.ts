@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -17,6 +18,7 @@ describe('AppComponent', () => {
         RouterTestingModule,
         TranslateModule.forRoot(),
         MatToolbarModule,
+        MatBottomSheetModule,
         MatMenuModule,
         MatIconModule,
         MatButtonModule,

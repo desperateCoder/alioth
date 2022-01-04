@@ -1,6 +1,13 @@
 {
     "Title": "{{deviceName}}: List of Custom ROMs",
-    "Configure theme": "Configure theme",
+    "Share": "Share",
+    "Open preferences": "Open preferences",
+    "Preferences": {
+        "Title": "Preferences",
+        "Theme": "Theme",
+        "Language": "Language",
+        "Choose": "Choose"
+    },
     "Theme": {
         "Light": "Light",
         "Dark": "Dark",

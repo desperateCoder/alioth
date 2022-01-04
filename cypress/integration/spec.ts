@@ -60,8 +60,11 @@ describe('Custom ROM list', () => {
 })
 
 function setLanguage(lang: string) {
+  cy.get('[data-test="preferences"]').click()
   cy.get('[data-test="configure-language"]').click()
   cy.get(`[data-test="language-${lang}"]`).eq(0).click()
+  // https://stackoverflow.com/a/53859372
+  cy.get('.cdk-overlay-backdrop').eq(0).click(-50, -50, { force: true })
 }
 
 const sampleData = [

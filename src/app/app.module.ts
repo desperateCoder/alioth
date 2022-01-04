@@ -14,7 +14,10 @@ import { GeneratedLicenseFileAvailable } from './about/licenses/licenses.service
 import { environment } from 'src/environments/environment';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { I18nService } from './i18n.service';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet'; 
+import { PreferencesComponent } from './preferences/preferences.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSelectModule } from '@angular/material/select'; 
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,7 +25,8 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,9 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    MatBottomSheetModule,
+    MatButtonToggleModule,
+    MatSelectModule,
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
