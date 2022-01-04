@@ -14,6 +14,7 @@ import { GeneratedLicenseFileAvailable } from './about/licenses/licenses.service
 import { environment } from 'src/environments/environment';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { I18nService } from './i18n.service';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -51,7 +52,7 @@ export function createTranslateLoader(http: HttpClient) {
 })
 export class AppModule {
   constructor(translate: TranslateService) {
-    translate.use(translate.getBrowserLang() || translate.defaultLang)
+    translate.use(translate.store.currentLang)
 		translate.store.onLangChange.subscribe(lang => translate.use(lang.lang))
   }
 }

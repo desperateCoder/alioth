@@ -25,7 +25,7 @@
     <mat-icon>language</mat-icon>
   </button>
   <mat-menu #languageMenu>
-    <button mat-menu-item *ngFor="let lang of translate.getLangs()" (click)="translate.use(lang)" [attr.data-test]="'language-' + lang">
+    <button mat-menu-item *ngFor="let lang of translate.getLangs()" (click)="i18n.setPreferredLanguage(lang)" [attr.data-test]="'language-' + lang">
       <mat-icon><ng-container *ngIf="translate.currentLang === lang">check</ng-container></mat-icon>
       <span>{{ lang }}</span>
     </button>

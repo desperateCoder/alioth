@@ -12,8 +12,8 @@ export class ThemeingService {
   private readonly darkModeSetting = new ReplaySubject<Theme>(1)
   public readonly darkModeSetting$ = this.darkModeSetting.asObservable()
 
-  private readonly themePersistenceKey = 'theme';
-  private readonly themePersistenceValueDark = 'dark';
+  private readonly themePersistenceKey = 'theme'
+  private readonly themePersistenceValueDark = 'dark'
 
   private readonly darkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
   private readonly darkModeMediaListener = (event: MediaQueryListEvent) => this.darkModeActive.next(event.matches)
@@ -43,21 +43,21 @@ export class ThemeingService {
     this.darkModeSetting.next(theme)
     switch (theme) {
       case Theme.LIGHT: {
-        this.darkModeMedia.removeEventListener('change', this.darkModeMediaListener);
+        this.darkModeMedia.removeEventListener('change', this.darkModeMediaListener)
         this.darkModeActive.next(false)
-        localStorage.setItem(this.themePersistenceKey, 'light');
+        localStorage.setItem(this.themePersistenceKey, 'light')
         break;
       }
       case Theme.DARK: {
-        this.darkModeMedia.removeEventListener('change', this.darkModeMediaListener);
+        this.darkModeMedia.removeEventListener('change', this.darkModeMediaListener)
         this.darkModeActive.next(true)
-        localStorage.setItem(this.themePersistenceKey, this.themePersistenceValueDark);
+        localStorage.setItem(this.themePersistenceKey, this.themePersistenceValueDark)
         break;
       }
       case Theme.SYSTEM: {
-        this.darkModeMedia.addEventListener('change', this.darkModeMediaListener);
+        this.darkModeMedia.addEventListener('change', this.darkModeMediaListener)
         this.darkModeActive.next(this.darkModeMedia.matches)
-        localStorage.removeItem(this.themePersistenceKey);
+        localStorage.removeItem(this.themePersistenceKey)
         break;
       }
     }

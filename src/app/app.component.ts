@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { combineLatest, map, startWith, Subject, switchMap, takeUntil, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { I18nService } from './i18n.service';
 import { Theme, ThemeingService as ThemingService } from './themeing.service';
 
 @Component({
@@ -23,7 +24,8 @@ export class AppComponent implements OnInit, OnDestroy {
     @Inject(DOCUMENT) private readonly document: Document,
     @Inject(Title) private readonly title: Title,
     public readonly theming: ThemingService,
-    public readonly translate: TranslateService
+    public readonly translate: TranslateService,
+    public readonly i18n: I18nService
   ) { }
 
   ngOnInit(): void {
