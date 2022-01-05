@@ -5,6 +5,7 @@
             {
                 "name": "hentaiOS",
                 "androidVersions": ["12"],
+                "note": "Please note that hentaiOS is not compatible with any of the listed kernels.",
                 "maintainer": [
                     {
                         "name": "Raphielscape",
@@ -14,11 +15,10 @@
                         "name": "Dyneteve"
                     },
                     {
-                        "name": "OC'D",
+                        "name": "gotenksin (OC'D)",
                         "link": "https://t.me/gotenksin"
                     }
                 ],
-                "note": "Please note that hentaiOS is not compatible with any of the listed kernels.",
                 "links": [
                     {
                         "url": "https://t.me/hentaiOS",
@@ -39,7 +39,7 @@
                         "link": "https://t.me/sahilsonar"
                     },
                     {
-                        "name": "Althaf",
+                        "name": "althafvly",
                         "link": "https://t.me/althafvly"
                     },
                     {
@@ -49,24 +49,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/sepi7v",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "ColtOS",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "Aman Dwivedi",
-                        "link": "https://t.me/amandwivedi0"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://rb.gy/jifk5s",
-                        "text": "SourceForge"
+                        "url": "https://t.me/pocoF3GlobalUpdates/747",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -75,13 +59,29 @@
                 "androidVersions": ["11"],
                 "maintainer": [
                     {
-                        "name": "Nick van Bokhorst",
+                        "name": "NickVBokhorst",
                         "link": "https://t.me/NickvBokhorst"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/tnd89m",
+                        "url": "https://t.me/pocoF3GlobalUpdates/774",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "Descendant",
+                "androidVersions": ["11"],
+                "maintainer": [
+                    {
+                        "name": "Manuel (framework_res)",
+                        "link": "https://t.me/framework_res"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/802",
                         "text": "Post on XDA"
                     }
                 ]
@@ -97,8 +97,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/aospkalioth",
-                        "text": "@AOSPKAlioth"
+                        "url": "https://t.me/pocoF3GlobalUpdates/658",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -113,8 +113,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/bzunaj",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/760",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -129,13 +129,13 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/pccqcx",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/782",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
             {
-                "name": "POSP",
+                "name": "Potato Open Sauce Project (POSP)",
                 "androidVersions": ["12"],
                 "maintainer": [
                     {
@@ -145,8 +145,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/8s9t3d",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/794",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -161,8 +161,24 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/Octavi_OS",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/767",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "xdroidCAF",
+                "androidVersions": ["11"],
+                "maintainer": [
+                    {
+                        "name": "oghe3003",
+                        "link": "https://t.me/oghe3003"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/806",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -177,8 +193,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/qucm7b",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/798",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -193,8 +209,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/etvo1g",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/778",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -205,28 +221,16 @@
                     {
                         "name": "blinoff82",
                         "link": "https://t.me/blinoff82"
+                    },
+                    {
+                        "name": "DennySPb",
+                        "link": "https://t.me/dennyspb"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/4rkkum",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "StagOS",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "IronGFly",
-                        "link": "https://t.me/irongfly"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/HornsOfficial",
-                        "text": "@HornsOfficial"
+                        "url": "https://t.me/pocoF3GlobalUpdates/795",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -241,24 +245,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/akjmmu",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "Pixel Extended",
-                "androidVersions": ["11"],
-                "maintainer": [
-                    {
-                        "name": "Ralf979",
-                        "link": "https://t.me/ralf979"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://rb.gy/stgebk",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/757",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -273,14 +261,14 @@
                 ],
                 "links": [
                     {
-                        "url": "https://sourceforge.net/projects/derpfest/files/alioth/",
-                        "text": "SourceForge"
+                        "url": "https://t.me/pocoF3GlobalUpdates/729",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
             {
                 "name": "SparkOS",
-                "androidVersions": ["11"],
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "shubh1133",
@@ -289,24 +277,125 @@
                 ],
                 "links": [
                     {
-                        "url": "https://www.pling.com/p/1554425/",
-                        "text": "Pling"
+                        "url": "https://t.me/pocoF3GlobalUpdates/704",
+                        "text": "Post on Telegram"
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "title": "Unofficial AOSP",
+        "roms": [
             {
-                "name": "Pixel Experience Plus",
-                "androidVersions": ["11"],
+                "name": "ProjectXtended First Blood",
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
-                        "name": "Zidan44",
-                        "link": "https://t.me/zidan44"
+                        "name": "Eideron1",
+                        "link": "https://t.me/eideron1"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://download.pixelexperience.org/alioth",
-                        "text": "Website"
+                        "url": "https://t.me/pocoF3GlobalUpdates/769",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "BlissROM",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "cristianvaz",
+                        "link": "https://t.me/cristianvaz"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/769",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "Project Arcana",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "andrejWH",
+                        "link": "https://t.me/andrejWH"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/808",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "Lighthouse Sailboat",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "drishal",
+                        "link": "https://t.me/drishal"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/769",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "PalladiumOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "Eidoron1",
+                        "link": "https://t.me/eidoron1"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/810",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "awakenOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "NextWorksGFX",
+                        "link": "https://t.me/nextworksgfx"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/811",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "Yet Another AOSP Project (YAPP)",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "andrejWH",
+                        "link": "https://t.me/andrejwh"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/783",
+                        "text": "Post on Telegram"
                     }
                 ]
             }
@@ -332,28 +421,28 @@
                 ]
             },
             {
-                "name": "XiaomiEU",
-                "androidVersions": ["11", "12"],
+                "name": "Xiaomi.EU",
+                "androidVersions": ["12"],
                 "links": [
                     {
-                        "url": "https://xiaomi.eu/",
-                        "text": "Website"
+                        "url": "https://t.me/pocoF3GlobalUpdates/816",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
             {
                 "name": "MIUIVN Mod",
-                "androidVersions": ["11"],
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "Kimnam2005",
-                        "link": "https://t-me/kimnam2005"
+                        "link": "https://t.me/kimnam2005"
                     }
                 ],
                 "links": [
                      {
-                         "url": "https://t.me/pocof3vn",
-                         "text": "@PocoF3VN"
+                         "url": "https://t.me/pocoF3GlobalUpdates/727",
+                         "text": "Post on Telegram"
                      }
                 ]
             }
@@ -373,24 +462,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/va45yo",
-                        "text": "Post on XDA"
-                    }
-                ]
-            },
-            {
-                "name": "IMMENSITY-X Kernel",
-                "androidVersions": ["11", "AOSP"],
-                "maintainer": [
-                    {
-                        "name": "UtsavTheCunt",
-                        "link": "https://t.me/utsavthecunt"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://rb.gy/tbhl0f",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/809",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -405,8 +478,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/hyperXalioth",
-                        "text": "@HyperXAlioth"
+                        "url": "https://t.me/pocoF3GlobalUpdates/807",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -415,30 +488,30 @@
                 "androidVersions": ["11", "12", "AOSP + MIUI"],
                 "maintainer": [
                     {
-                        "name": "Nick van Bokhorst",
+                        "name": "NickVBokhorst",
                         "link": "https://t.me/NickvBokhorst"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/shkbgj",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/761",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
             {
-                "name": "aRise Kernel",
-                "androidVersions": ["11", "12", "AOSP"],
+                "name": "Eclipsia Kernel",
+                "androidVersions": ["11", "12", "AOSP + MIUI"],
                 "maintainer": [
                     {
-                        "name": "NotZeetaa",
-                        "link": "https://t.me/notzeetaa"
+                        "name": "Dawfuk",
+                        "link": "https://t.me/dawfuk"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/frew7d",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/739",
+                        "text": "Post on Telegram"
                     }
                 ]
             }
@@ -458,8 +531,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://twrp.me/xiaomi/xiaomipocof3.html",
-                        "text": "Website"
+                        "url": "https://t.me/pocoF3GlobalUpdates/659",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -489,30 +562,45 @@
                 ],
                 "links": [
                     {
-                        "url": "https://dl.akr-developers.com/?dir=skkk/TWRP/A12",
-                        "text": "AKR Download"
+                        "url": "https://t.me/pocoF3GlobalUpdates/722",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
             {
-                "name": "OrangeFox Recovery Project",
+                "name": "OrangeFox Recovery Project - Unofficial",
                 "androidVersions": ["12", "AOSP + MIUI"],
                 "note": "Do not use this on hentaiOS",
                 "lastModified": "2021-12-17",
                 "maintainer": [
                     {
-                        "name": "Pranav Talmale",
+                        "name": "raphael_alpha",
                         "link": "https://t.me/raphael_alpha"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://rb.gy/csiwgx",
-                        "text": "Post on XDA"
+                        "url": "https://t.me/pocoF3GlobalUpdates/813",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "SkyHawk Recovery Project",
+                "androidVersions": ["12", "AOSP + MIUI"],
+                "maintainer": [
+                    {
+                        "name": "raphael_alpha",
+                        "url": "https://t.me/raphael_alpha"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/814",
+                        "text": "Post on Telegram"
                     }
                 ]
             }
         ]
     }
 ]
-

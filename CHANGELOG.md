@@ -4,7 +4,11 @@ All notable changes to this project will be documented in this file. The changel
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.0.1] - 2022-01-05
+First big update in the new year since the maintainer was on vacation.
+### Changed
+- Updated the list in general, removing a lot of unnecessary and deprecated entries from [@krakeen06](https://github.com/krakeen06)
+- Now, the download links are no longer pure download links. They now take you to the respective Telegram post which also includes support, additional notes and the full credits [krakeen06](https://github.com/krakeen06)
 
 ## [2.0.0] - 2021-12-29
 ### Added
@@ -17,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0]
 ### Added
-- Collection of Custom ROM information from [@krakeen25](https://github.com/krakeen25)
+- Collection of Custom ROM information from [@krakeen06](https://github.com/krakeen06)
 - Static HTML page to display ROM data from [@desperateCoder](https://github.com/desperateCoder)
 - Schema validation from [@stefan-niedermann](https://github.com/stefan-niedermann)
 - Dark theme based on system default from [@stefan-niedermann](https://github.com/stefan-niedermann)
