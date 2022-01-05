@@ -18,7 +18,7 @@ export const environment = {
   maintainer: [
     {
       name: '@krakeen06',
-      url: 'https://t.me/PocoF3GlobalOfficial'
+      url: 'https://t.me/krakeen06'
     },
     {
       name: '@desperateCoder',
