@@ -215,6 +215,22 @@
                 ]
             },
             {
+                "name": "Yet Another AOSP Project (YAPP)",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "gotenksIN",
+                        "link": "https://t.me/gotenksIN"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/826",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
                 "name": "SyberiaOS",
                 "androidVersions": ["12"],
                 "maintainer": [
@@ -320,6 +336,22 @@
                 ]
             },
             {
+                "name": "PixysOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "andrejWH",
+                        "link": "https://t.me/andrejwh"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/828",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
                 "name": "Project Arcana",
                 "androidVersions": ["12"],
                 "maintainer": [
@@ -330,7 +362,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/808",
+                        "url": "https://t.me/pocoF3GlobalUpdates/827",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -379,22 +411,6 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/811",
-                        "text": "Post on Telegram"
-                    }
-                ]
-            },
-            {
-                "name": "Yet Another AOSP Project (YAPP)",
-                "androidVersions": ["12"],
-                "maintainer": [
-                    {
-                        "name": "andrejWH",
-                        "link": "https://t.me/andrejwh"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/pocoF3GlobalUpdates/783",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -478,7 +494,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/807",
+                        "url": "https://t.me/pocoF3GlobalUpdates/824",
                         "text": "Post on Telegram"
                     }
                 ]
