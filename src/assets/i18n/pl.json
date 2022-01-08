@@ -1,0 +1,18 @@
+{
+    "Title": "{{deviceName}}: Lista Custom ROMów",
+    "Share": "Udostępnij",
+    "Open preferences": "Otwórz preferencje",
+    "Preferences": {
+        "Title": "Preferencje",
+        "Theme": "Tryb",
+        "Language": "Język",
+        "Choose": "Wybierz"
+    },
+    "Theme": {
+        "Light": "Jasny",
+        "Dark": "Ciemny",
+        "System default": "Domyślne ustawienie systemu"
+    },
+    "Configure language": "Zkonfiguruj język",
+    "About": "O stronie"
+}
