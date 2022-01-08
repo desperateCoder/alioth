@@ -10,7 +10,7 @@
 "Notes": "Uwagi",
 "No ROMs found": "Nie znaleziono ROMów",
 "Footer": {
-    "Last modified": "Ta lista była ostatnio modyfikowana dnia <strong>{{lastModified}}</strong> i może ulec zmjanie w każdej chwili.",
+    "Last modified": "Ta lista była ostatnio modyfikowana dnia <strong>{{lastModified}}</strong> i może ulec zmianie w każdej chwili.",
     "See about": "Proszę sprawdzić <a href=\"{{aboutUrl}}\">About</a>, aby uzyskać więcej informacji o tej aplikacji i jej danych."
 }
 }
