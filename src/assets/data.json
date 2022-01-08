@@ -336,6 +336,37 @@
                 ]
             },
             {
+                "name": "LineageOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "Dyneteve"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/747",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "ProtonAOSP",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "GrettoRosella",
+                        "link": "https://t.me/grettorosella"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/830",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
                 "name": "PixysOS",
                 "androidVersions": ["12"],
                 "maintainer": [
