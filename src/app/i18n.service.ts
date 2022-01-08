@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class I18nService {
   private preferredLang = this.defaultLang
 
   constructor(private translate: TranslateService) {
-    this.translate.langs = ['en', 'de']
+    this.translate.langs = environment.translations
     this.translate.use(localStorage.getItem(this.langPersistenceKey) || this.defaultLang)
   }
 
