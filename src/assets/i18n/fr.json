@@ -1,0 +1,18 @@
+{
+    "Title": "{{deviceName}}: Liste des custom ROMs",
+    "Share": "Partager",
+    "Open preferences": "Ouvrir les préférences",
+    "Preferences": {
+        "Title": "Préférences",
+        "Theme": "Thème",
+        "Language": "Langue",
+        "Choose": "Choisir"
+    },
+    "Theme": {
+        "Light": "Clair",
+        "Dark": "Sombre",
+        "System default": "Défaut du système"
+    },
+    "Configure language": "Configurer la langue",
+    "About": "Sur le site"
+}
