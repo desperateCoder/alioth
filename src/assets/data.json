@@ -338,6 +338,7 @@
             {
                 "name": "LineageOS",
                 "androidVersions": ["12"],
+                "note": "This ROM is permissive and does not pass CTS.",
                 "maintainer": [
                     {
                         "name": "Dyneteve"
