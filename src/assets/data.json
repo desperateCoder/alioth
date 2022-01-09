@@ -167,6 +167,22 @@
                 ]
             },
             {
+                "name": "Lighthouse Sailboat",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "drishal",
+                        "link": "https://t.me/drishal"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/835",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
                 "name": "xdroidCAF",
                 "androidVersions": ["11"],
                 "maintainer": [
@@ -277,7 +293,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/729",
+                        "url": "https://t.me/pocoF3GlobalUpdates/836",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -331,6 +347,22 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/820",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "SuperiorOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "theangelofdead02",
+                        "link": "https://t.me/theangelofdead02"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/837",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -394,22 +426,6 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/827",
-                        "text": "Post on Telegram"
-                    }
-                ]
-            },
-            {
-                "name": "Lighthouse Sailboat",
-                "androidVersions": ["12"],
-                "maintainer": [
-                    {
-                        "name": "drishal",
-                        "link": "https://t.me/drishal"
-                    }
-                ],
-                "links": [
-                    {
-                        "url": "https://t.me/pocoF3GlobalUpdates/769",
                         "text": "Post on Telegram"
                     }
                 ]
