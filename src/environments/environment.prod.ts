@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  translations: ['en', 'de', 'fr'],
+  translations: ['en', 'de', 'fr', 'pl'],
   deviceName: 'Alioth',
   projectURL: 'https://github.com/desperateCoder/alioth',
   contributionURL: 'https://github.com/desperateCoder/alioth',
