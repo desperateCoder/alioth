@@ -54,7 +54,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Print last modification date
-        run: echo $(git log -1 src/assets/data.json)
+        run: ls && echo $(git log -1 src/assets/data.json) && echo $(git log -1)
       - name: Replace last modified date
         run: sed -i "s/%LAST_MODIFIED%/$(git log -1 --pretty="format:%cI" src/assets/data.json)/g" src/environments/environment.prod.ts
       - name: Build UI
