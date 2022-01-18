@@ -1,0 +1,18 @@
+{
+    "Title": "{{deviceName}}: Lista de ROMs",
+    "Share": "Compartilhar",
+    "Open preferences": "Abrir configurações",
+    "Preferences": {
+        "Title": "Configurações",
+        "Theme": "Tema",
+        "Language": "Idioma",
+        "Choose": "Escolher"
+    },
+    "Theme": {
+        "Light": "Claro",
+        "Dark": "Escuro",
+        "System default": "Padrão do sistema"
+    },
+    "Configure language": "Configurar idioma",
+    "About": "Sobre"
+}

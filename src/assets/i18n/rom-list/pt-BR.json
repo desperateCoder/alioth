@@ -1,0 +1,16 @@
+{
+    "FilterBar": {
+        "Search…": "Buscar…",
+        "Android version": "Versão do Android"
+    },
+    "Android versions": "Versões do Android",
+    "Last modified": "Última modificação",
+    "Links": "Links",
+    "Maintainer": "Mantenedor",
+    "Notes": "Notas",
+    "No ROMs found": "Nenhuma ROM foi encontrada",
+    "Footer": {
+        "Last modified": "Esta lista foi alterada pela última vez em <strong>{{lastModified}}</strong> e está sempre sujeita a modificações.",
+        "See about": "Veja <a href=\"{{aboutUrl}}\">Sobre</a> para mais informações sobre este aplicativo e seus dados."
+    }
+}
