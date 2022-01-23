@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, combineLatest, distinctUntilChanged, filter, map, Observable, share, tap } from 'rxjs';
+import { BehaviorSubject, combineLatest, distinctUntilChanged, map, Observable, share, tap } from 'rxjs';
 import { Data } from '../schema';
 
 @Injectable({
