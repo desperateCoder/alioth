@@ -5,11 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [2.2.0] - 2022-01-23
-### Changed
-- Sort ROM items in each category alphabetically from [@stefan-niedermann](https://github.com/stefan-niedermann)
-
 ### Added
 - Full text labels instead of language codes in preferences dialog from [@stefan-niedermann](https://github.com/stefan-niedermann)
+
+### Changed
+- Sort ROM items in each category alphabetically from [@stefan-niedermann](https://github.com/stefan-niedermann)
 
 ## [2.1.0] - 2022-01-06
 First big update in the new year since the maintainer was on vacation.
