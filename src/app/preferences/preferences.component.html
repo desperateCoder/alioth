@@ -23,7 +23,7 @@
     <mat-label>{{'Preferences.Choose' | translate}}</mat-label>
     <mat-select [value]="translate.currentLang" (valueChange)="i18n.setPreferredLanguage($event)" data-test="configure-language">
         <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang" [attr.data-test]="'language-' + lang">
-            {{lang}}
+            {{'Preferences.Languages.' + lang | translate}}
         </mat-option>
     </mat-select>
 </mat-form-field>
