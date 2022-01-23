@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, combineLatest, distinctUntilChanged, filter, map, Observable, share } from 'rxjs';
+import { BehaviorSubject, combineLatest, distinctUntilChanged, filter, map, Observable, share, tap } from 'rxjs';
 import { Data } from '../schema';
 
 @Injectable({
@@ -22,6 +22,11 @@ export class RomService {
   private getRawData(): Observable<Data> {
     if (this.rawData$ === null) {
       this.rawData$ = this.http.get<Data>('assets/data.json')
+        .pipe(tap(categories => categories.forEach(category => category.roms.sort((a, b) => {
+          const lowerA = a.name.toLowerCase()
+          const lowerB = b.name.toLowerCase()
+          return lowerA < lowerB ? -1 : lowerA > lowerB ? 1 : 0
+        }))))
     }
 
     return this.rawData$
