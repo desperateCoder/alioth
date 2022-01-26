@@ -29,7 +29,7 @@
           "description": "Contains the actual items"
         }
       },
-      "additionalProperties": false 
+      "additionalProperties": false
     },
     "item": {
       "type": "object",
@@ -42,6 +42,10 @@
         "name": {
           "type": "string",
           "description": "The name of the ROM."
+        },
+        "pinned": {
+          "type": "boolean",
+          "description": "whether this ROM should be pinned at top of the list."
         },
         "note": {
           "type": "string",
@@ -76,7 +80,7 @@
           "description": "Contains one or maintainers"
         }
       },
-      "additionalProperties": false 
+      "additionalProperties": false
     },
     "link": {
       "type": "object",
@@ -94,7 +98,7 @@
           "description": "The title of this link."
         }
       },
-      "additionalProperties": false 
+      "additionalProperties": false
     },
     "maintainer": {
       "type": "object",
@@ -111,7 +115,7 @@
           "description": "The name of the Maintainer."
         }
       },
-      "additionalProperties": false 
+      "additionalProperties": false
     }
   }
 }
