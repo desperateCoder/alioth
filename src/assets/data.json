@@ -586,6 +586,7 @@
             {
                 "name": "Stock MIUI Firmware",
                 "androidVersions": ["11"],
+                "pinned": true,
                 "maintainer": [
                     {
                         "name": "Xiaomi",
@@ -707,6 +708,7 @@
             {
                 "name": "TWRP - Official",
                 "androidVersions": ["11", "AOSP + MIUI"],
+                "pinned": true,
                 "maintainer": [
                     {
                         "name": "Nebrassy",
