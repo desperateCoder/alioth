@@ -1,6 +1,8 @@
 mat-card-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    line-height: 150%;
 }
 
 mat-card-content {
