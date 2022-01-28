@@ -8,8 +8,8 @@ describe('Custom ROM list', () => {
     it('should display filters based on the data', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
       cy.visit('/')
-      cy.get('mat-button-toggle').eq(1).should('contain.text', '11')
-      cy.get('mat-button-toggle').eq(2).should('contain.text', '12')
+      cy.get('mat-button-toggle-group mat-button-toggle').eq(0).should('contain.text', '11')
+      cy.get('mat-button-toggle-group mat-button-toggle').eq(1).should('contain.text', '12')
     })
     it('should hide items when searching for a term', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
@@ -21,7 +21,7 @@ describe('Custom ROM list', () => {
     it('should filter items when pressing a toggle button', () => {
       cy.intercept('GET', 'assets/data.json', sampleData)
       cy.visit('/')
-      cy.get('mat-button-toggle').eq(1).click()
+      cy.get('mat-button-toggle-group mat-button-toggle').first().click()
       cy.get('app-rom').should('have.length', 2)
       cy.get('app-rom').eq(0).contains('Foo ROM')
       cy.get('app-rom').eq(1).contains('Baz OS')
