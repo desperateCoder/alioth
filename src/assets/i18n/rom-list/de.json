@@ -1,7 +1,8 @@
 {
     "FilterBar": {
         "Search…": "Suchen…",
-        "Android version": "Android-Version"
+        "Android version": "Android-Version",
+        "Pinned": "Nur angepinnte ROMs zeigen"
     },
     "Android versions": "Android-Versionen",
     "Last modified": "Zuletzt aktualisiert",

@@ -10,7 +10,8 @@ export class RomService {
 
   private readonly filter$ = new BehaviorSubject<RomFilter>({
     term: '',
-    androidVersion: ''
+    androidVersion: '',
+    pinned: false
   })
   private rawData$: null | Observable<Data> = null
   private filteredData$: null | Observable<Data> = null
@@ -76,6 +77,7 @@ export class RomService {
       return {
         title: category.title,
         roms: category.roms
+          .filter(rom => filter.pinned ? rom.pinned : true)
           .filter(rom => !!rom.androidVersions.find(version => version.toLocaleLowerCase().indexOf(filter.androidVersion) >= 0))
           .filter(rom =>
             rom.name
@@ -101,14 +103,18 @@ export class RomService {
   }
 
   public setFilter<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
-    this.filter$.next({ ...this.filter$.getValue(), [property]: value.toLowerCase() })
+    this.filter$.next({
+      ...this.filter$.getValue(), [property]: (
+        typeof value === 'string' ? value.toLowerCase() : value
+      )
+    })
   }
 
   public isFilteredBy<Property extends keyof RomFilter>(property: Property, value: RomFilter[Property]) {
-    const lowerValue = value.toLowerCase()
+    const lowerValue = typeof value === 'string' ? value.toLowerCase() : value
     return this.filter$.asObservable()
       .pipe(
-        map(filter => filter[property].toLowerCase()),
+        map(filter => typeof filter[property] === 'string' ? (filter[property] as string).toLowerCase() : filter[property]),
         map(property => property === lowerValue)
       )
   }
@@ -116,5 +122,6 @@ export class RomService {
 
 interface RomFilter {
   term: string
-  androidVersion: string
+  androidVersion: string,
+  pinned: boolean
 }

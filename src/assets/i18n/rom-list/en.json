@@ -1,7 +1,8 @@
 {
     "FilterBar": {
         "Search…": "Search…",
-        "Android version": "Android version"
+        "Android version": "Android version",
+        "Pinned": "Show only pinned ROMs"
     },
     "Android versions": "Android versions",
     "Last modified": "Last modified",

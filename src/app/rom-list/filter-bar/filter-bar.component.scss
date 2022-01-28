@@ -20,6 +20,7 @@ mat-form-field {
     flex: 1 1 auto;
     min-width: 0;
     margin-bottom: -1rem;
+    width: 120px;
 
     @media (min-width: $breakpoint-show-version-filter) {
         max-width: 35rem;

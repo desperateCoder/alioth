@@ -4,10 +4,13 @@
         <input matInput type="search" #searchInput autofocus>
         <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
+    <mat-button-toggle #pinned (change)="service.setFilter('pinned', pinned.checked)" [attr.aria-label]="'FilterBar.Pinned' | translate">
+        <mat-icon>star</mat-icon>
+    </mat-button-toggle>
     <mat-button-toggle-group name="androidVersion" [attr.aria-label]="'FilterBar.Android version' | translate" multiple
         (change)="filterAndroidVersion($event)">
-        <mat-button-toggle *ngFor="let version of (androidVersions$ | async)"
-            [checked]="(service.isFilteredBy('androidVersion', version) | async)" [value]="version">{{version}}
+        <mat-button-toggle *ngFor="let version of androidVersions$ | async"
+            [checked]="service.isFilteredBy('androidVersion', version) | async" [value]="version">{{version}}
         </mat-button-toggle>
     </mat-button-toggle-group>
 </mat-toolbar>
