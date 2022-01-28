@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, combineLatest, distinctUntilChanged, map, Observable, share, tap } from 'rxjs';
-import { Data } from '../schema';
+import { Category, Data } from '../schema';
 
 @Injectable({
   providedIn: 'root'
@@ -22,14 +22,27 @@ export class RomService {
   private getRawData(): Observable<Data> {
     if (this.rawData$ === null) {
       this.rawData$ = this.http.get<Data>('assets/data.json')
-        .pipe(tap(categories => categories.forEach(category => category.roms.sort((a, b) => {
-          const lowerA = a.name.toLowerCase()
-          const lowerB = b.name.toLowerCase()
-          return lowerA < lowerB ? -1 : lowerA > lowerB ? 1 : 0
-        }))))
+        .pipe(
+          tap(this.sortROMsAlphabetically),
+          tap(this.sortROMsByPinStatus)
+        )
     }
 
     return this.rawData$
+  }
+
+  private sortROMsAlphabetically(categories: Category[]) {
+    categories.forEach(category => category.roms.sort((a, b) => {
+      const lowerA = a.name.toLowerCase()
+      const lowerB = b.name.toLowerCase()
+      return lowerA < lowerB ? -1 : lowerA > lowerB ? 1 : 0
+    }))
+  }
+
+  private sortROMsByPinStatus(categories: Category[]) {
+    categories.forEach(category => category.roms.sort((a, b) => {
+      return !a.pinned && b.pinned ? 1 : a.pinned && !b.pinned ? -1 : 0
+    }))
   }
 
   public getAndroidVersions(): Observable<Set<string>> {

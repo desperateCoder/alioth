@@ -1,5 +1,6 @@
 <mat-card *ngIf="rom">
-    <mat-card-title>{{rom.name}}</mat-card-title>
+    <mat-card-title>{{rom.name}}
+        <mat-icon *ngIf="rom.pinned">star</mat-icon></mat-card-title>
     <mat-card-content>
         <p>
             <mat-icon [title]="'Android versions' | translate">android</mat-icon>
