@@ -65,7 +65,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/774",
+                        "url": "https://t.me/pocoF3GlobalUpdates/937",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -97,7 +97,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/869",
+                        "url": "https://t.me/pocoF3GlobalUpdates/930",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -114,6 +114,30 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/908",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "AOSPA (Paranoid Android)",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "gotenksIN",
+                        "link": "https:/t.me/gotenksin"
+                    },
+                    {
+                        "name": "SahilSonar",
+                        "link": "https:/t.me/sahilsonar"
+                    },
+                    {
+                        "name": "UtsavTheCunt",
+                        "link": "https:/t.me/utsavthecunt"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/928",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -177,7 +201,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/901",
+                        "url": "https://t.me/pocoF3GlobalUpdates/931",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -241,7 +265,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/835",
+                        "url": "https://t.me/pocoF3GlobalUpdates/932",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -273,7 +297,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/865",
+                        "url": "https://t.me/pocoF3GlobalUpdates/925",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -309,7 +333,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/879",
+                        "url": "https://t.me/pocoF3GlobalUpdates/940",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -361,7 +385,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/757",
+                        "url": "https://t.me/pocoF3GlobalUpdates/929",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -377,7 +401,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/903",
+                        "url": "https://t.me/pocoF3GlobalUpdates/936",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -409,7 +433,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/859",
+                        "url": "https://t.me/pocoF3GlobalUpdates/923",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -440,13 +464,13 @@
                 "androidVersions": ["12"],
                 "maintainer": [
                     {
-                        "name": "theangelofdead02",
-                        "link": "https://t.me/theangelofdead02"
+                        "name": "theangelofdead01",
+                        "link": "https://t.me/theangelofdead01"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/837",
+                        "url": "https://t.me/pocoF3GlobalUpdates/920",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -478,6 +502,22 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/747",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "ForkLOS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "drishal",
+                        "link": "https://t.me/drishal"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/918",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -535,13 +575,13 @@
                 "androidVersions": ["12"],
                 "maintainer": [
                     {
-                        "name": "Eideron1",
-                        "link": "https://t.me/eideron1"
+                        "name": "Eidoron1",
+                        "link": "https://t.me/eidoron1"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/914",
+                        "url": "https://t.me/pocoF3GlobalUpdates/934",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -626,7 +666,7 @@
                 ],
                 "links": [
                      {
-                         "url": "https://t.me/pocoF3GlobalUpdates/842",
+                         "url": "https://t.me/pocoF3GlobalUpdates/921",
                          "text": "Post on Telegram"
                      }
                 ]
@@ -743,12 +783,12 @@
                 "androidVersions": ["12", "AOSP + MIUI"],
                 "maintainer": [
                     {
-                        "name": "Camerado"
+                        "name": "Chinese TWRP Developers"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/722",
+                        "url": "https://t.me/pocoF3GlobalUpdates/933",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -766,7 +806,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/881",
+                        "url": "https://t.me/pocoF3GlobalUpdates/935",
                         "text": "Post on Telegram"
                     }
                 ]
