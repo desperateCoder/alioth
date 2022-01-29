@@ -679,6 +679,7 @@
             {
                 "name": "Quantic+ Kernel",
                 "androidVersions": ["11", "12", "AOSP"],
+                "pinned": true,
                 "maintainer": [
                     {
                         "name": "Carlos Ayrton",
