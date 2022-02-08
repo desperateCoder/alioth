@@ -29,9 +29,21 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {"glob": "CONTRIBUTING.md", "input": ".", "output": "assets/"},
-              {"glob": "CHANGELOG.md", "input": ".", "output": "assets/"},
-              {"glob": ".htaccess", "input": ".", "output": "."}
+              {
+                "glob": "CONTRIBUTING.md",
+                "input": ".",
+                "output": "assets/"
+              },
+              {
+                "glob": "CHANGELOG.md",
+                "input": ".",
+                "output": "assets/"
+              },
+              {
+                "glob": ".htaccess",
+                "input": ".",
+                "output": "."
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -102,22 +114,13 @@
             "browserTarget": "custom-rom-list:build"
           }
         },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "devServerTarget": "custom-rom-list:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "custom-rom-list:serve:production"
-            }
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "watch": true,
-            "headless": false
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         },
         "e2e": {
@@ -136,5 +139,8 @@
       }
     }
   },
-  "defaultProject": "custom-rom-list"
+  "defaultProject": "custom-rom-list",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

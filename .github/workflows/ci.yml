@@ -3,6 +3,17 @@ name: CI pipeline
 on: [ push, pull_request ]
 
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Linter
+        run: npm run lint
+
   validate-json:
     name: Validate JSON
     runs-on: ubuntu-latest
