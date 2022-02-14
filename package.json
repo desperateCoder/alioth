@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
     "cypress": "latest",
-    "eslint": "^8.2.0",
+    "eslint": "^8.9.0",
     "jest": "^27.5.1",
     "jest-preset-angular": "^11.0.1",
     "json-schema-to-typescript": "^10.1.5",
