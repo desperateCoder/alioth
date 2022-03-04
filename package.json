@@ -29,7 +29,7 @@
     "ngx-markdown": "^13.1.0",
     "rxjs": "~7.5.4",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-builders/jest": "^13.0.3",
