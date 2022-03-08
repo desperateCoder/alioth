@@ -80,7 +80,7 @@
             },
             {
                 "name": "Descendant",
-                "androidVersions": "12",
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "Manuel (framework_res)",
@@ -90,7 +90,7 @@
                 "links": [
                     {
                         "url": "https://t.me/pocoF3GlobalUpdates/1000",
-                        "text": "Post on XDA"
+                        "text": "Post on Telegram"
                     }
                 ]
             },
