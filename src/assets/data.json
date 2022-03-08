@@ -815,7 +815,7 @@
             },
             {
                 "name": "Immensity-X Kernel",
-                "androidVersions": "12",
+                "androidVersions": ["12"],
                 "maintainer": [
                     {
                         "name": "UtsavTheCunt",
