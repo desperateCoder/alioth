@@ -80,7 +80,7 @@
             },
             {
                 "name": "Descendant",
-                "androidVersions": ["12"],
+                "androidVersions": "12",
                 "maintainer": [
                     {
                         "name": "Manuel (framework_res)",
