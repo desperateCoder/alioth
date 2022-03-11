@@ -363,7 +363,7 @@
                 ]
             },
             {
-                "name": "Yet Another AOSP Project (YAPP)",
+                "name": "Yet Another AOSP Project (YAAP)",
                 "androidVersions": ["12"],
                 "maintainer": [
                     {
@@ -782,8 +782,8 @@
                 ]
             },
             {
-                "name": "Optimus Drunk Kernel",
-                "androidVersions": ["11", "12", "AOSP + MIUI"],
+                "name": "InfiniR Kernel",
+                "androidVersions": ["12", "AOSP + MIUI"],
                 "maintainer": [
                     {
                         "name": "NickVBokhorst",
@@ -792,8 +792,8 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/976",
-                        "text": "Post on Telegram"
+                        "url": "https://github.com/raystef66/InfiniR_kernel_alioth/releases/tag/v2.08",
+                        "text": "GitHub Releases"
                     }
                 ]
             },
