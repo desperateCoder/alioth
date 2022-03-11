@@ -784,10 +784,11 @@
             {
                 "name": "InfiniR Kernel",
                 "androidVersions": ["12", "AOSP + MIUI"],
+                "note": "This kernel is a fork of NickvBokhorst's Optimus Drunk kernel which was shortly dropped.",
                 "maintainer": [
                     {
-                        "name": "NickVBokhorst",
-                        "link": "https://t.me/NickvBokhorst"
+                        "name": "Raystef66",
+                        "link": "https://t.me/raystef66"
                     }
                 ],
                 "links": [
