@@ -25,7 +25,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/hentaiOS/114",
+                        "url": "https://t.me/hentaiOS/124",
                         "text": "Release Post (EN-US)"
                     }
                 ]
@@ -49,7 +49,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1072",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1113",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -107,13 +107,13 @@
                 "androidVersions": ["12"],
                 "maintainer": [
                     {
-                        "name": "ChandraChaganti",
-                        "link": "https:/t.me/chandrachaganti"
+                        "name": "lzgmc",
+                        "link": "https:/t.me/lzgmc"
                     }
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/954",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1108",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -207,6 +207,22 @@
                 ]
             },
             {
+                "name": "Palladium OS",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "theangelofdead01",
+                        "link": "https://t.me/theangelofdead01"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/1093",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
                 "name": "EvolutionX",
                 "androidVersions": ["12"],
                 "maintainer": [
@@ -217,7 +233,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1060",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1098",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -317,7 +333,7 @@
                         "text": "Post on Telegram (A11)"
                     },
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1057",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1109",
                         "text": "Post on Telegram (A12)"
                     }
                 ]
@@ -333,7 +349,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1038",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1091",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -502,7 +518,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1085",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1090",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -574,6 +590,38 @@
                     {
                         "url": "https://t.me/XiaomiGeeksBot",
                         "text": "Run /fastboot @XiaomiGeeksBot"
+                    }
+                ]
+            },
+            {
+                "name": "MIUI Mint",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "project_mint",
+                        "link": "https://t.me/project_mint"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/1089",
+                        "text": "Post on Telegram"
+                    }
+                ]
+            },
+            {
+                "name": "MIUISR",
+                "androidVersions": ["12"],
+                "maintainer": [
+                    {
+                        "name": "xerolite",
+                        "link": "https://t.me/xerolite"
+                    }
+                ],
+                "links": [
+                    {
+                        "url": "https://t.me/pocoF3GlobalUpdates/1111",
+                        "text": "Post on Telegram"
                     }
                 ]
             },
@@ -673,7 +721,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/1067",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1115",
                         "text": "Post on Telegram"
                     }
                 ]
@@ -777,7 +825,7 @@
                 ],
                 "links": [
                     {
-                        "url": "https://t.me/pocoF3GlobalUpdates/977",
+                        "url": "https://t.me/pocoF3GlobalUpdates/1110",
                         "text": "Post on Telegram"
                     }
                 ]
