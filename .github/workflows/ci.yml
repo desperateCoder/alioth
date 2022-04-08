@@ -51,7 +51,7 @@ jobs:
       - name: Run End to End tests
         run: npm run e2e
       - name: Upload videos
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: e2e-videos
           path: cypress/videos
@@ -73,7 +73,7 @@ jobs:
       - name: Build UI
         run: npm run build
       - name: Stash bundle
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: bundle
           path: dist/custom-rom-list/
