@@ -22,7 +22,7 @@
     "@angular/material": "^13.3.6",
     "@angular/platform-browser": "~13.3.6",
     "@angular/platform-browser-dynamic": "~13.3.6",
-    "@angular/router": "~13.3.6",
+    "@angular/router": "~13.3.7",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "material-icons": "^1.10.11",
