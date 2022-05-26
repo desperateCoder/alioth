@@ -1,0 +1,13 @@
+{
+    "About": "Acerca de",
+    "Maintainer": "Mantenedores",
+    "Reuse for your own device": "Reutilizar para su dispositivo",
+    "This project aims to be device agnostic. Feel free to fork this project and configure it to your needs by adjusting the following files:": "Este proyecto pretende ser independiente del dispositivo. Siéntase libre de bifurcar este proyecto y configurarlo según sus necesidades ajustando los siguientes archivos:",
+    "Project website": "Sitio web del proyecto",
+    "Additional links": "Enlaces adicionales",
+    "Explore additional resources provided by the maintainer about the data for this device:": "Explore recursos adicionales proporcionados por el mantenedor sobre los datos de este dispositivo:",
+    "Contributing": "Contribuyendo",
+    "Contribute": "Contribuir",
+    "Changelog": "Registro de cambios",
+    "Licenses of used third party libraries": "Licencias de bibliotecas de terceros urilizadas"
+}
