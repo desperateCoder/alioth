@@ -1,0 +1,26 @@
+{
+    "Title": "{{deviceName}}: Lista de ROMs",
+    "Share": "Share",
+    "Open preferences": "Abrir preferencias",
+    "Preferences": {
+        "Title": "Preferencias",
+        "Theme": "Tema",
+        "Language": "Lenguaje",
+        "Choose": "Escoger",
+        "Languages": {
+            "en": "Inglés",
+            "de": "Aleman",
+            "fr": "Francés",
+            "pl": "Polaco",
+            "pt-BR": "Portugues (Brasil)",
+            "es": "Español"
+        }
+    },
+    "Theme": {
+        "Light": "Claro",
+        "Dark": "Oscuro",
+        "System default": "Predeterminado del sistema"
+    },
+    "Configure language": "Configurar lenguaje",
+    "About": "Acerca de"
+}
