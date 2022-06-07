@@ -2,6 +2,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +23,7 @@ describe('FilterBarComponent', () => {
         MatButtonToggleModule,
         MatFormFieldModule,
         MatToolbarModule,
+        MatIconModule,
         MatInputModule
       ],
       declarations: [ FilterBarComponent ]

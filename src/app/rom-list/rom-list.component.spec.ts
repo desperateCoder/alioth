@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { RomListComponent } from './rom-list.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('RomListComponent', () => {
@@ -27,6 +28,7 @@ describe('RomListComponent', () => {
         MatButtonToggleModule,
         MatFormFieldModule,
         MatToolbarModule,
+        MatIconModule,
         MatInputModule
       ],
       providers: [

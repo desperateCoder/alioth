@@ -135,8 +135,10 @@
       }
     }
   },
-  "defaultProject": "custom-rom-list",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": false
   }
 }
