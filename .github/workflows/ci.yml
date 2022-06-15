@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --force
       - name: Run Linter
         run: npm run lint
 
@@ -39,7 +39,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --force
       - name: Run frontend Unit tests
         run: npm run test
 
@@ -50,7 +50,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --force
       - name: Run End to End tests
         run: npm run e2e
       - name: Upload videos
@@ -68,7 +68,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --force
       - name: Print last modification date
         run: echo $(git log -1 src/assets/data.json)
       - name: Replace last modified date
