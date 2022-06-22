@@ -26,7 +26,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "material-icons": "^1.11.1",
-    "ngx-markdown": "^14.0.0",
+    "ngx-markdown": "^14.0.1",
     "rxjs": "~7.5.5",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.6"
