@@ -40,7 +40,7 @@
     "@angular-eslint/schematics": "14.0.2",
     "@angular-eslint/template-parser": "14.0.2",
     "@angular/cli": "^14.0.5",
-    "@angular/compiler-cli": "^14.0.5",
+    "@angular/compiler-cli": "^14.0.6",
     "@cypress/schematic": "^2.0.0",
     "@types/jest": "^28.1.5",
     "@types/node": "^18.0.3",
