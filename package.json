@@ -42,7 +42,7 @@
     "@angular/cli": "^14.0.6",
     "@angular/compiler-cli": "^14.0.6",
     "@cypress/schematic": "^2.0.0",
-    "@types/jest": "^28.1.5",
+    "@types/jest": "^28.1.6",
     "@types/node": "^18.0.4",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "5.30.6",
