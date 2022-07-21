@@ -20,7 +20,7 @@
     "@angular/core": "^14.0.1",
     "@angular/forms": "^14.1.0",
     "@angular/material": "^14.1.0",
-    "@angular/platform-browser": "^14.0.5",
+    "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.0.6",
     "@ngx-translate/core": "^14.0.0",
