@@ -25,7 +25,7 @@
     "@angular/router": "^14.1.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
-    "material-icons": "^1.11.7",
+    "material-icons": "^1.11.8",
     "ngx-markdown": "^14.0.1",
     "rxjs": "~7.5.6",
     "tslib": "^2.4.0",
