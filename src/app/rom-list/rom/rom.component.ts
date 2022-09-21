@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Item, Link, Maintainer } from 'src/app/schema';
+import { Item, Link } from 'src/app/schema';
 
 @Component({
   selector: 'app-rom',

@@ -1,6 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input } from '@angular/core';
-import { Category, Item } from 'src/app/schema';
+import { Item } from 'src/app/schema';
 
 @Component({
   selector: 'app-rom-category',
